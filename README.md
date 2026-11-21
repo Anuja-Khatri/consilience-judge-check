@@ -27,7 +27,7 @@ The arithmetic here is simple, and anyone could do it by hand for one criterion.
 | Compare the judge with expert labels | Which is right, on the labelled sample | Anything outside the sample. Labels take experts' time, and experts disagree | No labels. The answer key is the rubric itself, so the test is public and anyone can run it again |
 | A script written for the occasion | An answer, once | Whether the script is right | The cases are built from the rubric by one command. Each row is decided in exact decimal arithmetic. What cannot be read exactly is left out and listed, not guessed. Every result has a receipt that re-runs. The audit records are in this repository |
 
-**When a judge is replaced.** Models used as judges are withdrawn by their providers. The same test can be put to the replacement with nothing rebuilt. In the first study that took 473 calls so far and about 3 US dollars.
+**When a judge is replaced.** Models used as judges are withdrawn by their providers. The same test can be put to the replacement with nothing rebuilt. In the first study that took 489 calls and about 3 US dollars.
 
 **What it does not add.** Anything about the criteria that need judgement, which is most of any rubric. And it checks; it does not discover. It finds where a judge misapplies a stated tolerance. It finds nothing about the work being judged.
 
@@ -102,6 +102,7 @@ consilience-judge-check check studies/judge-check-2026/results/draco_product/tab
 - **The rubric reader is narrow and is not proven.** It reads criteria that start with "States", end with "(within +/- T)" and give a dollar amount, a percentage or a count. Everything else is left out and counted. Three audits each found hostile criteria it misread; it was rewritten after each, and the final version has not been audited. Read the review list it writes (`scan --review`).
 - **It has met one real rubric.**
 - **The study uses built sentences, not real reports**, and a small sample.
+- **The second judge had one call per criterion.** Its run was closed before the repeat calls, so nothing here says whether its verdicts are stable from call to call.
 - **A receipt says "given this table, these rows differ from the arithmetic".** It does not prove the judge gave the verdicts in the table. The call records kept beside it are the evidence for that.
 - **The engine is pinned to a development commit** of `consilience-core` (0.2.0.dev0), not to a release.
 - **No person has reviewed this yet.** Every audit so far was done by a separate AI session.

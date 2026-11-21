@@ -38,7 +38,7 @@ Where the third DRACO judge is wrong, its own reply nearly always shows the mist
 ## Read this before the numbers
 
 - **Two judges, and neither is the paper's primary judge as published.** The third configuration in the paper's judge table (reasoning off, temperature 0) is tested in full. The paper's primary judge has been shut down by its provider, so its direct successor in the same model line was tested, at the paper's settings for the primary judge (thinking level low, temperature 0.2). The paper's second judge is not tested.
-- **The run on the second judge is one call per criterion.** The repeats, and a third of the just-inside stage, have not been run yet; the provider limits the key to 250 requests a day.
+- **The run on the second judge is one call per criterion, and it was closed early.** It was stopped on 21 Nov before its spending cap, by the author's decision, when the provider's limit of 250 requests a day would have carried it into a third day. Not run: 18 of the 76 criteria just inside the tolerance, and all the repeat calls. So nothing here says whether this judge's verdicts are stable from call to call.
 - **Built responses, not real system reports.** No system's reports are public, so the judge could not be re-run on them. Each response states one value in one sentence, sometimes to more decimal places than a real report would use. **Nothing here says any system's score or rank would change.**
 - **76 criteria from 10 DRACO tasks, 73 of them Finance. One task holds 39 of the 76.** They are all the criteria that state a tolerance and pass the parsing rules, so the replication used new values on the same criteria.
 - **This harness is not DRACO's.** The grading prompt is the paper's, byte for byte. The output limit (1,024 tokens; no reply was cut off) is this study's, and the judge wrapped every reply in a code fence although the prompt says not to. The status field was read by rule. If DRACO's own harness forces a different output form, a few verdicts could differ.
@@ -159,7 +159,7 @@ From rubric to report, the package does every step that does not need a model.
 | Table | Rows | Judge right | Judge lenient | Judge strict |
 |---|---|---|---|---|
 | Third judge, all arms | 3,051 | 2,872 | 139 | 40 |
-| Current judge of the primary family, so far | 473 | 473 | 0 | 0 |
+| Current judge of the primary family | 489 | 489 | 0 | 0 |
 
 - **Part 1 was first run with this study's own scripts** (`pilot/`), and those call records are kept. It was then rebuilt through the package alone: all 3,051 saved calls match, by hash, the sentences the package builds, and every count comes out the same (`results/draco_product/`). Part 1b was run through the package from the start.
 - **What the tool adds, and what it does not.** Each row is one comparison, decided in exact decimal arithmetic on the digits as written. The tool is published, tested arithmetic, a unit check done by the Consilience engine, and a receipt anyone can re-run. It never runs a judge, and a receipt does not prove the judge gave the verdicts in the table: the call records beside it do.
@@ -177,7 +177,7 @@ From rubric to report, the package does every step that does not need a model.
 
 **The cases are the same.** `consilience-judge-check scan` found the 76 checkable criteria in DRACO's rubric and `consilience-judge-check probes` built the sentences. For every distance used in Part 1 they are the same text, byte for byte, as the third judge was sent.
 
-**The run is nearly finished.** It was preregistered in five stages with a spending cap of 4.25 US dollars. The provider allows the key 250 requests a day, so it runs in daily batches. 473 calls have a verdict, and every one is right. Not yet run: a third of the just-inside stage, and the repeats.
+**The run is closed.** It was preregistered in five stages with a spending cap of 4.25 US dollars. It was stopped on 21 Nov 2026 at 3.08 US dollars, before the cap, by the author's decision: the provider allows the key 250 requests a day, and the rest would have run into a third day. 489 calls have a verdict, and every one is right. **Not run:** 36 calls of the just-inside stage (18 criteria on each side) and all 304 repeat calls. No rule was changed.
 
 | Stage | The number stated | Right verdict | Calls with a verdict | Criteria judged wrongly |
 |---|---|---|---|---|
@@ -186,8 +186,8 @@ From rubric to report, the package does every step that does not need a model.
 | 2 (complete) | The criterion's own value | MET | 76 of 76 | 0 of 76 |
 | 2 (complete) | Far off | UNMET | 76 of 76 | 0 of 76 |
 | 3 (complete) | 1.1 T above, inside a long report | UNMET | 69 of 69 | **0 of 69** (0% to 5%) |
-| 4 (part) | 0.9 T below | MET | 50 of 76 | 0 of 50 |
-| 4 (part) | 0.9 T above | MET | 50 of 76 | 0 of 50 |
+| 4 (part) | 0.9 T below | MET | 58 of 76 | 0 of 58 |
+| 4 (part) | 0.9 T above | MET | 58 of 76 | 0 of 58 |
 | 5 | Stage 1 twice more | UNMET | not run | |
 
 **Against the rules fixed before the run.**
@@ -198,7 +198,8 @@ From rubric to report, the package does every step that does not need a model.
 | The same, 1.1 T above | Same threshold | 0 of 76. Not shown |
 | Controls | Harness suspect if more than 3 of 76 are wrong | 0 of 76 wrong on each. The harness is sound |
 | Inside a long report | Shown at 4 or more of 69 | 0 of 69. **Not shown** |
-| Does it refuse a value just inside? | Reported as counted | 0 of 50 on each side, so far |
+| Does it refuse a value just inside? | Reported as counted | 0 of 58 on each side. 18 criteria on each side were not reached |
+| Do repeated calls agree? | From the fifth stage | Not answered: the run was closed before that stage |
 
 | On the same 152 sentences | Paper's third judge | Current judge of the primary family |
 |---|---|---|
@@ -206,12 +207,12 @@ From rubric to report, the package does every step that does not need a model.
 | 1.1 T above, accepted | 10 of 76 criteria | 0 of 76 |
 | Either | 27 of 76 | 0 of 76 |
 | 1.1 T above inside a long report, accepted | 14 of 69 | 0 of 69 |
-| 0.9 T, wrongly refused (below, above) | 6 and 5 of 76 | 0 and 0 of 50, so far |
+| 0.9 T, wrongly refused (below, above) | 6 and 5 of 76 | 0 and 0 of 58 |
 
 - **The error in Part 1 is a property of the third judge**, not of rubric judges in general.
 - **It holds inside a long report too.** There the third judge accepted more than it did for the sentence alone at the same distance (14 of 69 against 10 of 76).
-- **What this does not show.** One call per criterion; the repeats have not been run. This is the successor model, on this study's harness, on built sentences.
-- Five calls failed and are in the record (three refused by the provider's request limits, two when the credit ran out). Four were made again and have a verdict; the fifth is the call the daily limit stopped on. After the first 24 calls the script was changed once, to pace under 25 requests a minute. The stages, their order, the stopping rule and the pass rule were not changed.
+- **What this does not show.** One call per criterion. The repeats were not run, so nothing here says whether this judge's verdicts are stable from call to call. 18 of the 76 criteria were not tested just inside the tolerance. This is the successor model, on this study's harness, on built sentences.
+- Six calls failed and are in the record (four refused by the provider's request limits, two when the credit ran out). Five were made again and have a verdict; the sixth is the call the daily limit stopped on at the end. After the first 24 calls the script was changed once, to pace under 25 requests a minute. The stages, their order, the stopping rule and the pass rule were not changed.
 
 ---
 
@@ -308,7 +309,7 @@ consilience-judge-check verify studies/judge-check-2026/results/draco_product/gr
 consilience-judge-check verify studies/judge-check-2026/results/draco_second_judge/grader_receipt.json
 ```
 
-The first re-reads the table of 2,298 cases from the first two arms, re-runs every comparison and confirms 2,218 right, 57 lenient, 23 strict. The second does the same for the 753 replication cases: 654 right, 82 lenient, 17 strict. The third is a receipt of the Consilience engine's own `check` command, which this tool hands to the engine; it confirms that 15 of 565 wrong-law calls reach mark 9 and 78 reach mark 8. The fourth is the third judge through the package alone (3,051 rows: 2,872, 139, 40). The fifth is the second judge (473 rows so far, all right). A receipt says "given this table, these are the rows where the verdict differs". The call records beside it are the evidence that the judge gave those verdicts.
+The first re-reads the table of 2,298 cases from the first two arms, re-runs every comparison and confirms 2,218 right, 57 lenient, 23 strict. The second does the same for the 753 replication cases: 654 right, 82 lenient, 17 strict. The third is a receipt of the Consilience engine's own `check` command, which this tool hands to the engine; it confirms that 15 of 565 wrong-law calls reach mark 9 and 78 reach mark 8. The fourth is the third judge through the package alone (3,051 rows: 2,872, 139, 40). The fifth is the second judge (489 rows, all right). A receipt says "given this table, these are the rows where the verdict differs". The call records beside it are the evidence that the judge gave those verdicts.
 
 To recount by criterion and by task from the call records (`DRACO_HOME` holds the dataset and paper source):
 
@@ -347,7 +348,7 @@ Call records carry the model identifier in a `judge_model` field, and three summ
 ## How the study was run
 
 - **Written down first.** Six preregistrations, each committed before its calls. Their hashes as committed: judge `1f9e56088401…`, judge panel `5243c60dc294…`, DRACO `3e5845366310…`, DRACO near the boundary `f1b59a5df7ef…`, DRACO replication `b0a7dc2c3ede…`, DRACO second judge `54499db287af…`. The commit history that shows the order is in a private repository. One sentence was removed from each of three DRACO files for publication; the hashes above are of the files before that.
-- **Every call kept.** 4,459 judge calls with a result (a verdict or a score), none edited or dropped. Kept beside them: the 10 calls that failed, and 2 calls made before the second judge's run to learn its reply format.
+- **Every call kept.** 4,475 judge calls with a result (a verdict or a score), none edited or dropped. Kept beside them: the 11 calls that failed, and 2 calls made before the second judge's run to learn its reply format.
 - **Checked before it was shown.** The first write-up led with "26 of 228 calls, 11%". Before publication that figure was put to a preregistered replication and an independent audit. The replication held. The audit found that the intervals were too narrow, that one sentence about the judge was wrong, that several "made no difference" statements were too strong, and that the engine did not decide "exactly" as claimed. The engine was fixed, the tables rebuilt and this text rewritten. `AUDIT.md` has every finding. Tables and receipts were regenerated; no call record was changed.
 - **Run on 20 and 21 Nov 2026**, as the first use of `check`, on benchmarks chosen because Perplexity's research page lists them and their papers name judge reliability as open.
 - **Provenance.** The study belongs to the Consilience project (Anuja Khatri). The code and this text were written with an AI coding assistant working under her direction.

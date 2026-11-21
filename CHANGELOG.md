@@ -1,5 +1,17 @@
 # Changelog
 
+## The study, 21 Nov 2026: the run on the second judge is closed
+
+No code changed. The last calls on the second DRACO judge were made and counted, and the run was closed before its spending cap by the author's decision, when the provider's limit of 250 requests a day would have carried it into a third day.
+
+| | |
+|---|---|
+| Calls with a verdict | 489, every one right |
+| Complete | Just outside the tolerance (0 of 76 accepted on each side); exact and far-off values (all right); just outside, inside a long report (0 of 69 accepted) |
+| Part done | Just inside the tolerance: 58 of 76 criteria on each side, none wrongly refused |
+| Not run | 18 criteria just inside, and all the repeat calls |
+| In the whole study | 4,475 judge calls with a result, 11 failed, all kept |
+
 ## 0.1.1 (21 Nov 2026)
 
 Corrections after an independent check of this repository by a separate session. Its report, as returned, and what was done about each finding: [AUDIT_MOVE.md](AUDIT_MOVE.md).
@@ -53,5 +65,5 @@ The first version as a package of its own.
 | The contracts file, re-run from DRACO's rubric | Same result: 3,934 criteria read, 207 mention a tolerance, 76 accepted |
 | The preregistered file of test sentences, rebuilt from the contracts | Byte for byte the same (sha256 `147522f41376131e…`) through `verify` and the tests, which rebuild it with the comment line it was first written with. The `probes` command today writes the same rows under a new first line |
 | The third judge's 3,051 graded cases, joined and decided again | 2,872 right, 139 lenient, 40 strict, as before |
-| The second judge's 473 graded cases so far, joined and decided again | 473 right, as before |
+| The second judge's 473 graded cases at that time, joined and decided again | 473 right, as before |
 | The study folder | Every file byte for byte as on the working branch, except its `README.md` (true of 0.1.0; for the renames made in 0.1.1 see `PROVENANCE.md`) |

@@ -1,5 +1,5 @@
 {
- "calls": 478,
+ "calls": 495,
  "judge_models": [
   "gemini-3.1-pro-preview"
  ],
@@ -20,12 +20,12 @@
    "with_a_verdict": 69
   },
   "4": {
-   "calls": 101,
-   "failed_or_unreadable": 1,
-   "with_a_verdict": 100
+   "calls": 118,
+   "failed_or_unreadable": 2,
+   "with_a_verdict": 116
   }
  },
- "metered_spend_usd": 2.9994,
+ "metered_spend_usd": 3.081,
  "planned_by_stage": {
   "1": 152,
   "2": 152,
@@ -39,7 +39,7 @@
   "temperature": 0.2
  },
  "tokens": {
-  "prompt": 898172,
-  "total": 998428
+  "prompt": 921405,
+  "total": 1024590
  }
 }

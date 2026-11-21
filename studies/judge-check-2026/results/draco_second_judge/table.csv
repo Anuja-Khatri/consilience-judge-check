@@ -1,4 +1,4 @@
-# One row per graded probe, built by `consilience rubric table`. The right verdict is not here: grader-check works it out from the numbers. `group` is the probe's distance, kept for counting.
+# One row per graded probe, built by `consilience-judge-check table`. The right verdict is not here: `check` works it out from the numbers. `group` is the probe's distance, kept for counting.
 id,reference_value,reference_unit,tolerance,stated_value,stated_unit,grader_verdict,group,item,cluster,reference_step
 00c8dc0cd995@+0.9#0,5.31,percent,0.1 percent,5.4,percent,met,+0.9,00c8dc0cd995,3a8db70a-d906-4bde-bf87-c0c74504409a,0.01
 05269a462a95@+0.9#0,1524000,USD,100000 USD,1614000,USD,met,+0.9,05269a462a95,342b15b8-0ae1-43ce-9ebe-c7318179f156,1000
@@ -50,6 +50,14 @@ id,reference_value,reference_unit,tolerance,stated_value,stated_unit,grader_verd
 8f43aa7ce3f3@+0.9#0,7020000,USD,150000 USD,7155000,USD,met,+0.9,8f43aa7ce3f3,342b15b8-0ae1-43ce-9ebe-c7318179f156,1000
 90fcbfd65765@+0.9#0,3151232,USD,10000 USD,3160232,USD,met,+0.9,90fcbfd65765,67dfb8ea-cc84-4fb9-abc2-4794aa20eb44,1
 95b8faca7949@+0.9#0,625000,USD,40000 USD,661000,USD,met,+0.9,95b8faca7949,342b15b8-0ae1-43ce-9ebe-c7318179f156,1000
+9875f6e03600@+0.9#0,107000,USD,20000 USD,125000,USD,met,+0.9,9875f6e03600,785c8570-6aed-4517-aac2-1d56e16745b7,1000
+a87c0f5bda61@+0.9#0,67121,USD,1000 USD,68021,USD,met,+0.9,a87c0f5bda61,67dfb8ea-cc84-4fb9-abc2-4794aa20eb44,1
+ac6dd3f56310@+0.9#0,1007000,USD,50000 USD,1052000,USD,met,+0.9,ac6dd3f56310,342b15b8-0ae1-43ce-9ebe-c7318179f156,1000
+af4aa10a290d@+0.9#0,800000000,USD,5000000 USD,804500000,USD,met,+0.9,af4aa10a290d,3a8db70a-d906-4bde-bf87-c0c74504409a,1000
+b4d1065c1b38@+0.9#0,1448109,USD,10000 USD,1457109,USD,met,+0.9,b4d1065c1b38,67dfb8ea-cc84-4fb9-abc2-4794aa20eb44,1
+b58db5c114f7@+0.9#0,77.53,USD,3 USD,80.23,USD,met,+0.9,b58db5c114f7,342b15b8-0ae1-43ce-9ebe-c7318179f156,0.01
+b8e87ef67d40@+0.9#0,117900000,USD,1000000 USD,118800000,USD,met,+0.9,b8e87ef67d40,a78eed67-ebe3-425e-a467-d54ee8949c8b,100000
+ba48f4e13a23@+0.9#0,13.14,USD,0.5 USD,13.59,USD,met,+0.9,ba48f4e13a23,342b15b8-0ae1-43ce-9ebe-c7318179f156,0.01
 00c8dc0cd995@+1.1#0,5.31,percent,0.1 percent,5.42,percent,unmet,+1.1,00c8dc0cd995,3a8db70a-d906-4bde-bf87-c0c74504409a,0.01
 05269a462a95@+1.1#0,1524000,USD,100000 USD,1634000,USD,unmet,+1.1,05269a462a95,342b15b8-0ae1-43ce-9ebe-c7318179f156,1000
 092ae21e5b04@+1.1#0,190703,USD,1000 USD,191803,USD,unmet,+1.1,092ae21e5b04,67dfb8ea-cc84-4fb9-abc2-4794aa20eb44,1
@@ -245,6 +253,14 @@ fdd2e5eb0705@+1.1:report#0,1007306,count,20000 count,1029306,count,unmet,+1.1:re
 8f43aa7ce3f3@-0.9#0,7020000,USD,150000 USD,6885000,USD,met,-0.9,8f43aa7ce3f3,342b15b8-0ae1-43ce-9ebe-c7318179f156,1000
 90fcbfd65765@-0.9#0,3151232,USD,10000 USD,3142232,USD,met,-0.9,90fcbfd65765,67dfb8ea-cc84-4fb9-abc2-4794aa20eb44,1
 95b8faca7949@-0.9#0,625000,USD,40000 USD,589000,USD,met,-0.9,95b8faca7949,342b15b8-0ae1-43ce-9ebe-c7318179f156,1000
+9875f6e03600@-0.9#0,107000,USD,20000 USD,89000,USD,met,-0.9,9875f6e03600,785c8570-6aed-4517-aac2-1d56e16745b7,1000
+a87c0f5bda61@-0.9#0,67121,USD,1000 USD,66221,USD,met,-0.9,a87c0f5bda61,67dfb8ea-cc84-4fb9-abc2-4794aa20eb44,1
+ac6dd3f56310@-0.9#0,1007000,USD,50000 USD,962000,USD,met,-0.9,ac6dd3f56310,342b15b8-0ae1-43ce-9ebe-c7318179f156,1000
+af4aa10a290d@-0.9#0,800000000,USD,5000000 USD,795500000,USD,met,-0.9,af4aa10a290d,3a8db70a-d906-4bde-bf87-c0c74504409a,1000
+b4d1065c1b38@-0.9#0,1448109,USD,10000 USD,1439109,USD,met,-0.9,b4d1065c1b38,67dfb8ea-cc84-4fb9-abc2-4794aa20eb44,1
+b58db5c114f7@-0.9#0,77.53,USD,3 USD,74.83,USD,met,-0.9,b58db5c114f7,342b15b8-0ae1-43ce-9ebe-c7318179f156,0.01
+b8e87ef67d40@-0.9#0,117900000,USD,1000000 USD,117000000,USD,met,-0.9,b8e87ef67d40,a78eed67-ebe3-425e-a467-d54ee8949c8b,100000
+ba48f4e13a23@-0.9#0,13.14,USD,0.5 USD,12.69,USD,met,-0.9,ba48f4e13a23,342b15b8-0ae1-43ce-9ebe-c7318179f156,0.01
 00c8dc0cd995@-1.1#0,5.31,percent,0.1 percent,5.2,percent,unmet,-1.1,00c8dc0cd995,3a8db70a-d906-4bde-bf87-c0c74504409a,0.01
 05269a462a95@-1.1#0,1524000,USD,100000 USD,1414000,USD,unmet,-1.1,05269a462a95,342b15b8-0ae1-43ce-9ebe-c7318179f156,1000
 092ae21e5b04@-1.1#0,190703,USD,1000 USD,189603,USD,unmet,-1.1,092ae21e5b04,67dfb8ea-cc84-4fb9-abc2-4794aa20eb44,1
