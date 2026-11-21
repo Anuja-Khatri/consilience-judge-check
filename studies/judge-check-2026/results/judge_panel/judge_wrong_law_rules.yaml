@@ -1,0 +1,33 @@
+# Rules for the Consilience `check` command over the DiscoverPhysics judge calls on
+# explanations that state a wrong law by construction. One row per call.
+kind: check-rules
+name: judge-wrong-law
+version: judge-wrong-law-v1
+plain_english: >
+  Each row is one call to the DiscoverPhysics explanation judge on a rule-written explanation
+  in which exactly one typed field of the law is wrong (or the text is about another world, or
+  commits to nothing). Such an explanation must not reach a pass mark.
+source: >
+  PREREGISTRATION_JUDGE.md and PREREGISTRATION_JUDGE_PANEL.md in this folder. The table is
+  wrong_law_calls.csv beside this file, built from the three judges' call records.
+id_column: call_id
+columns:
+  passes_at_9:
+    unit: count
+    plain_english: 1 if the judge's score is 9 or more (the paper's pass mark), otherwise 0.
+  passes_at_8:
+    unit: count
+    plain_english: 1 if the judge's score is 8 or more (the public code's pass mark), otherwise 0.
+rules:
+  - id: W9
+    kind: bound
+    column: passes_at_9
+    max: 0 count
+    plain_english: A wrong-law explanation does not pass at the paper's mark.
+    rationale: The label is fixed by construction; a pass is a judge error or a rubric band that admits the error.
+  - id: W8
+    kind: bound
+    column: passes_at_8
+    max: 0 count
+    plain_english: A wrong-law explanation does not pass at the public code's mark.
+    rationale: As above, at the more lenient mark.

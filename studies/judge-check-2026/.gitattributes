@@ -1,0 +1,4 @@
+# The receipts in this folder record a hash of each table's exact bytes.
+# Keep the tables byte for byte, whatever line-ending settings a checkout uses
+# (one of them was written with CRLF line endings).
+results/**/*.csv -text

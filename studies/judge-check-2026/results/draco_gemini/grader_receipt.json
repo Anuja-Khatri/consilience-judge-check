@@ -1,0 +1,344 @@
+{
+  "receipt": "consilience-grader-receipt/v1",
+  "command": "grader-check",
+  "consilience_version": "0.2.0.dev0",
+  "pint_version": "0.26.2",
+  "inputs": {
+    "data": {
+      "path": "studies/judge-check-2026/results/draco_gemini/table.csv",
+      "sha256": "6a1354d929e98cd21710a3a6785532f041ebeb5592de0af9b1bd3d7c4c8d2170",
+      "bytes": 57309
+    }
+  },
+  "options": {
+    "precision": "exact",
+    "edge_guard": 4e-09,
+    "met_words": [
+      "1",
+      "met",
+      "pass",
+      "passed",
+      "true",
+      "yes"
+    ],
+    "unmet_words": [
+      "0",
+      "fail",
+      "failed",
+      "false",
+      "no",
+      "unmet"
+    ]
+  },
+  "result": {
+    "summary": {
+      "rows": 473,
+      "decided": 473,
+      "right": 473,
+      "lenient": 0,
+      "strict": 0,
+      "grader_unreadable": 0,
+      "undecided": 0,
+      "blank_lines": 0,
+      "decided_exact": 473,
+      "decided_float": 0,
+      "by_group": {
+        "+0.9": {
+          "rows": 50,
+          "decided": 50,
+          "right": 50,
+          "lenient": 0,
+          "strict": 0,
+          "grader_unreadable": 0,
+          "undecided": 0
+        },
+        "+1.1": {
+          "rows": 76,
+          "decided": 76,
+          "right": 76,
+          "lenient": 0,
+          "strict": 0,
+          "grader_unreadable": 0,
+          "undecided": 0
+        },
+        "+1.1:report": {
+          "rows": 69,
+          "decided": 69,
+          "right": 69,
+          "lenient": 0,
+          "strict": 0,
+          "grader_unreadable": 0,
+          "undecided": 0
+        },
+        "-0.9": {
+          "rows": 50,
+          "decided": 50,
+          "right": 50,
+          "lenient": 0,
+          "strict": 0,
+          "grader_unreadable": 0,
+          "undecided": 0
+        },
+        "-1.1": {
+          "rows": 76,
+          "decided": 76,
+          "right": 76,
+          "lenient": 0,
+          "strict": 0,
+          "grader_unreadable": 0,
+          "undecided": 0
+        },
+        "0": {
+          "rows": 76,
+          "decided": 76,
+          "right": 76,
+          "lenient": 0,
+          "strict": 0,
+          "grader_unreadable": 0,
+          "undecided": 0
+        },
+        "far": {
+          "rows": 76,
+          "decided": 76,
+          "right": 76,
+          "lenient": 0,
+          "strict": 0,
+          "grader_unreadable": 0,
+          "undecided": 0
+        }
+      },
+      "by_item": {
+        "+0.9": {
+          "items": 50,
+          "wrong_at_least_once": 0,
+          "wrong_on_every_row": 0,
+          "rows_disagree": 0,
+          "lenient_at_least_once": 0,
+          "strict_at_least_once": 0,
+          "wrong_share_95": [
+            0.0,
+            0.0714
+          ],
+          "items_without_a_cluster": 0,
+          "clusters": 9,
+          "clusters_with_a_wrong_item": 0,
+          "largest_cluster": {
+            "wrong": 0,
+            "items": 28
+          },
+          "largest_cluster_is_tied": false,
+          "other_clusters": {
+            "wrong": 0,
+            "items": 22
+          },
+          "items_in_more_than_one_cluster": 0,
+          "lenient_items_rounding_checked": 0,
+          "lenient_items_rounding_not_checked": 0,
+          "lenient_items_at_reference_precision": 0,
+          "lenient_items_still_outside_after_rounding_half_up": 0,
+          "lenient_items_still_outside_after_rounding_toward_reference": 0
+        },
+        "+1.1": {
+          "items": 76,
+          "wrong_at_least_once": 0,
+          "wrong_on_every_row": 0,
+          "rows_disagree": 0,
+          "lenient_at_least_once": 0,
+          "strict_at_least_once": 0,
+          "wrong_share_95": [
+            0.0,
+            0.0481
+          ],
+          "items_without_a_cluster": 0,
+          "clusters": 10,
+          "clusters_with_a_wrong_item": 0,
+          "largest_cluster": {
+            "wrong": 0,
+            "items": 39
+          },
+          "largest_cluster_is_tied": false,
+          "other_clusters": {
+            "wrong": 0,
+            "items": 37
+          },
+          "items_in_more_than_one_cluster": 0,
+          "lenient_items_rounding_checked": 0,
+          "lenient_items_rounding_not_checked": 0,
+          "lenient_items_at_reference_precision": 0,
+          "lenient_items_still_outside_after_rounding_half_up": 0,
+          "lenient_items_still_outside_after_rounding_toward_reference": 0
+        },
+        "+1.1:report": {
+          "items": 69,
+          "wrong_at_least_once": 0,
+          "wrong_on_every_row": 0,
+          "rows_disagree": 0,
+          "lenient_at_least_once": 0,
+          "strict_at_least_once": 0,
+          "wrong_share_95": [
+            0.0,
+            0.0527
+          ],
+          "items_without_a_cluster": 0,
+          "clusters": 9,
+          "clusters_with_a_wrong_item": 0,
+          "largest_cluster": {
+            "wrong": 0,
+            "items": 39
+          },
+          "largest_cluster_is_tied": false,
+          "other_clusters": {
+            "wrong": 0,
+            "items": 30
+          },
+          "items_in_more_than_one_cluster": 0,
+          "lenient_items_rounding_checked": 0,
+          "lenient_items_rounding_not_checked": 0,
+          "lenient_items_at_reference_precision": 0,
+          "lenient_items_still_outside_after_rounding_half_up": 0,
+          "lenient_items_still_outside_after_rounding_toward_reference": 0
+        },
+        "-0.9": {
+          "items": 50,
+          "wrong_at_least_once": 0,
+          "wrong_on_every_row": 0,
+          "rows_disagree": 0,
+          "lenient_at_least_once": 0,
+          "strict_at_least_once": 0,
+          "wrong_share_95": [
+            0.0,
+            0.0714
+          ],
+          "items_without_a_cluster": 0,
+          "clusters": 9,
+          "clusters_with_a_wrong_item": 0,
+          "largest_cluster": {
+            "wrong": 0,
+            "items": 28
+          },
+          "largest_cluster_is_tied": false,
+          "other_clusters": {
+            "wrong": 0,
+            "items": 22
+          },
+          "items_in_more_than_one_cluster": 0,
+          "lenient_items_rounding_checked": 0,
+          "lenient_items_rounding_not_checked": 0,
+          "lenient_items_at_reference_precision": 0,
+          "lenient_items_still_outside_after_rounding_half_up": 0,
+          "lenient_items_still_outside_after_rounding_toward_reference": 0
+        },
+        "-1.1": {
+          "items": 76,
+          "wrong_at_least_once": 0,
+          "wrong_on_every_row": 0,
+          "rows_disagree": 0,
+          "lenient_at_least_once": 0,
+          "strict_at_least_once": 0,
+          "wrong_share_95": [
+            0.0,
+            0.0481
+          ],
+          "items_without_a_cluster": 0,
+          "clusters": 10,
+          "clusters_with_a_wrong_item": 0,
+          "largest_cluster": {
+            "wrong": 0,
+            "items": 39
+          },
+          "largest_cluster_is_tied": false,
+          "other_clusters": {
+            "wrong": 0,
+            "items": 37
+          },
+          "items_in_more_than_one_cluster": 0,
+          "lenient_items_rounding_checked": 0,
+          "lenient_items_rounding_not_checked": 0,
+          "lenient_items_at_reference_precision": 0,
+          "lenient_items_still_outside_after_rounding_half_up": 0,
+          "lenient_items_still_outside_after_rounding_toward_reference": 0
+        },
+        "0": {
+          "items": 76,
+          "wrong_at_least_once": 0,
+          "wrong_on_every_row": 0,
+          "rows_disagree": 0,
+          "lenient_at_least_once": 0,
+          "strict_at_least_once": 0,
+          "wrong_share_95": [
+            0.0,
+            0.0481
+          ],
+          "items_without_a_cluster": 0,
+          "clusters": 10,
+          "clusters_with_a_wrong_item": 0,
+          "largest_cluster": {
+            "wrong": 0,
+            "items": 39
+          },
+          "largest_cluster_is_tied": false,
+          "other_clusters": {
+            "wrong": 0,
+            "items": 37
+          },
+          "items_in_more_than_one_cluster": 0,
+          "lenient_items_rounding_checked": 0,
+          "lenient_items_rounding_not_checked": 0,
+          "lenient_items_at_reference_precision": 0,
+          "lenient_items_still_outside_after_rounding_half_up": 0,
+          "lenient_items_still_outside_after_rounding_toward_reference": 0
+        },
+        "far": {
+          "items": 76,
+          "wrong_at_least_once": 0,
+          "wrong_on_every_row": 0,
+          "rows_disagree": 0,
+          "lenient_at_least_once": 0,
+          "strict_at_least_once": 0,
+          "wrong_share_95": [
+            0.0,
+            0.0481
+          ],
+          "items_without_a_cluster": 0,
+          "clusters": 10,
+          "clusters_with_a_wrong_item": 0,
+          "largest_cluster": {
+            "wrong": 0,
+            "items": 39
+          },
+          "largest_cluster_is_tied": false,
+          "other_clusters": {
+            "wrong": 0,
+            "items": 37
+          },
+          "items_in_more_than_one_cluster": 0,
+          "lenient_items_rounding_checked": 0,
+          "lenient_items_rounding_not_checked": 0,
+          "lenient_items_at_reference_precision": 0,
+          "lenient_items_still_outside_after_rounding_half_up": 0,
+          "lenient_items_still_outside_after_rounding_toward_reference": 0
+        }
+      },
+      "rows_without_an_item": 0,
+      "items_with_no_decided_row": 0,
+      "items_with_more_than_one_reference": 0
+    },
+    "disagreements": [],
+    "undecided": [],
+    "header": [
+      "id",
+      "reference_value",
+      "reference_unit",
+      "tolerance",
+      "stated_value",
+      "stated_unit",
+      "grader_verdict",
+      "group",
+      "item",
+      "cluster",
+      "reference_step"
+    ],
+    "exit_code": 0
+  },
+  "sha256": "ab274c84b6819be078d00af4e7eabccbc5b3c6145ddb2627a24be1b6c24725c3"
+}

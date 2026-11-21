@@ -1,0 +1,119 @@
+{
+ "default": {
+  "plain_fail9_calls": [
+   21,
+   25
+  ],
+  "plain_fail9_every_call": 4,
+  "plain_fail9_texts": 5,
+  "plain_texts": 5,
+  "right_fail9_calls": [
+   25,
+   75
+  ],
+  "right_fail9_texts": 6,
+  "right_texts": 15,
+  "right_variants": [
+   "benchmark_reference",
+   "plain_true",
+   "textbook_true"
+  ],
+  "worlds": [
+   "coulomb_easy",
+   "extra_dimensions",
+   "gravity",
+   "oscillator",
+   "yukawa"
+  ],
+  "wrong_pass8_calls": [
+   12,
+   190
+  ],
+  "wrong_pass8_texts": 4,
+  "wrong_pass9_calls": [
+   0,
+   190
+  ],
+  "wrong_pass9_texts": 0,
+  "wrong_texts": 38,
+  "wrong_texts_scored": 38
+ },
+ "smaller": {
+  "plain_fail9_calls": [
+   24,
+   25
+  ],
+  "plain_fail9_every_call": 4,
+  "plain_fail9_texts": 5,
+  "plain_texts": 5,
+  "right_fail9_calls": [
+   33,
+   75
+  ],
+  "right_fail9_texts": 7,
+  "right_texts": 15,
+  "right_variants": [
+   "benchmark_reference",
+   "plain_true",
+   "textbook_true"
+  ],
+  "worlds": [
+   "coulomb_easy",
+   "extra_dimensions",
+   "gravity",
+   "oscillator",
+   "yukawa"
+  ],
+  "wrong_pass8_calls": [
+   19,
+   185
+  ],
+  "wrong_pass8_texts": 6,
+  "wrong_pass9_calls": [
+   5,
+   185
+  ],
+  "wrong_pass9_texts": 2,
+  "wrong_texts": 38,
+  "wrong_texts_scored": 37
+ },
+ "stronger": {
+  "plain_fail9_calls": [
+   10,
+   25
+  ],
+  "plain_fail9_every_call": 1,
+  "plain_fail9_texts": 3,
+  "plain_texts": 5,
+  "right_fail9_calls": [
+   10,
+   75
+  ],
+  "right_fail9_texts": 3,
+  "right_texts": 15,
+  "right_variants": [
+   "benchmark_reference",
+   "plain_true",
+   "textbook_true"
+  ],
+  "worlds": [
+   "coulomb_easy",
+   "extra_dimensions",
+   "gravity",
+   "oscillator",
+   "yukawa"
+  ],
+  "wrong_pass8_calls": [
+   47,
+   190
+  ],
+  "wrong_pass8_texts": 12,
+  "wrong_pass9_calls": [
+   10,
+   190
+  ],
+  "wrong_pass9_texts": 4,
+  "wrong_texts": 38,
+  "wrong_texts_scored": 38
+ }
+}

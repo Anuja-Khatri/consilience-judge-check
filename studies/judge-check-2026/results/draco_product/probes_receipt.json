@@ -1,0 +1,41 @@
+{
+  "receipt": "consilience-rubric-probes/v1",
+  "command": "rubric probes",
+  "consilience_version": "0.2.0.dev0",
+  "inputs": {
+    "contracts": {
+      "path": "results/draco_product/contracts.json",
+      "sha256": "f446bc0051c770e0b87e2195d09028358215f6bc3ac3e8e0a05a0cac48d62947"
+    }
+  },
+  "options": {
+    "offsets": [
+      "0",
+      "+0.5",
+      "+0.9",
+      "+1.1",
+      "+1.5",
+      "+2",
+      "-0.9",
+      "-1.1",
+      "far",
+      "+0.9u",
+      "+1.1u",
+      "+3"
+    ]
+  },
+  "result": {
+    "probes": 856,
+    "items": 76,
+    "skipped": {
+      "+0.9u:no_other_unit": 28,
+      "+1.1u:no_other_unit": 28
+    },
+    "output": {
+      "path": "results/draco_product/probes.csv",
+      "sha256": "147522f41376131ede60b2a1a0de0e92681fbc3ac52b06b7a0f8d799bbbb01ac",
+      "bytes": 198385
+    }
+  },
+  "sha256": "56b536040f90fc12dfe5e2af8058a217b62723d2cdaf9348f96e4681a00c684e"
+}

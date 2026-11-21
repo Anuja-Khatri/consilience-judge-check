@@ -1,0 +1,2028 @@
+{
+  "receipt": "consilience-rubric-contracts/v1",
+  "command": "rubric scan",
+  "consilience_version": "0.2.0.dev0",
+  "inputs": {
+    "rubric": {
+      "path": "rubric.csv",
+      "sha256": "18262c758f9a34b483639b6bfcec8960a746e3e7faa87a90b86733d74b146b09",
+      "bytes": 800123
+    }
+  },
+  "options": {
+    "lead": [
+      "States"
+    ],
+    "where": {
+      "section": "factual-accuracy"
+    }
+  },
+  "result": {
+    "counts": {
+      "criteria": 3934,
+      "contain_within_plus_or_minus": 207,
+      "checkable": 76,
+      "left_out": {
+        "characters_not_read": 15,
+        "does_not_start_with_a_lead_word": 20,
+        "no_trailing_tolerance": 15,
+        "not_selected_or_not_a_positive_criterion": 2,
+        "number_not_read": 10,
+        "wording_not_read": 69
+      },
+      "percent_tolerance_read_as_points": 2,
+      "groups": 100,
+      "groups_containing_within_plus_or_minus": 23,
+      "groups_with_a_checkable_criterion": 10,
+      "weight": {
+        "positive_total": "30724",
+        "checkable": "664",
+        "checkable_share": 0.0216,
+        "groups_with_a_share": 10,
+        "share_within_a_group_min": 0.0253,
+        "share_within_a_group_max": 0.5915
+      }
+    },
+    "items": [
+      {
+        "id": "b8e87ef67d40",
+        "line": 59,
+        "group": "a78eed67-ebe3-425e-a467-d54ee8949c8b",
+        "weight": "10",
+        "criterion": "States Renaissance Portfolio purchase price as $117.9 million (within +/- $1M)",
+        "claim": "Renaissance Portfolio purchase price as $117.9 million",
+        "span": [
+          40,
+          54
+        ],
+        "kind": "money",
+        "unit": "USD",
+        "written": {
+          "sign": "",
+          "currency": "$",
+          "number": "117.9",
+          "unit_text": " million",
+          "scale": "1000000",
+          "decimals": 1
+        },
+        "value": "117900000",
+        "tolerance": "1000000",
+        "tolerance_text": "$1M",
+        "step": "100000"
+      },
+      {
+        "id": "df1f99e42a3a",
+        "line": 454,
+        "group": "342b15b8-0ae1-43ce-9ebe-c7318179f156",
+        "weight": "10",
+        "criterion": "States 2024 total stock-based compensation as $2,757k (within +/- $50k)",
+        "claim": "2024 total stock-based compensation as $2,757k",
+        "span": [
+          39,
+          46
+        ],
+        "kind": "money",
+        "unit": "USD",
+        "written": {
+          "sign": "",
+          "currency": "$",
+          "number": "2,757",
+          "unit_text": "k",
+          "scale": "1000",
+          "decimals": 0
+        },
+        "value": "2757000",
+        "tolerance": "50000",
+        "tolerance_text": "$50k",
+        "step": "1000"
+      },
+      {
+        "id": "50e39130ac61",
+        "line": 455,
+        "group": "342b15b8-0ae1-43ce-9ebe-c7318179f156",
+        "weight": "10",
+        "criterion": "States 2023 total stock-based compensation as $1,578k (within +/- $50k)",
+        "claim": "2023 total stock-based compensation as $1,578k",
+        "span": [
+          39,
+          46
+        ],
+        "kind": "money",
+        "unit": "USD",
+        "written": {
+          "sign": "",
+          "currency": "$",
+          "number": "1,578",
+          "unit_text": "k",
+          "scale": "1000",
+          "decimals": 0
+        },
+        "value": "1578000",
+        "tolerance": "50000",
+        "tolerance_text": "$50k",
+        "step": "1000"
+      },
+      {
+        "id": "354c41550164",
+        "line": 458,
+        "group": "342b15b8-0ae1-43ce-9ebe-c7318179f156",
+        "weight": "8",
+        "criterion": "States 2024 R&D SBC component as $742k (within +/- $40k)",
+        "claim": "2024 R&D SBC component as $742k",
+        "span": [
+          26,
+          31
+        ],
+        "kind": "money",
+        "unit": "USD",
+        "written": {
+          "sign": "",
+          "currency": "$",
+          "number": "742",
+          "unit_text": "k",
+          "scale": "1000",
+          "decimals": 0
+        },
+        "value": "742000",
+        "tolerance": "40000",
+        "tolerance_text": "$40k",
+        "step": "1000"
+      },
+      {
+        "id": "60e43faaa021",
+        "line": 459,
+        "group": "342b15b8-0ae1-43ce-9ebe-c7318179f156",
+        "weight": "8",
+        "criterion": "States 2024 G&A SBC component as $2,015k (within +/- $75k)",
+        "claim": "2024 G&A SBC component as $2,015k",
+        "span": [
+          26,
+          33
+        ],
+        "kind": "money",
+        "unit": "USD",
+        "written": {
+          "sign": "",
+          "currency": "$",
+          "number": "2,015",
+          "unit_text": "k",
+          "scale": "1000",
+          "decimals": 0
+        },
+        "value": "2015000",
+        "tolerance": "75000",
+        "tolerance_text": "$75k",
+        "step": "1000"
+      },
+      {
+        "id": "53ba91cf655a",
+        "line": 460,
+        "group": "342b15b8-0ae1-43ce-9ebe-c7318179f156",
+        "weight": "8",
+        "criterion": "States 2023 R&D SBC component as $425k (within +/- $30k)",
+        "claim": "2023 R&D SBC component as $425k",
+        "span": [
+          26,
+          31
+        ],
+        "kind": "money",
+        "unit": "USD",
+        "written": {
+          "sign": "",
+          "currency": "$",
+          "number": "425",
+          "unit_text": "k",
+          "scale": "1000",
+          "decimals": 0
+        },
+        "value": "425000",
+        "tolerance": "30000",
+        "tolerance_text": "$30k",
+        "step": "1000"
+      },
+      {
+        "id": "415e87a829c7",
+        "line": 461,
+        "group": "342b15b8-0ae1-43ce-9ebe-c7318179f156",
+        "weight": "8",
+        "criterion": "States 2023 G&A SBC component as $1,153k (within +/- $50k)",
+        "claim": "2023 G&A SBC component as $1,153k",
+        "span": [
+          26,
+          33
+        ],
+        "kind": "money",
+        "unit": "USD",
+        "written": {
+          "sign": "",
+          "currency": "$",
+          "number": "1,153",
+          "unit_text": "k",
+          "scale": "1000",
+          "decimals": 0
+        },
+        "value": "1153000",
+        "tolerance": "50000",
+        "tolerance_text": "$50k",
+        "step": "1000"
+      },
+      {
+        "id": "ac6dd3f56310",
+        "line": 462,
+        "group": "342b15b8-0ae1-43ce-9ebe-c7318179f156",
+        "weight": "10",
+        "criterion": "States Q3 2025 total stock-based compensation as $1,007k (within +/- $50k)",
+        "claim": "Q3 2025 total stock-based compensation as $1,007k",
+        "span": [
+          42,
+          49
+        ],
+        "kind": "money",
+        "unit": "USD",
+        "written": {
+          "sign": "",
+          "currency": "$",
+          "number": "1,007",
+          "unit_text": "k",
+          "scale": "1000",
+          "decimals": 0
+        },
+        "value": "1007000",
+        "tolerance": "50000",
+        "tolerance_text": "$50k",
+        "step": "1000"
+      },
+      {
+        "id": "625b79fdf63e",
+        "line": 463,
+        "group": "342b15b8-0ae1-43ce-9ebe-c7318179f156",
+        "weight": "10",
+        "criterion": "States Q3 2024 total stock-based compensation as $853k (within +/- $50k)",
+        "claim": "Q3 2024 total stock-based compensation as $853k",
+        "span": [
+          42,
+          47
+        ],
+        "kind": "money",
+        "unit": "USD",
+        "written": {
+          "sign": "",
+          "currency": "$",
+          "number": "853",
+          "unit_text": "k",
+          "scale": "1000",
+          "decimals": 0
+        },
+        "value": "853000",
+        "tolerance": "50000",
+        "tolerance_text": "$50k",
+        "step": "1000"
+      },
+      {
+        "id": "5b918267b9d4",
+        "line": 466,
+        "group": "342b15b8-0ae1-43ce-9ebe-c7318179f156",
+        "weight": "8",
+        "criterion": "States Q3 2025 R&D SBC as $311k (within +/- $20k)",
+        "claim": "Q3 2025 R&D SBC as $311k",
+        "span": [
+          19,
+          24
+        ],
+        "kind": "money",
+        "unit": "USD",
+        "written": {
+          "sign": "",
+          "currency": "$",
+          "number": "311",
+          "unit_text": "k",
+          "scale": "1000",
+          "decimals": 0
+        },
+        "value": "311000",
+        "tolerance": "20000",
+        "tolerance_text": "$20k",
+        "step": "1000"
+      },
+      {
+        "id": "6238a2146890",
+        "line": 467,
+        "group": "342b15b8-0ae1-43ce-9ebe-c7318179f156",
+        "weight": "8",
+        "criterion": "States Q3 2025 G&A SBC as $696k (within +/- $40k)",
+        "claim": "Q3 2025 G&A SBC as $696k",
+        "span": [
+          19,
+          24
+        ],
+        "kind": "money",
+        "unit": "USD",
+        "written": {
+          "sign": "",
+          "currency": "$",
+          "number": "696",
+          "unit_text": "k",
+          "scale": "1000",
+          "decimals": 0
+        },
+        "value": "696000",
+        "tolerance": "40000",
+        "tolerance_text": "$40k",
+        "step": "1000"
+      },
+      {
+        "id": "fb353a867903",
+        "line": 468,
+        "group": "342b15b8-0ae1-43ce-9ebe-c7318179f156",
+        "weight": "8",
+        "criterion": "States Q3 2024 R&D SBC as $228k (within +/- $20k)",
+        "claim": "Q3 2024 R&D SBC as $228k",
+        "span": [
+          19,
+          24
+        ],
+        "kind": "money",
+        "unit": "USD",
+        "written": {
+          "sign": "",
+          "currency": "$",
+          "number": "228",
+          "unit_text": "k",
+          "scale": "1000",
+          "decimals": 0
+        },
+        "value": "228000",
+        "tolerance": "20000",
+        "tolerance_text": "$20k",
+        "step": "1000"
+      },
+      {
+        "id": "95b8faca7949",
+        "line": 469,
+        "group": "342b15b8-0ae1-43ce-9ebe-c7318179f156",
+        "weight": "8",
+        "criterion": "States Q3 2024 G&A SBC as $625k (within +/- $40k)",
+        "claim": "Q3 2024 G&A SBC as $625k",
+        "span": [
+          19,
+          24
+        ],
+        "kind": "money",
+        "unit": "USD",
+        "written": {
+          "sign": "",
+          "currency": "$",
+          "number": "625",
+          "unit_text": "k",
+          "scale": "1000",
+          "decimals": 0
+        },
+        "value": "625000",
+        "tolerance": "40000",
+        "tolerance_text": "$40k",
+        "step": "1000"
+      },
+      {
+        "id": "d464b9f734a1",
+        "line": 470,
+        "group": "342b15b8-0ae1-43ce-9ebe-c7318179f156",
+        "weight": "8",
+        "criterion": "States 9-month 2025 SBC as $2,750k (within +/- $75k)",
+        "claim": "9-month 2025 SBC as $2,750k",
+        "span": [
+          20,
+          27
+        ],
+        "kind": "money",
+        "unit": "USD",
+        "written": {
+          "sign": "",
+          "currency": "$",
+          "number": "2,750",
+          "unit_text": "k",
+          "scale": "1000",
+          "decimals": 0
+        },
+        "value": "2750000",
+        "tolerance": "75000",
+        "tolerance_text": "$75k",
+        "step": "1000"
+      },
+      {
+        "id": "551c17407ad0",
+        "line": 471,
+        "group": "342b15b8-0ae1-43ce-9ebe-c7318179f156",
+        "weight": "8",
+        "criterion": "States 9-month 2024 SBC as $1,932k (within +/- $75k)",
+        "claim": "9-month 2024 SBC as $1,932k",
+        "span": [
+          20,
+          27
+        ],
+        "kind": "money",
+        "unit": "USD",
+        "written": {
+          "sign": "",
+          "currency": "$",
+          "number": "1,932",
+          "unit_text": "k",
+          "scale": "1000",
+          "decimals": 0
+        },
+        "value": "1932000",
+        "tolerance": "75000",
+        "tolerance_text": "$75k",
+        "step": "1000"
+      },
+      {
+        "id": "caf1874a7b99",
+        "line": 472,
+        "group": "342b15b8-0ae1-43ce-9ebe-c7318179f156",
+        "weight": "10",
+        "criterion": "States 2024 option shares granted as 461,499 (within +/- 10,000)",
+        "claim": "2024 option shares granted as 461,499",
+        "span": [
+          30,
+          37
+        ],
+        "kind": "count",
+        "unit": "count",
+        "written": {
+          "sign": "",
+          "currency": "",
+          "number": "461,499",
+          "unit_text": "",
+          "scale": "1",
+          "decimals": 0
+        },
+        "value": "461499",
+        "tolerance": "10000",
+        "tolerance_text": "10,000",
+        "step": "1"
+      },
+      {
+        "id": "ba48f4e13a23",
+        "line": 473,
+        "group": "342b15b8-0ae1-43ce-9ebe-c7318179f156",
+        "weight": "10",
+        "criterion": "States 2024 weighted average grant exercise price as $13.14 (within +/- $0.50)",
+        "claim": "2024 weighted average grant exercise price as $13.14",
+        "span": [
+          46,
+          52
+        ],
+        "kind": "money",
+        "unit": "USD",
+        "written": {
+          "sign": "",
+          "currency": "$",
+          "number": "13.14",
+          "unit_text": "",
+          "scale": "1",
+          "decimals": 2
+        },
+        "value": "13.14",
+        "tolerance": "0.5",
+        "tolerance_text": "$0.50",
+        "step": "0.01"
+      },
+      {
+        "id": "f1ff0488207e",
+        "line": 474,
+        "group": "342b15b8-0ae1-43ce-9ebe-c7318179f156",
+        "weight": "10",
+        "criterion": "States 2025 option shares granted as 388,816 (within +/- 10,000)",
+        "claim": "2025 option shares granted as 388,816",
+        "span": [
+          30,
+          37
+        ],
+        "kind": "count",
+        "unit": "count",
+        "written": {
+          "sign": "",
+          "currency": "",
+          "number": "388,816",
+          "unit_text": "",
+          "scale": "1",
+          "decimals": 0
+        },
+        "value": "388816",
+        "tolerance": "10000",
+        "tolerance_text": "10,000",
+        "step": "1"
+      },
+      {
+        "id": "5475bfc18d3a",
+        "line": 475,
+        "group": "342b15b8-0ae1-43ce-9ebe-c7318179f156",
+        "weight": "10",
+        "criterion": "States 2025 weighted average grant exercise price as $19.67 (within +/- $0.50)",
+        "claim": "2025 weighted average grant exercise price as $19.67",
+        "span": [
+          46,
+          52
+        ],
+        "kind": "money",
+        "unit": "USD",
+        "written": {
+          "sign": "",
+          "currency": "$",
+          "number": "19.67",
+          "unit_text": "",
+          "scale": "1",
+          "decimals": 2
+        },
+        "value": "19.67",
+        "tolerance": "0.5",
+        "tolerance_text": "$0.50",
+        "step": "0.01"
+      },
+      {
+        "id": "82311c274e91",
+        "line": 476,
+        "group": "342b15b8-0ae1-43ce-9ebe-c7318179f156",
+        "weight": "8",
+        "criterion": "States outstanding options at 12/31/2024 as 705,593 shares (within +/- 15,000)",
+        "claim": "outstanding options at 12/31/2024 as 705,593 shares",
+        "span": [
+          37,
+          44
+        ],
+        "kind": "count",
+        "unit": "count",
+        "written": {
+          "sign": "",
+          "currency": "",
+          "number": "705,593",
+          "unit_text": "",
+          "scale": "1",
+          "decimals": 0
+        },
+        "value": "705593",
+        "tolerance": "15000",
+        "tolerance_text": "15,000",
+        "step": "1"
+      },
+      {
+        "id": "fdd2e5eb0705",
+        "line": 477,
+        "group": "342b15b8-0ae1-43ce-9ebe-c7318179f156",
+        "weight": "8",
+        "criterion": "States outstanding options at 9/30/2025 as 1,007,306 shares (within +/- 20,000)",
+        "claim": "outstanding options at 9/30/2025 as 1,007,306 shares",
+        "span": [
+          36,
+          45
+        ],
+        "kind": "count",
+        "unit": "count",
+        "written": {
+          "sign": "",
+          "currency": "",
+          "number": "1,007,306",
+          "unit_text": "",
+          "scale": "1",
+          "decimals": 0
+        },
+        "value": "1007306",
+        "tolerance": "20000",
+        "tolerance_text": "20,000",
+        "step": "1"
+      },
+      {
+        "id": "66f28b01b186",
+        "line": 478,
+        "group": "342b15b8-0ae1-43ce-9ebe-c7318179f156",
+        "weight": "8",
+        "criterion": "States weighted average exercise price at 12/31/2024 as $35.85 (within +/- $2)",
+        "claim": "weighted average exercise price at 12/31/2024 as $35.85",
+        "span": [
+          49,
+          55
+        ],
+        "kind": "money",
+        "unit": "USD",
+        "written": {
+          "sign": "",
+          "currency": "$",
+          "number": "35.85",
+          "unit_text": "",
+          "scale": "1",
+          "decimals": 2
+        },
+        "value": "35.85",
+        "tolerance": "2",
+        "tolerance_text": "$2",
+        "step": "0.01"
+      },
+      {
+        "id": "7767dbf98624",
+        "line": 479,
+        "group": "342b15b8-0ae1-43ce-9ebe-c7318179f156",
+        "weight": "8",
+        "criterion": "States weighted average exercise price at 9/30/2025 as $25.07 (within +/- $2)",
+        "claim": "weighted average exercise price at 9/30/2025 as $25.07",
+        "span": [
+          48,
+          54
+        ],
+        "kind": "money",
+        "unit": "USD",
+        "written": {
+          "sign": "",
+          "currency": "$",
+          "number": "25.07",
+          "unit_text": "",
+          "scale": "1",
+          "decimals": 2
+        },
+        "value": "25.07",
+        "tolerance": "2",
+        "tolerance_text": "$2",
+        "step": "0.01"
+      },
+      {
+        "id": "b58db5c114f7",
+        "line": 480,
+        "group": "342b15b8-0ae1-43ce-9ebe-c7318179f156",
+        "weight": "8",
+        "criterion": "States weighted average exercise price at 12/31/2023 as $77.53 (within +/- $3)",
+        "claim": "weighted average exercise price at 12/31/2023 as $77.53",
+        "span": [
+          49,
+          55
+        ],
+        "kind": "money",
+        "unit": "USD",
+        "written": {
+          "sign": "",
+          "currency": "$",
+          "number": "77.53",
+          "unit_text": "",
+          "scale": "1",
+          "decimals": 2
+        },
+        "value": "77.53",
+        "tolerance": "3",
+        "tolerance_text": "$3",
+        "step": "0.01"
+      },
+      {
+        "id": "2db0a1d95356",
+        "line": 481,
+        "group": "342b15b8-0ae1-43ce-9ebe-c7318179f156",
+        "weight": "10",
+        "criterion": "States total warrants at 9/30/2025 as 13,714,356 shares (within +/- 200,000)",
+        "claim": "total warrants at 9/30/2025 as 13,714,356 shares",
+        "span": [
+          31,
+          41
+        ],
+        "kind": "count",
+        "unit": "count",
+        "written": {
+          "sign": "",
+          "currency": "",
+          "number": "13,714,356",
+          "unit_text": "",
+          "scale": "1",
+          "decimals": 0
+        },
+        "value": "13714356",
+        "tolerance": "200000",
+        "tolerance_text": "200,000",
+        "step": "1"
+      },
+      {
+        "id": "8d5463b6a76f",
+        "line": 482,
+        "group": "342b15b8-0ae1-43ce-9ebe-c7318179f156",
+        "weight": "10",
+        "criterion": "States pre-funded warrants at 9/30/2025 as 8,470,624 shares (within +/- 150,000)",
+        "claim": "pre-funded warrants at 9/30/2025 as 8,470,624 shares",
+        "span": [
+          36,
+          45
+        ],
+        "kind": "count",
+        "unit": "count",
+        "written": {
+          "sign": "",
+          "currency": "",
+          "number": "8,470,624",
+          "unit_text": "",
+          "scale": "1",
+          "decimals": 0
+        },
+        "value": "8470624",
+        "tolerance": "150000",
+        "tolerance_text": "150,000",
+        "step": "1"
+      },
+      {
+        "id": "8a43d3043248",
+        "line": 483,
+        "group": "342b15b8-0ae1-43ce-9ebe-c7318179f156",
+        "weight": "10",
+        "criterion": "States common warrants at 9/30/2025 as 5,243,732 shares (within +/- 100,000)",
+        "claim": "common warrants at 9/30/2025 as 5,243,732 shares",
+        "span": [
+          32,
+          41
+        ],
+        "kind": "count",
+        "unit": "count",
+        "written": {
+          "sign": "",
+          "currency": "",
+          "number": "5,243,732",
+          "unit_text": "",
+          "scale": "1",
+          "decimals": 0
+        },
+        "value": "5243732",
+        "tolerance": "100000",
+        "tolerance_text": "100,000",
+        "step": "1"
+      },
+      {
+        "id": "5562f1c29c67",
+        "line": 484,
+        "group": "342b15b8-0ae1-43ce-9ebe-c7318179f156",
+        "weight": "8",
+        "criterion": "States pre-funded warrants at 12/31/2024 as 3,970,587 shares (within +/- 100,000)",
+        "claim": "pre-funded warrants at 12/31/2024 as 3,970,587 shares",
+        "span": [
+          37,
+          46
+        ],
+        "kind": "count",
+        "unit": "count",
+        "written": {
+          "sign": "",
+          "currency": "",
+          "number": "3,970,587",
+          "unit_text": "",
+          "scale": "1",
+          "decimals": 0
+        },
+        "value": "3970587",
+        "tolerance": "100000",
+        "tolerance_text": "100,000",
+        "step": "1"
+      },
+      {
+        "id": "cf234fad4701",
+        "line": 486,
+        "group": "342b15b8-0ae1-43ce-9ebe-c7318179f156",
+        "weight": "8",
+        "criterion": "States weighted average warrant exercise price at 9/30/2025 as $8.69 (within +/- $0.50)",
+        "claim": "weighted average warrant exercise price at 9/30/2025 as $8.69",
+        "span": [
+          56,
+          61
+        ],
+        "kind": "money",
+        "unit": "USD",
+        "written": {
+          "sign": "",
+          "currency": "$",
+          "number": "8.69",
+          "unit_text": "",
+          "scale": "1",
+          "decimals": 2
+        },
+        "value": "8.69",
+        "tolerance": "0.5",
+        "tolerance_text": "$0.50",
+        "step": "0.01"
+      },
+      {
+        "id": "393e0b478c86",
+        "line": 489,
+        "group": "342b15b8-0ae1-43ce-9ebe-c7318179f156",
+        "weight": "8",
+        "criterion": "States September 2025 common share issuance price as $15.265 (within +/- $0.02)",
+        "claim": "September 2025 common share issuance price as $15.265",
+        "span": [
+          46,
+          53
+        ],
+        "kind": "money",
+        "unit": "USD",
+        "written": {
+          "sign": "",
+          "currency": "$",
+          "number": "15.265",
+          "unit_text": "",
+          "scale": "1",
+          "decimals": 3
+        },
+        "value": "15.265",
+        "tolerance": "0.02",
+        "tolerance_text": "$0.02",
+        "step": "0.001"
+      },
+      {
+        "id": "81b2439bd3ac",
+        "line": 490,
+        "group": "342b15b8-0ae1-43ce-9ebe-c7318179f156",
+        "weight": "8",
+        "criterion": "States September 2025 pre-funded warrant issuance price as $15.255 (within +/- $0.02)",
+        "claim": "September 2025 pre-funded warrant issuance price as $15.255",
+        "span": [
+          52,
+          59
+        ],
+        "kind": "money",
+        "unit": "USD",
+        "written": {
+          "sign": "",
+          "currency": "$",
+          "number": "15.255",
+          "unit_text": "",
+          "scale": "1",
+          "decimals": 3
+        },
+        "value": "15.255",
+        "tolerance": "0.02",
+        "tolerance_text": "$0.02",
+        "step": "0.001"
+      },
+      {
+        "id": "50cb0200eabe",
+        "line": 491,
+        "group": "342b15b8-0ae1-43ce-9ebe-c7318179f156",
+        "weight": "8",
+        "criterion": "States September 2025 issued 682,018 common shares (within +/- 15,000)",
+        "claim": "September 2025 issued 682,018 common shares",
+        "span": [
+          22,
+          29
+        ],
+        "kind": "count",
+        "unit": "count",
+        "written": {
+          "sign": "",
+          "currency": "",
+          "number": "682,018",
+          "unit_text": "",
+          "scale": "1",
+          "decimals": 0
+        },
+        "value": "682018",
+        "tolerance": "15000",
+        "tolerance_text": "15,000",
+        "step": "1"
+      },
+      {
+        "id": "6e30ebb89755",
+        "line": 492,
+        "group": "342b15b8-0ae1-43ce-9ebe-c7318179f156",
+        "weight": "8",
+        "criterion": "States September 2025 issued 4,561,714 pre-funded warrants (within +/- 100,000)",
+        "claim": "September 2025 issued 4,561,714 pre-funded warrants",
+        "span": [
+          22,
+          31
+        ],
+        "kind": "count",
+        "unit": "count",
+        "written": {
+          "sign": "",
+          "currency": "",
+          "number": "4,561,714",
+          "unit_text": "",
+          "scale": "1",
+          "decimals": 0
+        },
+        "value": "4561714",
+        "tolerance": "100000",
+        "tolerance_text": "100,000",
+        "step": "1"
+      },
+      {
+        "id": "37b3057993c7",
+        "line": 493,
+        "group": "342b15b8-0ae1-43ce-9ebe-c7318179f156",
+        "weight": "8",
+        "criterion": "States February 2024 issued 464,377 common shares (within +/- 15,000)",
+        "claim": "February 2024 issued 464,377 common shares",
+        "span": [
+          21,
+          28
+        ],
+        "kind": "count",
+        "unit": "count",
+        "written": {
+          "sign": "",
+          "currency": "",
+          "number": "464,377",
+          "unit_text": "",
+          "scale": "1",
+          "decimals": 0
+        },
+        "value": "464377",
+        "tolerance": "15000",
+        "tolerance_text": "15,000",
+        "step": "1"
+      },
+      {
+        "id": "bb4f523f2455",
+        "line": 494,
+        "group": "342b15b8-0ae1-43ce-9ebe-c7318179f156",
+        "weight": "8",
+        "criterion": "States February 2024 issued 3,853,997 pre-funded warrants (within +/- 100,000)",
+        "claim": "February 2024 issued 3,853,997 pre-funded warrants",
+        "span": [
+          21,
+          30
+        ],
+        "kind": "count",
+        "unit": "count",
+        "written": {
+          "sign": "",
+          "currency": "",
+          "number": "3,853,997",
+          "unit_text": "",
+          "scale": "1",
+          "decimals": 0
+        },
+        "value": "3853997",
+        "tolerance": "100000",
+        "tolerance_text": "100,000",
+        "step": "1"
+      },
+      {
+        "id": "437e2e4ae7d7",
+        "line": 496,
+        "group": "342b15b8-0ae1-43ce-9ebe-c7318179f156",
+        "weight": "10",
+        "criterion": "States potentially dilutive securities at 9/30/2025 as 6,308,952 shares (within +/- 200k)",
+        "claim": "potentially dilutive securities at 9/30/2025 as 6,308,952 shares",
+        "span": [
+          48,
+          57
+        ],
+        "kind": "count",
+        "unit": "count",
+        "written": {
+          "sign": "",
+          "currency": "",
+          "number": "6,308,952",
+          "unit_text": "",
+          "scale": "1",
+          "decimals": 0
+        },
+        "value": "6308952",
+        "tolerance": "200000",
+        "tolerance_text": "200k",
+        "step": "1"
+      },
+      {
+        "id": "8f43aa7ce3f3",
+        "line": 499,
+        "group": "342b15b8-0ae1-43ce-9ebe-c7318179f156",
+        "weight": "8",
+        "criterion": "States Q3 2025 total R&D expense as $7,020k (within +/- $150k)",
+        "claim": "Q3 2025 total R&D expense as $7,020k",
+        "span": [
+          29,
+          36
+        ],
+        "kind": "money",
+        "unit": "USD",
+        "written": {
+          "sign": "",
+          "currency": "$",
+          "number": "7,020",
+          "unit_text": "k",
+          "scale": "1000",
+          "decimals": 0
+        },
+        "value": "7020000",
+        "tolerance": "150000",
+        "tolerance_text": "$150k",
+        "step": "1000"
+      },
+      {
+        "id": "2d2beb3aa874",
+        "line": 500,
+        "group": "342b15b8-0ae1-43ce-9ebe-c7318179f156",
+        "weight": "8",
+        "criterion": "States Q3 2024 total R&D expense as $3,224k (within +/- $100k)",
+        "claim": "Q3 2024 total R&D expense as $3,224k",
+        "span": [
+          29,
+          36
+        ],
+        "kind": "money",
+        "unit": "USD",
+        "written": {
+          "sign": "",
+          "currency": "$",
+          "number": "3,224",
+          "unit_text": "k",
+          "scale": "1000",
+          "decimals": 0
+        },
+        "value": "3224000",
+        "tolerance": "100000",
+        "tolerance_text": "$100k",
+        "step": "1000"
+      },
+      {
+        "id": "23da16356654",
+        "line": 503,
+        "group": "342b15b8-0ae1-43ce-9ebe-c7318179f156",
+        "weight": "8",
+        "criterion": "States Q3 2025 Cadisegliatin R&D expense as $3,993k (within +/- $100k)",
+        "claim": "Q3 2025 Cadisegliatin R&D expense as $3,993k",
+        "span": [
+          37,
+          44
+        ],
+        "kind": "money",
+        "unit": "USD",
+        "written": {
+          "sign": "",
+          "currency": "$",
+          "number": "3,993",
+          "unit_text": "k",
+          "scale": "1000",
+          "decimals": 0
+        },
+        "value": "3993000",
+        "tolerance": "100000",
+        "tolerance_text": "$100k",
+        "step": "1000"
+      },
+      {
+        "id": "05269a462a95",
+        "line": 504,
+        "group": "342b15b8-0ae1-43ce-9ebe-c7318179f156",
+        "weight": "8",
+        "criterion": "States Q3 2024 Cadisegliatin R&D expense as $1,524k (within +/- $100k)",
+        "claim": "Q3 2024 Cadisegliatin R&D expense as $1,524k",
+        "span": [
+          37,
+          44
+        ],
+        "kind": "money",
+        "unit": "USD",
+        "written": {
+          "sign": "",
+          "currency": "$",
+          "number": "1,524",
+          "unit_text": "k",
+          "scale": "1000",
+          "decimals": 0
+        },
+        "value": "1524000",
+        "tolerance": "100000",
+        "tolerance_text": "$100k",
+        "step": "1000"
+      },
+      {
+        "id": "62e2a1251fc0",
+        "line": 986,
+        "group": "b3c576e7-dfc6-403f-90e7-53c011884d5c",
+        "weight": "8",
+        "criterion": "States exam fee as $93 (within +/- $10)",
+        "claim": "exam fee as $93",
+        "span": [
+          12,
+          15
+        ],
+        "kind": "money",
+        "unit": "USD",
+        "written": {
+          "sign": "",
+          "currency": "$",
+          "number": "93",
+          "unit_text": "",
+          "scale": "1",
+          "decimals": 0
+        },
+        "value": "93",
+        "tolerance": "10",
+        "tolerance_text": "$10",
+        "step": "1"
+      },
+      {
+        "id": "ed5343d2fceb",
+        "line": 992,
+        "group": "b3c576e7-dfc6-403f-90e7-53c011884d5c",
+        "weight": "8",
+        "criterion": "States license renewal fee as $97 (within +/- $5)",
+        "claim": "license renewal fee as $97",
+        "span": [
+          23,
+          26
+        ],
+        "kind": "money",
+        "unit": "USD",
+        "written": {
+          "sign": "",
+          "currency": "$",
+          "number": "97",
+          "unit_text": "",
+          "scale": "1",
+          "decimals": 0
+        },
+        "value": "97",
+        "tolerance": "5",
+        "tolerance_text": "$5",
+        "step": "1"
+      },
+      {
+        "id": "d0056072ecf8",
+        "line": 1013,
+        "group": "3a8db70a-d906-4bde-bf87-c0c74504409a",
+        "weight": "10",
+        "criterion": "States December 31, 2023 swap fair value as $4,321 thousand (within +/- $50k)",
+        "claim": "December 31, 2023 swap fair value as $4,321 thousand",
+        "span": [
+          37,
+          52
+        ],
+        "kind": "money",
+        "unit": "USD",
+        "written": {
+          "sign": "",
+          "currency": "$",
+          "number": "4,321",
+          "unit_text": " thousand",
+          "scale": "1000",
+          "decimals": 0
+        },
+        "value": "4321000",
+        "tolerance": "50000",
+        "tolerance_text": "$50k",
+        "step": "1000"
+      },
+      {
+        "id": "7d39b032c4de",
+        "line": 1014,
+        "group": "3a8db70a-d906-4bde-bf87-c0c74504409a",
+        "weight": "10",
+        "criterion": "States June 30, 2024 swap fair value as $3,927 thousand (within +/- $50k)",
+        "claim": "June 30, 2024 swap fair value as $3,927 thousand",
+        "span": [
+          33,
+          48
+        ],
+        "kind": "money",
+        "unit": "USD",
+        "written": {
+          "sign": "",
+          "currency": "$",
+          "number": "3,927",
+          "unit_text": " thousand",
+          "scale": "1000",
+          "decimals": 0
+        },
+        "value": "3927000",
+        "tolerance": "50000",
+        "tolerance_text": "$50k",
+        "step": "1000"
+      },
+      {
+        "id": "ce4fd66fe1c9",
+        "line": 1016,
+        "group": "3a8db70a-d906-4bde-bf87-c0c74504409a",
+        "weight": "8",
+        "criterion": "States September 30, 2025 swap fair value as $168 thousand (within +/- $50k)",
+        "claim": "September 30, 2025 swap fair value as $168 thousand",
+        "span": [
+          38,
+          51
+        ],
+        "kind": "money",
+        "unit": "USD",
+        "written": {
+          "sign": "",
+          "currency": "$",
+          "number": "168",
+          "unit_text": " thousand",
+          "scale": "1000",
+          "decimals": 0
+        },
+        "value": "168000",
+        "tolerance": "50000",
+        "tolerance_text": "$50k",
+        "step": "1000"
+      },
+      {
+        "id": "2c86fbbf812c",
+        "line": 1017,
+        "group": "3a8db70a-d906-4bde-bf87-c0c74504409a",
+        "weight": "10",
+        "criterion": "States Q2 2023 total interest expense as $15,567 thousand (within +/- $100k)",
+        "claim": "Q2 2023 total interest expense as $15,567 thousand",
+        "span": [
+          34,
+          50
+        ],
+        "kind": "money",
+        "unit": "USD",
+        "written": {
+          "sign": "",
+          "currency": "$",
+          "number": "15,567",
+          "unit_text": " thousand",
+          "scale": "1000",
+          "decimals": 0
+        },
+        "value": "15567000",
+        "tolerance": "100000",
+        "tolerance_text": "$100k",
+        "step": "1000"
+      },
+      {
+        "id": "806277bd8698",
+        "line": 1018,
+        "group": "3a8db70a-d906-4bde-bf87-c0c74504409a",
+        "weight": "10",
+        "criterion": "States Q2 2024 total interest expense as $16,202 thousand (within +/- $100k)",
+        "claim": "Q2 2024 total interest expense as $16,202 thousand",
+        "span": [
+          34,
+          50
+        ],
+        "kind": "money",
+        "unit": "USD",
+        "written": {
+          "sign": "",
+          "currency": "$",
+          "number": "16,202",
+          "unit_text": " thousand",
+          "scale": "1000",
+          "decimals": 0
+        },
+        "value": "16202000",
+        "tolerance": "100000",
+        "tolerance_text": "$100k",
+        "step": "1000"
+      },
+      {
+        "id": "825367b11ffa",
+        "line": 1022,
+        "group": "3a8db70a-d906-4bde-bf87-c0c74504409a",
+        "weight": "10",
+        "criterion": "States Q3 2024 total interest expense as $16,986 thousand (within +/- $100k)",
+        "claim": "Q3 2024 total interest expense as $16,986 thousand",
+        "span": [
+          34,
+          50
+        ],
+        "kind": "money",
+        "unit": "USD",
+        "written": {
+          "sign": "",
+          "currency": "$",
+          "number": "16,986",
+          "unit_text": " thousand",
+          "scale": "1000",
+          "decimals": 0
+        },
+        "value": "16986000",
+        "tolerance": "100000",
+        "tolerance_text": "$100k",
+        "step": "1000"
+      },
+      {
+        "id": "e0419288a2b8",
+        "line": 1023,
+        "group": "3a8db70a-d906-4bde-bf87-c0c74504409a",
+        "weight": "10",
+        "criterion": "States Q3 2025 total interest expense as $17,111 thousand (within +/- $100k)",
+        "claim": "Q3 2025 total interest expense as $17,111 thousand",
+        "span": [
+          34,
+          50
+        ],
+        "kind": "money",
+        "unit": "USD",
+        "written": {
+          "sign": "",
+          "currency": "$",
+          "number": "17,111",
+          "unit_text": " thousand",
+          "scale": "1000",
+          "decimals": 0
+        },
+        "value": "17111000",
+        "tolerance": "100000",
+        "tolerance_text": "$100k",
+        "step": "1000"
+      },
+      {
+        "id": "af4aa10a290d",
+        "line": 1037,
+        "group": "3a8db70a-d906-4bde-bf87-c0c74504409a",
+        "weight": "10",
+        "criterion": "States June 30, 2024 unsecured term loans as $800,000 thousand (within +/- $5,000k)",
+        "claim": "June 30, 2024 unsecured term loans as $800,000 thousand",
+        "span": [
+          38,
+          55
+        ],
+        "kind": "money",
+        "unit": "USD",
+        "written": {
+          "sign": "",
+          "currency": "$",
+          "number": "800,000",
+          "unit_text": " thousand",
+          "scale": "1000",
+          "decimals": 0
+        },
+        "value": "800000000",
+        "tolerance": "5000000",
+        "tolerance_text": "$5,000k",
+        "step": "1000"
+      },
+      {
+        "id": "ba7b9f3b1eec",
+        "line": 1039,
+        "group": "3a8db70a-d906-4bde-bf87-c0c74504409a",
+        "weight": "8",
+        "criterion": "States June 30, 2024 weighted-average interest rate as 5.22% (within +/- 0.1%)",
+        "claim": "June 30, 2024 weighted-average interest rate as 5.22%",
+        "span": [
+          48,
+          53
+        ],
+        "kind": "percent",
+        "unit": "percent",
+        "written": {
+          "sign": "",
+          "currency": "",
+          "number": "5.22",
+          "unit_text": "%",
+          "scale": "1",
+          "decimals": 2
+        },
+        "value": "5.22",
+        "tolerance": "0.1",
+        "tolerance_text": "0.1%",
+        "step": "0.01",
+        "percent_tolerance_read_as_points": true
+      },
+      {
+        "id": "6097b4a4aac0",
+        "line": 1042,
+        "group": "3a8db70a-d906-4bde-bf87-c0c74504409a",
+        "weight": "10",
+        "criterion": "States September 30, 2025 unsecured term loans as $1,100,000 thousand (within +/- $5,000k)",
+        "claim": "September 30, 2025 unsecured term loans as $1,100,000 thousand",
+        "span": [
+          43,
+          62
+        ],
+        "kind": "money",
+        "unit": "USD",
+        "written": {
+          "sign": "",
+          "currency": "$",
+          "number": "1,100,000",
+          "unit_text": " thousand",
+          "scale": "1000",
+          "decimals": 0
+        },
+        "value": "1100000000",
+        "tolerance": "5000000",
+        "tolerance_text": "$5,000k",
+        "step": "1000"
+      },
+      {
+        "id": "00c8dc0cd995",
+        "line": 1044,
+        "group": "3a8db70a-d906-4bde-bf87-c0c74504409a",
+        "weight": "8",
+        "criterion": "States September 30, 2025 weighted-average interest rate as 5.31% including swap effects (within +/- 0.1%)",
+        "claim": "September 30, 2025 weighted-average interest rate as 5.31% including swap effects",
+        "span": [
+          53,
+          58
+        ],
+        "kind": "percent",
+        "unit": "percent",
+        "written": {
+          "sign": "",
+          "currency": "",
+          "number": "5.31",
+          "unit_text": "%",
+          "scale": "1",
+          "decimals": 2
+        },
+        "value": "5.31",
+        "tolerance": "0.1",
+        "tolerance_text": "0.1%",
+        "step": "0.01",
+        "percent_tolerance_read_as_points": true
+      },
+      {
+        "id": "4cd7c1698130",
+        "line": 1062,
+        "group": "3a8db70a-d906-4bde-bf87-c0c74504409a",
+        "weight": "8",
+        "criterion": "States beginning cash as $128,789 thousand (within +/- $500k)",
+        "claim": "beginning cash as $128,789 thousand",
+        "span": [
+          18,
+          35
+        ],
+        "kind": "money",
+        "unit": "USD",
+        "written": {
+          "sign": "",
+          "currency": "$",
+          "number": "128,789",
+          "unit_text": " thousand",
+          "scale": "1000",
+          "decimals": 0
+        },
+        "value": "128789000",
+        "tolerance": "500000",
+        "tolerance_text": "$500k",
+        "step": "1000"
+      },
+      {
+        "id": "d1683467e9ca",
+        "line": 1067,
+        "group": "3a8db70a-d906-4bde-bf87-c0c74504409a",
+        "weight": "8",
+        "criterion": "States fixed charge coverage ratio as 3.24x (within +/- 0.1x)",
+        "claim": "fixed charge coverage ratio as 3.24x",
+        "span": [
+          31,
+          35
+        ],
+        "kind": "count",
+        "unit": "count",
+        "written": {
+          "sign": "",
+          "currency": "",
+          "number": "3.24",
+          "unit_text": "",
+          "scale": "1",
+          "decimals": 2
+        },
+        "value": "3.24",
+        "tolerance": "0.1",
+        "tolerance_text": "0.1x",
+        "step": "0.01"
+      },
+      {
+        "id": "67bb49c574c1",
+        "line": 1263,
+        "group": "97378684-875a-4a7d-ad19-d7d77942f131",
+        "weight": "8",
+        "criterion": "States March 2024 equity raise provided $16,183 thousand net proceeds (within +/- $100k)",
+        "claim": "March 2024 equity raise provided $16,183 thousand net proceeds",
+        "span": [
+          33,
+          49
+        ],
+        "kind": "money",
+        "unit": "USD",
+        "written": {
+          "sign": "",
+          "currency": "$",
+          "number": "16,183",
+          "unit_text": " thousand",
+          "scale": "1000",
+          "decimals": 0
+        },
+        "value": "16183000",
+        "tolerance": "100000",
+        "tolerance_text": "$100k",
+        "step": "1000"
+      },
+      {
+        "id": "0a8a11cb9589",
+        "line": 1264,
+        "group": "97378684-875a-4a7d-ad19-d7d77942f131",
+        "weight": "8",
+        "criterion": "States August 2024 debt repayment of $10,000 thousand (within +/- $100k)",
+        "claim": "August 2024 debt repayment of $10,000 thousand",
+        "span": [
+          30,
+          46
+        ],
+        "kind": "money",
+        "unit": "USD",
+        "written": {
+          "sign": "",
+          "currency": "$",
+          "number": "10,000",
+          "unit_text": " thousand",
+          "scale": "1000",
+          "decimals": 0
+        },
+        "value": "10000000",
+        "tolerance": "100000",
+        "tolerance_text": "$100k",
+        "step": "1000"
+      },
+      {
+        "id": "6ac122ee5d82",
+        "line": 1271,
+        "group": "97378684-875a-4a7d-ad19-d7d77942f131",
+        "weight": "6",
+        "criterion": "States beginning cash as $23,140 thousand at January 1, 2024 (within +/- $100k)",
+        "claim": "beginning cash as $23,140 thousand at January 1, 2024",
+        "span": [
+          18,
+          34
+        ],
+        "kind": "money",
+        "unit": "USD",
+        "written": {
+          "sign": "",
+          "currency": "$",
+          "number": "23,140",
+          "unit_text": " thousand",
+          "scale": "1000",
+          "decimals": 0
+        },
+        "value": "23140000",
+        "tolerance": "100000",
+        "tolerance_text": "$100k",
+        "step": "1000"
+      },
+      {
+        "id": "6adc88325a50",
+        "line": 2408,
+        "group": "bea85f62-a722-48a9-8ece-fbfb62653997",
+        "weight": "10",
+        "criterion": "States NVDA Q2 FY25 revenue as $30.0B (within +/- $0.5B)",
+        "claim": "NVDA Q2 FY25 revenue as $30.0B",
+        "span": [
+          24,
+          30
+        ],
+        "kind": "money",
+        "unit": "USD",
+        "written": {
+          "sign": "",
+          "currency": "$",
+          "number": "30.0",
+          "unit_text": "B",
+          "scale": "1000000000",
+          "decimals": 1
+        },
+        "value": "30000000000",
+        "tolerance": "500000000",
+        "tolerance_text": "$0.5B",
+        "step": "100000000"
+      },
+      {
+        "id": "fb81963bfe14",
+        "line": 2412,
+        "group": "bea85f62-a722-48a9-8ece-fbfb62653997",
+        "weight": "10",
+        "criterion": "States NVDA Q3 FY25 revenue as $35.1B (within +/- $0.5B)",
+        "claim": "NVDA Q3 FY25 revenue as $35.1B",
+        "span": [
+          24,
+          30
+        ],
+        "kind": "money",
+        "unit": "USD",
+        "written": {
+          "sign": "",
+          "currency": "$",
+          "number": "35.1",
+          "unit_text": "B",
+          "scale": "1000000000",
+          "decimals": 1
+        },
+        "value": "35100000000",
+        "tolerance": "500000000",
+        "tolerance_text": "$0.5B",
+        "step": "100000000"
+      },
+      {
+        "id": "81fca8c18b11",
+        "line": 2413,
+        "group": "bea85f62-a722-48a9-8ece-fbfb62653997",
+        "weight": "10",
+        "criterion": "States NVDA Q3 FY25 Data Center revenue as $30.8B (within +/- $0.5B)",
+        "claim": "NVDA Q3 FY25 Data Center revenue as $30.8B",
+        "span": [
+          36,
+          42
+        ],
+        "kind": "money",
+        "unit": "USD",
+        "written": {
+          "sign": "",
+          "currency": "$",
+          "number": "30.8",
+          "unit_text": "B",
+          "scale": "1000000000",
+          "decimals": 1
+        },
+        "value": "30800000000",
+        "tolerance": "500000000",
+        "tolerance_text": "$0.5B",
+        "step": "100000000"
+      },
+      {
+        "id": "1f890cf364e0",
+        "line": 2417,
+        "group": "bea85f62-a722-48a9-8ece-fbfb62653997",
+        "weight": "10",
+        "criterion": "States MSFT FY25 Q1 revenue as $65.6B (within +/- $0.5B)",
+        "claim": "MSFT FY25 Q1 revenue as $65.6B",
+        "span": [
+          24,
+          30
+        ],
+        "kind": "money",
+        "unit": "USD",
+        "written": {
+          "sign": "",
+          "currency": "$",
+          "number": "65.6",
+          "unit_text": "B",
+          "scale": "1000000000",
+          "decimals": 1
+        },
+        "value": "65600000000",
+        "tolerance": "500000000",
+        "tolerance_text": "$0.5B",
+        "step": "100000000"
+      },
+      {
+        "id": "3ca4599feecd",
+        "line": 2675,
+        "group": "ab17484f-fa6e-4e72-a970-e7cd6c5856d3",
+        "weight": "10",
+        "criterion": "States Hayes suffered $40,000 loss on Seattle home sale (within +/- $5,000)",
+        "claim": "Hayes suffered $40,000 loss on Seattle home sale",
+        "span": [
+          15,
+          22
+        ],
+        "kind": "money",
+        "unit": "USD",
+        "written": {
+          "sign": "",
+          "currency": "$",
+          "number": "40,000",
+          "unit_text": "",
+          "scale": "1",
+          "decimals": 0
+        },
+        "value": "40000",
+        "tolerance": "5000",
+        "tolerance_text": "$5,000",
+        "step": "1"
+      },
+      {
+        "id": "39cc98efe8b7",
+        "line": 2871,
+        "group": "67dfb8ea-cc84-4fb9-abc2-4794aa20eb44",
+        "weight": "10",
+        "criterion": "States Q1 2023 total sales as $2,345,541 (within +/- $10K)",
+        "claim": "Q1 2023 total sales as $2,345,541",
+        "span": [
+          23,
+          33
+        ],
+        "kind": "money",
+        "unit": "USD",
+        "written": {
+          "sign": "",
+          "currency": "$",
+          "number": "2,345,541",
+          "unit_text": "",
+          "scale": "1",
+          "decimals": 0
+        },
+        "value": "2345541",
+        "tolerance": "10000",
+        "tolerance_text": "$10K",
+        "step": "1"
+      },
+      {
+        "id": "a87c0f5bda61",
+        "line": 2872,
+        "group": "67dfb8ea-cc84-4fb9-abc2-4794aa20eb44",
+        "weight": "10",
+        "criterion": "States Q1 2023 gross profit as $67,121 (within +/- $1K)",
+        "claim": "Q1 2023 gross profit as $67,121",
+        "span": [
+          24,
+          31
+        ],
+        "kind": "money",
+        "unit": "USD",
+        "written": {
+          "sign": "",
+          "currency": "$",
+          "number": "67,121",
+          "unit_text": "",
+          "scale": "1",
+          "decimals": 0
+        },
+        "value": "67121",
+        "tolerance": "1000",
+        "tolerance_text": "$1K",
+        "step": "1"
+      },
+      {
+        "id": "3a980fb88687",
+        "line": 2874,
+        "group": "67dfb8ea-cc84-4fb9-abc2-4794aa20eb44",
+        "weight": "8",
+        "criterion": "States Q1 2023 direct supply revenue as $897,432 (within +/- $10K)",
+        "claim": "Q1 2023 direct supply revenue as $897,432",
+        "span": [
+          33,
+          41
+        ],
+        "kind": "money",
+        "unit": "USD",
+        "written": {
+          "sign": "",
+          "currency": "$",
+          "number": "897,432",
+          "unit_text": "",
+          "scale": "1",
+          "decimals": 0
+        },
+        "value": "897432",
+        "tolerance": "10000",
+        "tolerance_text": "$10K",
+        "step": "1"
+      },
+      {
+        "id": "f2ca9836373d",
+        "line": 2875,
+        "group": "67dfb8ea-cc84-4fb9-abc2-4794aa20eb44",
+        "weight": "8",
+        "criterion": "States Q1 2023 direct supply margin as 6% (within +/- 0.5 ppts)",
+        "claim": "Q1 2023 direct supply margin as 6%",
+        "span": [
+          32,
+          34
+        ],
+        "kind": "percent",
+        "unit": "percent",
+        "written": {
+          "sign": "",
+          "currency": "",
+          "number": "6",
+          "unit_text": "%",
+          "scale": "1",
+          "decimals": 0
+        },
+        "value": "6",
+        "tolerance": "0.5",
+        "tolerance_text": "0.5 ppts",
+        "step": "1"
+      },
+      {
+        "id": "b4d1065c1b38",
+        "line": 2876,
+        "group": "67dfb8ea-cc84-4fb9-abc2-4794aa20eb44",
+        "weight": "8",
+        "criterion": "States Q1 2023 indirect supply revenue as $1,448,109 (within +/- $10K)",
+        "claim": "Q1 2023 indirect supply revenue as $1,448,109",
+        "span": [
+          35,
+          45
+        ],
+        "kind": "money",
+        "unit": "USD",
+        "written": {
+          "sign": "",
+          "currency": "$",
+          "number": "1,448,109",
+          "unit_text": "",
+          "scale": "1",
+          "decimals": 0
+        },
+        "value": "1448109",
+        "tolerance": "10000",
+        "tolerance_text": "$10K",
+        "step": "1"
+      },
+      {
+        "id": "dd484d8a939a",
+        "line": 2877,
+        "group": "67dfb8ea-cc84-4fb9-abc2-4794aa20eb44",
+        "weight": "8",
+        "criterion": "States Q1 2023 indirect supply margin as 1% (within +/- 0.5 ppts)",
+        "claim": "Q1 2023 indirect supply margin as 1%",
+        "span": [
+          34,
+          36
+        ],
+        "kind": "percent",
+        "unit": "percent",
+        "written": {
+          "sign": "",
+          "currency": "",
+          "number": "1",
+          "unit_text": "%",
+          "scale": "1",
+          "decimals": 0
+        },
+        "value": "1",
+        "tolerance": "0.5",
+        "tolerance_text": "0.5 ppts",
+        "step": "1"
+      },
+      {
+        "id": "fb8b821fc406",
+        "line": 2878,
+        "group": "67dfb8ea-cc84-4fb9-abc2-4794aa20eb44",
+        "weight": "10",
+        "criterion": "States Q1 2024 total sales as $2,954,607 (within +/- $10K)",
+        "claim": "Q1 2024 total sales as $2,954,607",
+        "span": [
+          23,
+          33
+        ],
+        "kind": "money",
+        "unit": "USD",
+        "written": {
+          "sign": "",
+          "currency": "$",
+          "number": "2,954,607",
+          "unit_text": "",
+          "scale": "1",
+          "decimals": 0
+        },
+        "value": "2954607",
+        "tolerance": "10000",
+        "tolerance_text": "$10K",
+        "step": "1"
+      },
+      {
+        "id": "092ae21e5b04",
+        "line": 2882,
+        "group": "67dfb8ea-cc84-4fb9-abc2-4794aa20eb44",
+        "weight": "8",
+        "criterion": "States factory relocation loss as $190,703 (within +/- $1K)",
+        "claim": "factory relocation loss as $190,703",
+        "span": [
+          27,
+          35
+        ],
+        "kind": "money",
+        "unit": "USD",
+        "written": {
+          "sign": "",
+          "currency": "$",
+          "number": "190,703",
+          "unit_text": "",
+          "scale": "1",
+          "decimals": 0
+        },
+        "value": "190703",
+        "tolerance": "1000",
+        "tolerance_text": "$1K",
+        "step": "1"
+      },
+      {
+        "id": "90fcbfd65765",
+        "line": 2883,
+        "group": "67dfb8ea-cc84-4fb9-abc2-4794aa20eb44",
+        "weight": "8",
+        "criterion": "States Q1 2024 total cost of sales as $3,151,232 (within +/- $10K)",
+        "claim": "Q1 2024 total cost of sales as $3,151,232",
+        "span": [
+          31,
+          41
+        ],
+        "kind": "money",
+        "unit": "USD",
+        "written": {
+          "sign": "",
+          "currency": "$",
+          "number": "3,151,232",
+          "unit_text": "",
+          "scale": "1",
+          "decimals": 0
+        },
+        "value": "3151232",
+        "tolerance": "10000",
+        "tolerance_text": "$10K",
+        "step": "1"
+      },
+      {
+        "id": "807d85af7918",
+        "line": 3332,
+        "group": "785c8570-6aed-4517-aac2-1d56e16745b7",
+        "weight": "8",
+        "criterion": "States 2023 net cash used in operating activities as $31.505M (within +/- $0.5M)",
+        "claim": "2023 net cash used in operating activities as $31.505M",
+        "span": [
+          46,
+          54
+        ],
+        "kind": "money",
+        "unit": "USD",
+        "written": {
+          "sign": "",
+          "currency": "$",
+          "number": "31.505",
+          "unit_text": "M",
+          "scale": "1000000",
+          "decimals": 3
+        },
+        "value": "31505000",
+        "tolerance": "500000",
+        "tolerance_text": "$0.5M",
+        "step": "1000"
+      },
+      {
+        "id": "6e280b343a05",
+        "line": 3335,
+        "group": "785c8570-6aed-4517-aac2-1d56e16745b7",
+        "weight": "8",
+        "criterion": "States 2022 collaboration revenue as $861K (within +/- $50K)",
+        "claim": "2022 collaboration revenue as $861K",
+        "span": [
+          30,
+          35
+        ],
+        "kind": "money",
+        "unit": "USD",
+        "written": {
+          "sign": "",
+          "currency": "$",
+          "number": "861",
+          "unit_text": "K",
+          "scale": "1000",
+          "decimals": 0
+        },
+        "value": "861000",
+        "tolerance": "50000",
+        "tolerance_text": "$50K",
+        "step": "1000"
+      },
+      {
+        "id": "9875f6e03600",
+        "line": 3336,
+        "group": "785c8570-6aed-4517-aac2-1d56e16745b7",
+        "weight": "8",
+        "criterion": "States 2023 collaboration revenue as $107K (within +/- $20K)",
+        "claim": "2023 collaboration revenue as $107K",
+        "span": [
+          30,
+          35
+        ],
+        "kind": "money",
+        "unit": "USD",
+        "written": {
+          "sign": "",
+          "currency": "$",
+          "number": "107",
+          "unit_text": "K",
+          "scale": "1000",
+          "decimals": 0
+        },
+        "value": "107000",
+        "tolerance": "20000",
+        "tolerance_text": "$20K",
+        "step": "1000"
+      },
+      {
+        "id": "21c6094c2376",
+        "line": 3460,
+        "group": "2aac5ef3-f127-4582-a8a6-8f02bda5681e",
+        "weight": "8",
+        "criterion": "States H1 2025 separation costs as $64M in Unallocated Corporate Costs (within +/- $2M)",
+        "claim": "H1 2025 separation costs as $64M in Unallocated Corporate Costs",
+        "span": [
+          28,
+          32
+        ],
+        "kind": "money",
+        "unit": "USD",
+        "written": {
+          "sign": "",
+          "currency": "$",
+          "number": "64",
+          "unit_text": "M",
+          "scale": "1000000",
+          "decimals": 0
+        },
+        "value": "64000000",
+        "tolerance": "2000000",
+        "tolerance_text": "$2M",
+        "step": "1000000"
+      }
+    ]
+  },
+  "sha256": "f446bc0051c770e0b87e2195d09028358215f6bc3ac3e8e0a05a0cac48d62947"
+}

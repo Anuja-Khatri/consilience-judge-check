@@ -1,0 +1,521 @@
+{
+ "note": "Not preregistered. Added after the audit and after the replication arm was read.",
+ "reply_against_status": {
+  "first_arms": {
+   "calls_scored_right": 2218,
+   "explanation_says_the_opposite": [
+    "7d39b032c4de_report_outside_1",
+    "81fca8c18b11_near_inside_1",
+    "b8e87ef67d40_report_outside_2"
+   ]
+  },
+  "replication_arm": {
+   "calls_scored_right": 654,
+   "explanation_says_the_opposite": [
+    "6097b4a4aac0_below_outside_0"
+   ]
+  }
+ },
+ "rounding": {
+  "above_150": {
+   "accepted_and_still_outside_after_rounding_toward_the_reference": [
+    "6adc88325a50",
+    "af4aa10a290d"
+   ],
+   "accepted_at_least_once": 3,
+   "all_criteria_still_outside_after_rounding_toward_the_reference": 74,
+   "criteria": 76,
+   "of_those_still_outside_after_half_up_rounding": 3,
+   "of_those_still_outside_after_rounding_toward_the_reference": 2,
+   "of_those_written_at_the_criterions_own_precision": 1
+  },
+  "bare_outside": {
+   "accepted_and_still_outside_after_rounding_toward_the_reference": [
+    "3ca4599feecd"
+   ],
+   "accepted_at_least_once": 1,
+   "all_criteria_still_outside_after_rounding_toward_the_reference": 76,
+   "criteria": 76,
+   "of_those_still_outside_after_half_up_rounding": 1,
+   "of_those_still_outside_after_rounding_toward_the_reference": 1,
+   "of_those_written_at_the_criterions_own_precision": 1
+  },
+  "below_outside": {
+   "accepted_and_still_outside_after_rounding_toward_the_reference": [
+    "2db0a1d95356",
+    "3ca4599feecd",
+    "5475bfc18d3a",
+    "5b918267b9d4",
+    "6238a2146890",
+    "625b79fdf63e",
+    "62e2a1251fc0",
+    "66f28b01b186",
+    "82311c274e91",
+    "8d5463b6a76f",
+    "ac6dd3f56310",
+    "b58db5c114f7",
+    "ba48f4e13a23",
+    "cf234fad4701",
+    "d464b9f734a1",
+    "df1f99e42a3a",
+    "fb353a867903"
+   ],
+   "accepted_at_least_once": 22,
+   "all_criteria_still_outside_after_rounding_toward_the_reference": 68,
+   "criteria": 76,
+   "of_those_still_outside_after_half_up_rounding": 18,
+   "of_those_still_outside_after_rounding_toward_the_reference": 17,
+   "of_those_written_at_the_criterions_own_precision": 16
+  },
+  "near_outside": {
+   "accepted_and_still_outside_after_rounding_toward_the_reference": [
+    "3ca4599feecd",
+    "6097b4a4aac0",
+    "7d39b032c4de",
+    "af4aa10a290d",
+    "d464b9f734a1"
+   ],
+   "accepted_at_least_once": 10,
+   "all_criteria_still_outside_after_rounding_toward_the_reference": 68,
+   "criteria": 76,
+   "of_those_still_outside_after_half_up_rounding": 9,
+   "of_those_still_outside_after_rounding_toward_the_reference": 5,
+   "of_those_written_at_the_criterions_own_precision": 4
+  },
+  "report_near_outside": {
+   "accepted_and_still_outside_after_rounding_toward_the_reference": [
+    "092ae21e5b04",
+    "393e0b478c86",
+    "415e87a829c7",
+    "50e39130ac61",
+    "60e43faaa021",
+    "67bb49c574c1",
+    "7767dbf98624",
+    "806277bd8698",
+    "a87c0f5bda61",
+    "b8e87ef67d40",
+    "d464b9f734a1"
+   ],
+   "accepted_at_least_once": 14,
+   "all_criteria_still_outside_after_rounding_toward_the_reference": 64,
+   "criteria": 69,
+   "of_those_still_outside_after_half_up_rounding": 13,
+   "of_those_still_outside_after_rounding_toward_the_reference": 11,
+   "of_those_written_at_the_criterions_own_precision": 9
+  },
+  "report_outside": {
+   "accepted_and_still_outside_after_rounding_toward_the_reference": [
+    "4cd7c1698130",
+    "b8e87ef67d40"
+   ],
+   "accepted_at_least_once": 2,
+   "all_criteria_still_outside_after_rounding_toward_the_reference": 69,
+   "criteria": 69,
+   "of_those_still_outside_after_half_up_rounding": 2,
+   "of_those_still_outside_after_rounding_toward_the_reference": 2,
+   "of_those_written_at_the_criterions_own_precision": 2
+  },
+  "units_outside": {
+   "accepted_and_still_outside_after_rounding_toward_the_reference": [
+    "2c86fbbf812c",
+    "3ca4599feecd",
+    "60e43faaa021"
+   ],
+   "accepted_at_least_once": 8,
+   "all_criteria_still_outside_after_rounding_toward_the_reference": 43,
+   "criteria": 48,
+   "of_those_still_outside_after_half_up_rounding": 7,
+   "of_those_still_outside_after_rounding_toward_the_reference": 3,
+   "of_those_written_at_the_criterions_own_precision": 2
+  }
+ },
+ "tasks": {
+  "above_150": {
+   "criteria_rate": 0.0395,
+   "interval_criteria_independent": [
+    0.0135,
+    0.1097
+   ],
+   "interval_resampling_tasks": [
+    0.0,
+    0.1143
+   ],
+   "largest_task": [
+    0,
+    39
+   ],
+   "per_task_wrong_of_criteria": [
+    [
+     0,
+     39
+    ],
+    [
+     1,
+     13
+    ],
+    [
+     1,
+     9
+    ],
+    [
+     1,
+     4
+    ],
+    [
+     0,
+     3
+    ],
+    [
+     0,
+     3
+    ],
+    [
+     0,
+     2
+    ],
+    [
+     0,
+     1
+    ],
+    [
+     0,
+     1
+    ],
+    [
+     0,
+     1
+    ]
+   ],
+   "tasks": 10,
+   "tasks_with_a_wrong_criterion": 3,
+   "without_the_largest_task": [
+    3,
+    37
+   ]
+  },
+  "bare_outside": {
+   "criteria_rate": 0.0132,
+   "interval_criteria_independent": [
+    0.0023,
+    0.0708
+   ],
+   "interval_resampling_tasks": [
+    0.0,
+    0.0909
+   ],
+   "largest_task": [
+    0,
+    39
+   ],
+   "per_task_wrong_of_criteria": [
+    [
+     0,
+     39
+    ],
+    [
+     0,
+     13
+    ],
+    [
+     0,
+     9
+    ],
+    [
+     0,
+     4
+    ],
+    [
+     0,
+     3
+    ],
+    [
+     0,
+     3
+    ],
+    [
+     0,
+     2
+    ],
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     1
+    ],
+    [
+     0,
+     1
+    ]
+   ],
+   "tasks": 10,
+   "tasks_with_a_wrong_criterion": 1,
+   "without_the_largest_task": [
+    1,
+    37
+   ]
+  },
+  "below_outside": {
+   "criteria_rate": 0.2895,
+   "interval_criteria_independent": [
+    0.1996,
+    0.3996
+   ],
+   "interval_resampling_tasks": [
+    0.087,
+    0.4262
+   ],
+   "largest_task": [
+    15,
+    39
+   ],
+   "per_task_wrong_of_criteria": [
+    [
+     15,
+     39
+    ],
+    [
+     0,
+     13
+    ],
+    [
+     1,
+     9
+    ],
+    [
+     2,
+     4
+    ],
+    [
+     0,
+     3
+    ],
+    [
+     0,
+     3
+    ],
+    [
+     2,
+     2
+    ],
+    [
+     1,
+     1
+    ],
+    [
+     1,
+     1
+    ],
+    [
+     0,
+     1
+    ]
+   ],
+   "tasks": 10,
+   "tasks_with_a_wrong_criterion": 6,
+   "without_the_largest_task": [
+    7,
+    37
+   ]
+  },
+  "criteria_per_task": [
+   39,
+   13,
+   9,
+   4,
+   3,
+   3,
+   2,
+   1,
+   1,
+   1
+  ],
+  "near_outside": {
+   "criteria_rate": 0.1316,
+   "interval_criteria_independent": [
+    0.0731,
+    0.2255
+   ],
+   "interval_resampling_tasks": [
+    0.0519,
+    0.3333
+   ],
+   "largest_task": [
+    1,
+    39
+   ],
+   "per_task_wrong_of_criteria": [
+    [
+     1,
+     39
+    ],
+    [
+     3,
+     13
+    ],
+    [
+     2,
+     9
+    ],
+    [
+     2,
+     4
+    ],
+    [
+     0,
+     3
+    ],
+    [
+     0,
+     3
+    ],
+    [
+     0,
+     2
+    ],
+    [
+     1,
+     1
+    ],
+    [
+     1,
+     1
+    ],
+    [
+     0,
+     1
+    ]
+   ],
+   "tasks": 10,
+   "tasks_with_a_wrong_criterion": 6,
+   "without_the_largest_task": [
+    9,
+    37
+   ]
+  },
+  "report_near_outside": {
+   "criteria_rate": 0.2029,
+   "interval_criteria_independent": [
+    0.1249,
+    0.3122
+   ],
+   "interval_resampling_tasks": [
+    0.1496,
+    0.4545
+   ],
+   "largest_task": [
+    6,
+    39
+   ],
+   "per_task_wrong_of_criteria": [
+    [
+     6,
+     39
+    ],
+    [
+     1,
+     12
+    ],
+    [
+     2,
+     7
+    ],
+    [
+     1,
+     3
+    ],
+    [
+     0,
+     3
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     1,
+     1
+    ],
+    [
+     1,
+     1
+    ],
+    [
+     1,
+     1
+    ]
+   ],
+   "tasks": 9,
+   "tasks_with_a_wrong_criterion": 8,
+   "without_the_largest_task": [
+    8,
+    30
+   ]
+  },
+  "report_outside": {
+   "criteria_rate": 0.029,
+   "interval_criteria_independent": [
+    0.008,
+    0.0997
+   ],
+   "interval_resampling_tasks": [
+    0.0,
+    0.1333
+   ],
+   "largest_task": [
+    0,
+    39
+   ],
+   "per_task_wrong_of_criteria": [
+    [
+     0,
+     39
+    ],
+    [
+     1,
+     12
+    ],
+    [
+     0,
+     7
+    ],
+    [
+     0,
+     3
+    ],
+    [
+     0,
+     3
+    ],
+    [
+     0,
+     2
+    ],
+    [
+     0,
+     1
+    ],
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     1
+    ]
+   ],
+   "tasks": 9,
+   "tasks_with_a_wrong_criterion": 2,
+   "without_the_largest_task": [
+    2,
+    30
+   ]
+  }
+ },
+ "tolerance_criteria_in_benchmark": {
+  "any_plus_minus": 215,
+  "tasks_with_any": 24,
+  "wording_within_plus_minus": 207
+ }
+}

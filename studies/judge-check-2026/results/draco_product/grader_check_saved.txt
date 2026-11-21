@@ -1,0 +1,219 @@
+data:        studies/judge-check-2026/results/draco_product/table_saved.csv (3051 rows; sha256 b3f0a6362b8968b8241427f99f5650749413d5e85bf8245ffeb6251cb5be625f)
+decided:     3051 of 3051 (3051 in exact decimal arithmetic, 0 after a unit conversion)
+grader right: 2872
+lenient:     139 (accepted a value outside the stated tolerance)
+strict:      40 (rejected a value inside the stated tolerance)
+  line 9    092ae21e5b04@+0.5#0  +0.5  strict: stated 191203 USD, reference 190703 USD, tolerance 1000 USD, difference 500 USD   row receipt 2fbb1340e7e7
+  line 10   092ae21e5b04@+0.5#1  +0.5  strict: stated 191203 USD, reference 190703 USD, tolerance 1000 USD, difference 500 USD   row receipt c9b55c13584d
+  line 11   092ae21e5b04@+0.5#2  +0.5  strict: stated 191203 USD, reference 190703 USD, tolerance 1000 USD, difference 500 USD   row receipt 6f4d2e581e5a
+  line 156  a87c0f5bda61@+0.5#0  +0.5  strict: stated 67621 USD, reference 67121 USD, tolerance 1000 USD, difference 500 USD   row receipt 0f6088f26f19
+  line 157  a87c0f5bda61@+0.5#1  +0.5  strict: stated 67621 USD, reference 67121 USD, tolerance 1000 USD, difference 500 USD   row receipt 45fd832ba323
+  line 158  a87c0f5bda61@+0.5#2  +0.5  strict: stated 67621 USD, reference 67121 USD, tolerance 1000 USD, difference 500 USD   row receipt 5dea19b44c13
+  line 504  5475bfc18d3a@+0.9#0  +0.9  strict: stated 20.12 USD, reference 19.67 USD, tolerance 0.5 USD, difference 0.45 USD   row receipt fac47b92b267
+  line 505  5475bfc18d3a@+0.9#1  +0.9  strict: stated 20.12 USD, reference 19.67 USD, tolerance 0.5 USD, difference 0.45 USD   row receipt d92aeec550ea
+  line 506  5475bfc18d3a@+0.9#2  +0.9  strict: stated 20.12 USD, reference 19.67 USD, tolerance 0.5 USD, difference 0.45 USD   row receipt e3208914f371
+  line 546  6e30ebb89755@+0.9#0  +0.9  strict: stated 4651714 count, reference 4561714 count, tolerance 100000 count, difference 90000 count   row receipt f0a591d8f9ce
+  line 591  a87c0f5bda61@+0.9#0  +0.9  strict: stated 68021 USD, reference 67121 USD, tolerance 1000 USD, difference 900 USD   row receipt 5f82c2f09bb8
+  line 592  a87c0f5bda61@+0.9#1  +0.9  strict: stated 68021 USD, reference 67121 USD, tolerance 1000 USD, difference 900 USD   row receipt 45451afe0979
+  line 593  a87c0f5bda61@+0.9#2  +0.9  strict: stated 68021 USD, reference 67121 USD, tolerance 1000 USD, difference 900 USD   row receipt 2ce3e617bf40
+  line 612  ba7b9f3b1eec@+0.9#0  +0.9  strict: stated 5.31 percent, reference 5.22 percent, tolerance 0.1 percent, difference 0.09 percent   row receipt 0135038ed87b
+  line 613  ba7b9f3b1eec@+0.9#1  +0.9  strict: stated 5.31 percent, reference 5.22 percent, tolerance 0.1 percent, difference 0.09 percent   row receipt db9a5111c1ba
+  line 614  ba7b9f3b1eec@+0.9#2  +0.9  strict: stated 5.31 percent, reference 5.22 percent, tolerance 0.1 percent, difference 0.09 percent   row receipt b325676e0704
+  line 630  d1683467e9ca@+0.9#0  +0.9  strict: stated 3.33 count, reference 3.24 count, tolerance 0.1 count, difference 0.09 count   row receipt 6901cb914c60
+  line 631  d1683467e9ca@+0.9#1  +0.9  strict: stated 3.33 count, reference 3.24 count, tolerance 0.1 count, difference 0.09 count   row receipt f5d30ab8bb38
+  line 669  092ae21e5b04@+0.9u#0  +0.9u  strict: stated 191603 USD, reference 190703 USD, tolerance 1000 USD, difference 900 USD   row receipt 1a3612519a5f
+  line 670  092ae21e5b04@+0.9u#1  +0.9u  strict: stated 191603 USD, reference 190703 USD, tolerance 1000 USD, difference 900 USD   row receipt 78d6303e0e49
+  line 671  092ae21e5b04@+0.9u#2  +0.9u  strict: stated 191603 USD, reference 190703 USD, tolerance 1000 USD, difference 900 USD   row receipt 3bf4df16f977
+  line 771  a87c0f5bda61@+0.9u#0  +0.9u  strict: stated 68021 USD, reference 67121 USD, tolerance 1000 USD, difference 900 USD   row receipt 022afa4ba5b0
+  line 773  a87c0f5bda61@+0.9u#2  +0.9u  strict: stated 68021 USD, reference 67121 USD, tolerance 1000 USD, difference 900 USD   row receipt c2acb0d24cea
+  line 825  21c6094c2376@+1.1#0  +1.1  lenient: stated 66200000 USD, reference 64000000 USD, tolerance 2000000 USD, difference 2.2e+06 USD   row receipt 203f04967770
+  line 826  21c6094c2376@+1.1#1  +1.1  lenient: stated 66200000 USD, reference 64000000 USD, tolerance 2000000 USD, difference 2.2e+06 USD   row receipt bd6fce5a28f7
+  line 827  21c6094c2376@+1.1#2  +1.1  lenient: stated 66200000 USD, reference 64000000 USD, tolerance 2000000 USD, difference 2.2e+06 USD   row receipt e8066874304f
+  line 855  3ca4599feecd@+1.1#0  +1.1  lenient: stated 45500 USD, reference 40000 USD, tolerance 5000 USD, difference 5500 USD   row receipt 9c517762ca15
+  line 856  3ca4599feecd@+1.1#1  +1.1  lenient: stated 45500 USD, reference 40000 USD, tolerance 5000 USD, difference 5500 USD   row receipt fe079ad78b85
+  line 857  3ca4599feecd@+1.1#2  +1.1  lenient: stated 45500 USD, reference 40000 USD, tolerance 5000 USD, difference 5500 USD   row receipt 4ac94cf9b995
+  line 888  6097b4a4aac0@+1.1#0  +1.1  lenient: stated 1105500000 USD, reference 1100000000 USD, tolerance 5000000 USD, difference 5.5e+06 USD   row receipt b85c1dbf422d
+  line 889  6097b4a4aac0@+1.1#1  +1.1  lenient: stated 1105500000 USD, reference 1100000000 USD, tolerance 5000000 USD, difference 5.5e+06 USD   row receipt 5edec0e6f7bd
+  line 890  6097b4a4aac0@+1.1#2  +1.1  lenient: stated 1105500000 USD, reference 1100000000 USD, tolerance 5000000 USD, difference 5.5e+06 USD   row receipt 7c0b39c4ef3b
+  line 912  6adc88325a50@+1.1#0  +1.1  lenient: stated 30550000000 USD, reference 30000000000 USD, tolerance 500000000 USD, difference 5.5e+08 USD   row receipt 801669ab5601
+  line 913  6adc88325a50@+1.1#1  +1.1  lenient: stated 30550000000 USD, reference 30000000000 USD, tolerance 500000000 USD, difference 5.5e+08 USD   row receipt 7924753b9f06
+  line 914  6adc88325a50@+1.1#2  +1.1  lenient: stated 30550000000 USD, reference 30000000000 USD, tolerance 500000000 USD, difference 5.5e+08 USD   row receipt 7a26b91dfb1f
+  line 926  7d39b032c4de@+1.1#2  +1.1  lenient: stated 3982000 USD, reference 3927000 USD, tolerance 50000 USD, difference 55000 USD   row receipt 6b7d867d8733
+  line 969  af4aa10a290d@+1.1#0  +1.1  lenient: stated 805500000 USD, reference 800000000 USD, tolerance 5000000 USD, difference 5.5e+06 USD   row receipt 255b72964b08
+  line 970  af4aa10a290d@+1.1#1  +1.1  lenient: stated 805500000 USD, reference 800000000 USD, tolerance 5000000 USD, difference 5.5e+06 USD   row receipt e1ba25714396
+  line 971  af4aa10a290d@+1.1#2  +1.1  lenient: stated 805500000 USD, reference 800000000 USD, tolerance 5000000 USD, difference 5.5e+06 USD   row receipt 677194537d88
+  line 1005 d464b9f734a1@+1.1#0  +1.1  lenient: stated 2832500 USD, reference 2750000 USD, tolerance 75000 USD, difference 82500 USD   row receipt f37fcef268db
+  line 1006 d464b9f734a1@+1.1#1  +1.1  lenient: stated 2832500 USD, reference 2750000 USD, tolerance 75000 USD, difference 82500 USD   row receipt ac70dbc1ab8d
+  line 1007 d464b9f734a1@+1.1#2  +1.1  lenient: stated 2832500 USD, reference 2750000 USD, tolerance 75000 USD, difference 82500 USD   row receipt decd556659f8
+  line 1008 dd484d8a939a@+1.1#0  +1.1  lenient: stated 1.55 percent, reference 1 percent, tolerance 0.5 percent, difference 0.55 percent   row receipt 216a69de928e
+  line 1023 f2ca9836373d@+1.1#0  +1.1  lenient: stated 6.55 percent, reference 6 percent, tolerance 0.5 percent, difference 0.55 percent   row receipt 0685f6e89fd2
+  line 1024 f2ca9836373d@+1.1#1  +1.1  lenient: stated 6.55 percent, reference 6 percent, tolerance 0.5 percent, difference 0.55 percent   row receipt bce3f19206b5
+  line 1025 f2ca9836373d@+1.1#2  +1.1  lenient: stated 6.55 percent, reference 6 percent, tolerance 0.5 percent, difference 0.55 percent   row receipt 418bdefb6377
+  line 1029 fb81963bfe14@+1.1#0  +1.1  lenient: stated 35650000000 USD, reference 35100000000 USD, tolerance 500000000 USD, difference 5.5e+08 USD   row receipt 774222329532
+  line 1030 fb81963bfe14@+1.1#1  +1.1  lenient: stated 35650000000 USD, reference 35100000000 USD, tolerance 500000000 USD, difference 5.5e+08 USD   row receipt f2180ba8df09
+  line 1031 fb81963bfe14@+1.1#2  +1.1  lenient: stated 35650000000 USD, reference 35100000000 USD, tolerance 500000000 USD, difference 5.5e+08 USD   row receipt d8184cd03373
+  line 1040 092ae21e5b04@+1.1:report#0  +1.1:report  lenient: stated 191803 USD, reference 190703 USD, tolerance 1000 USD, difference 1100 USD   row receipt b169fefa0b16
+  line 1042 21c6094c2376@+1.1:report#0  +1.1:report  lenient: stated 66200000 USD, reference 64000000 USD, tolerance 2000000 USD, difference 2.2e+06 USD   row receipt 92f004592cb5
+  line 1049 393e0b478c86@+1.1:report#0  +1.1:report  lenient: stated 15.287 USD, reference 15.265 USD, tolerance 0.02 USD, difference 0.022 USD   row receipt b6f304574b9b
+  line 1052 415e87a829c7@+1.1:report#0  +1.1:report  lenient: stated 1208000 USD, reference 1153000 USD, tolerance 50000 USD, difference 55000 USD   row receipt 7e4b98543df2
+  line 1056 50e39130ac61@+1.1:report#0  +1.1:report  lenient: stated 1633000 USD, reference 1578000 USD, tolerance 50000 USD, difference 55000 USD   row receipt 78cd092f0bd8
+  line 1062 60e43faaa021@+1.1:report#0  +1.1:report  lenient: stated 2097500 USD, reference 2015000 USD, tolerance 75000 USD, difference 82500 USD   row receipt b09fb4063249
+  line 1067 67bb49c574c1@+1.1:report#0  +1.1:report  lenient: stated 16293000 USD, reference 16183000 USD, tolerance 100000 USD, difference 110000 USD   row receipt dd2bf23ac83e
+  line 1070 7767dbf98624@+1.1:report#0  +1.1:report  lenient: stated 27.27 USD, reference 25.07 USD, tolerance 2 USD, difference 2.2 USD   row receipt a943bb7f8715
+  line 1072 806277bd8698@+1.1:report#0  +1.1:report  lenient: stated 16312000 USD, reference 16202000 USD, tolerance 100000 USD, difference 110000 USD   row receipt 9af4d3ee7763
+  line 1084 a87c0f5bda61@+1.1:report#0  +1.1:report  lenient: stated 68221 USD, reference 67121 USD, tolerance 1000 USD, difference 1100 USD   row receipt dea6b65c9f7f
+  line 1089 b8e87ef67d40@+1.1:report#0  +1.1:report  lenient: stated 119000000 USD, reference 117900000 USD, tolerance 1000000 USD, difference 1.1e+06 USD   row receipt 4a4b67173016
+  line 1098 d464b9f734a1@+1.1:report#0  +1.1:report  lenient: stated 2832500 USD, reference 2750000 USD, tolerance 75000 USD, difference 82500 USD   row receipt c2ce076341f3
+  line 1101 ed5343d2fceb@+1.1:report#0  +1.1:report  lenient: stated 102.5 USD, reference 97 USD, tolerance 5 USD, difference 5.5 USD   row receipt 8e4dde4cabdc
+  line 1104 fb81963bfe14@+1.1:report#0  +1.1:report  lenient: stated 35650000000 USD, reference 35100000000 USD, tolerance 500000000 USD, difference 5.5e+08 USD   row receipt 43ef9fef7321
+  line 1116 1f890cf364e0@+1.1u#0  +1.1u  lenient: stated 66150000000 USD, reference 65600000000 USD, tolerance 500000000 USD, difference 5.5e+08 USD   row receipt c4dd52daa197
+  line 1118 1f890cf364e0@+1.1u#2  +1.1u  lenient: stated 66150000000 USD, reference 65600000000 USD, tolerance 500000000 USD, difference 5.5e+08 USD   row receipt f85fe69467d5
+  line 1119 21c6094c2376@+1.1u#0  +1.1u  lenient: stated 66200000 USD, reference 64000000 USD, tolerance 2000000 USD, difference 2.2e+06 USD   row receipt 492854cbff65
+  line 1120 21c6094c2376@+1.1u#1  +1.1u  lenient: stated 66200000 USD, reference 64000000 USD, tolerance 2000000 USD, difference 2.2e+06 USD   row receipt bf96d620bf22
+  line 1121 21c6094c2376@+1.1u#2  +1.1u  lenient: stated 66200000 USD, reference 64000000 USD, tolerance 2000000 USD, difference 2.2e+06 USD   row receipt ee1e79c0783d
+  line 1125 2c86fbbf812c@+1.1u#0  +1.1u  lenient: stated 15677000 USD, reference 15567000 USD, tolerance 100000 USD, difference 110000 USD   row receipt eee3d353bfec
+  line 1126 2c86fbbf812c@+1.1u#1  +1.1u  lenient: stated 15677000 USD, reference 15567000 USD, tolerance 100000 USD, difference 110000 USD   row receipt 06b1128972dd
+  line 1140 3ca4599feecd@+1.1u#0  +1.1u  lenient: stated 45500 USD, reference 40000 USD, tolerance 5000 USD, difference 5500 USD   row receipt 0a79715f0c58
+  line 1141 3ca4599feecd@+1.1u#1  +1.1u  lenient: stated 45500 USD, reference 40000 USD, tolerance 5000 USD, difference 5500 USD   row receipt 3784604dd990
+  line 1142 3ca4599feecd@+1.1u#2  +1.1u  lenient: stated 45500 USD, reference 40000 USD, tolerance 5000 USD, difference 5500 USD   row receipt 8f67a78fa86b
+  line 1164 60e43faaa021@+1.1u#0  +1.1u  lenient: stated 2097500 USD, reference 2015000 USD, tolerance 75000 USD, difference 82500 USD   row receipt fd39c32b7b96
+  line 1165 60e43faaa021@+1.1u#1  +1.1u  lenient: stated 2097500 USD, reference 2015000 USD, tolerance 75000 USD, difference 82500 USD   row receipt da1e00ca352e
+  line 1166 60e43faaa021@+1.1u#2  +1.1u  lenient: stated 2097500 USD, reference 2015000 USD, tolerance 75000 USD, difference 82500 USD   row receipt 7dae8661edb8
+  line 1179 6adc88325a50@+1.1u#0  +1.1u  lenient: stated 30550000000 USD, reference 30000000000 USD, tolerance 500000000 USD, difference 5.5e+08 USD   row receipt 261808c33ac9
+  line 1180 6adc88325a50@+1.1u#1  +1.1u  lenient: stated 30550000000 USD, reference 30000000000 USD, tolerance 500000000 USD, difference 5.5e+08 USD   row receipt 68997ba4278b
+  line 1181 6adc88325a50@+1.1u#2  +1.1u  lenient: stated 30550000000 USD, reference 30000000000 USD, tolerance 500000000 USD, difference 5.5e+08 USD   row receipt 5d79bd741b83
+  line 1194 81fca8c18b11@+1.1u#0  +1.1u  lenient: stated 31350000000 USD, reference 30800000000 USD, tolerance 500000000 USD, difference 5.5e+08 USD   row receipt cf58099099e2
+  line 1195 81fca8c18b11@+1.1u#1  +1.1u  lenient: stated 31350000000 USD, reference 30800000000 USD, tolerance 500000000 USD, difference 5.5e+08 USD   row receipt 0d8002705899
+  line 1196 81fca8c18b11@+1.1u#2  +1.1u  lenient: stated 31350000000 USD, reference 30800000000 USD, tolerance 500000000 USD, difference 5.5e+08 USD   row receipt b641327b3de4
+  line 1245 fb81963bfe14@+1.1u#0  +1.1u  lenient: stated 35650000000 USD, reference 35100000000 USD, tolerance 500000000 USD, difference 5.5e+08 USD   row receipt 028aa31ba58e
+  line 1246 fb81963bfe14@+1.1u#1  +1.1u  lenient: stated 35650000000 USD, reference 35100000000 USD, tolerance 500000000 USD, difference 5.5e+08 USD   row receipt c3e2b0d7e685
+  line 1247 fb81963bfe14@+1.1u#2  +1.1u  lenient: stated 35650000000 USD, reference 35100000000 USD, tolerance 500000000 USD, difference 5.5e+08 USD   row receipt aad594393894
+  line 1353 6adc88325a50@+1.5#0  +1.5  lenient: stated 30750000000 USD, reference 30000000000 USD, tolerance 500000000 USD, difference 7.5e+08 USD   row receipt b8736b0b6f43
+  line 1354 6adc88325a50@+1.5#1  +1.5  lenient: stated 30750000000 USD, reference 30000000000 USD, tolerance 500000000 USD, difference 7.5e+08 USD   row receipt e3b7504bd885
+  line 1355 6adc88325a50@+1.5#2  +1.5  lenient: stated 30750000000 USD, reference 30000000000 USD, tolerance 500000000 USD, difference 7.5e+08 USD   row receipt 3afde18e5a8b
+  line 1410 af4aa10a290d@+1.5#0  +1.5  lenient: stated 807500000 USD, reference 800000000 USD, tolerance 5000000 USD, difference 7.5e+06 USD   row receipt 0abca5b6ee96
+  line 1451 dd484d8a939a@+1.5#2  +1.5  lenient: stated 1.75 percent, reference 1 percent, tolerance 0.5 percent, difference 0.75 percent   row receipt d176b66bd2f0
+  line 1524 3ca4599feecd@+2#0  +2  lenient: stated 50000 USD, reference 40000 USD, tolerance 5000 USD, difference 10000 USD   row receipt 3dbdde781a83
+  line 1525 3ca4599feecd@+2#1  +2  lenient: stated 50000 USD, reference 40000 USD, tolerance 5000 USD, difference 10000 USD   row receipt b4c5ca83255f
+  line 1526 3ca4599feecd@+2#2  +2  lenient: stated 50000 USD, reference 40000 USD, tolerance 5000 USD, difference 10000 USD   row receipt bae1179b660e
+  line 1934 fdd2e5eb0705@+2:note#2  +2:note  lenient: stated 1047306 count, reference 1007306 count, tolerance 20000 count, difference 40000 count   row receipt 7be2045f816f
+  line 1983 4cd7c1698130@+2:report#0  +2:report  lenient: stated 129789000 USD, reference 128789000 USD, tolerance 500000 USD, difference 1e+06 USD   row receipt 5bf2e24c1ef4
+  line 1984 4cd7c1698130@+2:report#1  +2:report  lenient: stated 129789000 USD, reference 128789000 USD, tolerance 500000 USD, difference 1e+06 USD   row receipt d2c044b617c7
+  line 1985 4cd7c1698130@+2:report#2  +2:report  lenient: stated 129789000 USD, reference 128789000 USD, tolerance 500000 USD, difference 1e+06 USD   row receipt cc84aed72c2d
+  line 2088 b8e87ef67d40@+2:report#0  +2:report  lenient: stated 119900000 USD, reference 117900000 USD, tolerance 1000000 USD, difference 2e+06 USD   row receipt 5ed6b44930fc
+  line 2089 b8e87ef67d40@+2:report#1  +2:report  lenient: stated 119900000 USD, reference 117900000 USD, tolerance 1000000 USD, difference 2e+06 USD   row receipt dc5547c9076e
+  line 2181 39cc98efe8b7@-0.9#0  -0.9  strict: stated 2336541 USD, reference 2345541 USD, tolerance 10000 USD, difference 9000 USD   row receipt 23ada63f0c1b
+  line 2182 39cc98efe8b7@-0.9#1  -0.9  strict: stated 2336541 USD, reference 2345541 USD, tolerance 10000 USD, difference 9000 USD   row receipt 803ccc4c9786
+  line 2250 6e30ebb89755@-0.9#0  -0.9  strict: stated 4471714 count, reference 4561714 count, tolerance 100000 count, difference 90000 count   row receipt 757bc079acbc
+  line 2251 6e30ebb89755@-0.9#1  -0.9  strict: stated 4471714 count, reference 4561714 count, tolerance 100000 count, difference 90000 count   row receipt d23aea9f4a9d
+  line 2252 6e30ebb89755@-0.9#2  -0.9  strict: stated 4471714 count, reference 4561714 count, tolerance 100000 count, difference 90000 count   row receipt 9f341b626be9
+  line 2295 a87c0f5bda61@-0.9#0  -0.9  strict: stated 66221 USD, reference 67121 USD, tolerance 1000 USD, difference 900 USD   row receipt 41aa43e17f14
+  line 2296 a87c0f5bda61@-0.9#1  -0.9  strict: stated 66221 USD, reference 67121 USD, tolerance 1000 USD, difference 900 USD   row receipt 3b70bef811ce
+  line 2297 a87c0f5bda61@-0.9#2  -0.9  strict: stated 66221 USD, reference 67121 USD, tolerance 1000 USD, difference 900 USD   row receipt 7d1e5bcadd1b
+  line 2316 ba7b9f3b1eec@-0.9#0  -0.9  strict: stated 5.13 percent, reference 5.22 percent, tolerance 0.1 percent, difference 0.09 percent   row receipt f244c2682aa2
+  line 2317 ba7b9f3b1eec@-0.9#1  -0.9  strict: stated 5.13 percent, reference 5.22 percent, tolerance 0.1 percent, difference 0.09 percent   row receipt a456505c7420
+  line 2318 ba7b9f3b1eec@-0.9#2  -0.9  strict: stated 5.13 percent, reference 5.22 percent, tolerance 0.1 percent, difference 0.09 percent   row receipt 54986b69ca7c
+  line 2319 bb4f523f2455@-0.9#0  -0.9  strict: stated 3763997 count, reference 3853997 count, tolerance 100000 count, difference 90000 count   row receipt 0dc3d4852c6b
+  line 2320 bb4f523f2455@-0.9#1  -0.9  strict: stated 3763997 count, reference 3853997 count, tolerance 100000 count, difference 90000 count   row receipt a7c6639d7818
+  line 2321 bb4f523f2455@-0.9#2  -0.9  strict: stated 3763997 count, reference 3853997 count, tolerance 100000 count, difference 90000 count   row receipt 3799b3192316
+  line 2334 d1683467e9ca@-0.9#0  -0.9  strict: stated 3.15 count, reference 3.24 count, tolerance 0.1 count, difference 0.09 count   row receipt bd8dc2851e80
+  line 2335 d1683467e9ca@-0.9#1  -0.9  strict: stated 3.15 count, reference 3.24 count, tolerance 0.1 count, difference 0.09 count   row receipt 0756a36cecc1
+  line 2336 d1683467e9ca@-0.9#2  -0.9  strict: stated 3.15 count, reference 3.24 count, tolerance 0.1 count, difference 0.09 count   row receipt d00d70edcf14
+  line 2385 21c6094c2376@-1.1#0  -1.1  lenient: stated 61800000 USD, reference 64000000 USD, tolerance 2000000 USD, difference 2.2e+06 USD   row receipt 1005a6f54faa
+  line 2386 21c6094c2376@-1.1#1  -1.1  lenient: stated 61800000 USD, reference 64000000 USD, tolerance 2000000 USD, difference 2.2e+06 USD   row receipt 904d582399ce
+  line 2387 21c6094c2376@-1.1#2  -1.1  lenient: stated 61800000 USD, reference 64000000 USD, tolerance 2000000 USD, difference 2.2e+06 USD   row receipt 4743a7318e0b
+  line 2397 2db0a1d95356@-1.1#0  -1.1  lenient: stated 13494356 count, reference 13714356 count, tolerance 200000 count, difference 220000 count   row receipt 05674f314ad0
+  line 2398 2db0a1d95356@-1.1#1  -1.1  lenient: stated 13494356 count, reference 13714356 count, tolerance 200000 count, difference 220000 count   row receipt 42e2394eb0c6
+  line 2399 2db0a1d95356@-1.1#2  -1.1  lenient: stated 13494356 count, reference 13714356 count, tolerance 200000 count, difference 220000 count   row receipt 63619b9d6e6b
+  line 2415 3ca4599feecd@-1.1#0  -1.1  lenient: stated 34500 USD, reference 40000 USD, tolerance 5000 USD, difference 5500 USD   row receipt 04c480ca25a0
+  line 2416 3ca4599feecd@-1.1#1  -1.1  lenient: stated 34500 USD, reference 40000 USD, tolerance 5000 USD, difference 5500 USD   row receipt a5eaffadc32d
+  line 2417 3ca4599feecd@-1.1#2  -1.1  lenient: stated 34500 USD, reference 40000 USD, tolerance 5000 USD, difference 5500 USD   row receipt 87ac4f09dfb3
+  line 2436 5475bfc18d3a@-1.1#0  -1.1  lenient: stated 19.12 USD, reference 19.67 USD, tolerance 0.5 USD, difference 0.55 USD   row receipt 86a6757d81f4
+  line 2437 5475bfc18d3a@-1.1#1  -1.1  lenient: stated 19.12 USD, reference 19.67 USD, tolerance 0.5 USD, difference 0.55 USD   row receipt e01b4586abde
+  line 2438 5475bfc18d3a@-1.1#2  -1.1  lenient: stated 19.12 USD, reference 19.67 USD, tolerance 0.5 USD, difference 0.55 USD   row receipt 0e67a519cdd6
+  line 2445 5b918267b9d4@-1.1#0  -1.1  lenient: stated 289000 USD, reference 311000 USD, tolerance 20000 USD, difference 22000 USD   row receipt 091a4192123e
+  line 2446 5b918267b9d4@-1.1#1  -1.1  lenient: stated 289000 USD, reference 311000 USD, tolerance 20000 USD, difference 22000 USD   row receipt fde1a7c61fcb
+  line 2447 5b918267b9d4@-1.1#2  -1.1  lenient: stated 289000 USD, reference 311000 USD, tolerance 20000 USD, difference 22000 USD   row receipt 913c36196b44
+  line 2454 6238a2146890@-1.1#0  -1.1  lenient: stated 652000 USD, reference 696000 USD, tolerance 40000 USD, difference 44000 USD   row receipt 510e73fd1dd6
+  line 2455 6238a2146890@-1.1#1  -1.1  lenient: stated 652000 USD, reference 696000 USD, tolerance 40000 USD, difference 44000 USD   row receipt a8d11853d680
+  line 2456 6238a2146890@-1.1#2  -1.1  lenient: stated 652000 USD, reference 696000 USD, tolerance 40000 USD, difference 44000 USD   row receipt 22565709570d
+  line 2457 625b79fdf63e@-1.1#0  -1.1  lenient: stated 798000 USD, reference 853000 USD, tolerance 50000 USD, difference 55000 USD   row receipt e5d9f5c1a673
+  line 2458 625b79fdf63e@-1.1#1  -1.1  lenient: stated 798000 USD, reference 853000 USD, tolerance 50000 USD, difference 55000 USD   row receipt 66396672e422
+  line 2459 625b79fdf63e@-1.1#2  -1.1  lenient: stated 798000 USD, reference 853000 USD, tolerance 50000 USD, difference 55000 USD   row receipt 279afd77c9be
+  line 2460 62e2a1251fc0@-1.1#0  -1.1  lenient: stated 82 USD, reference 93 USD, tolerance 10 USD, difference 11 USD   row receipt 5699ccdb67d0
+  line 2461 62e2a1251fc0@-1.1#1  -1.1  lenient: stated 82 USD, reference 93 USD, tolerance 10 USD, difference 11 USD   row receipt d41e6e7b1006
+  line 2462 62e2a1251fc0@-1.1#2  -1.1  lenient: stated 82 USD, reference 93 USD, tolerance 10 USD, difference 11 USD   row receipt eb865fc667e7
+  line 2463 66f28b01b186@-1.1#0  -1.1  lenient: stated 33.65 USD, reference 35.85 USD, tolerance 2 USD, difference 2.2 USD   row receipt 246fda0fb62e
+  line 2464 66f28b01b186@-1.1#1  -1.1  lenient: stated 33.65 USD, reference 35.85 USD, tolerance 2 USD, difference 2.2 USD   row receipt d870b55b98e4
+  line 2465 66f28b01b186@-1.1#2  -1.1  lenient: stated 33.65 USD, reference 35.85 USD, tolerance 2 USD, difference 2.2 USD   row receipt 82a01584172a
+  line 2472 6adc88325a50@-1.1#0  -1.1  lenient: stated 29450000000 USD, reference 30000000000 USD, tolerance 500000000 USD, difference 5.5e+08 USD   row receipt 8125473a1ce5
+  line 2473 6adc88325a50@-1.1#1  -1.1  lenient: stated 29450000000 USD, reference 30000000000 USD, tolerance 500000000 USD, difference 5.5e+08 USD   row receipt 14160a3d87b9
+  line 2474 6adc88325a50@-1.1#2  -1.1  lenient: stated 29450000000 USD, reference 30000000000 USD, tolerance 500000000 USD, difference 5.5e+08 USD   row receipt 062176b740f7
+  line 2496 81fca8c18b11@-1.1#0  -1.1  lenient: stated 30250000000 USD, reference 30800000000 USD, tolerance 500000000 USD, difference 5.5e+08 USD   row receipt 3f846f5eaaf1
+  line 2497 81fca8c18b11@-1.1#1  -1.1  lenient: stated 30250000000 USD, reference 30800000000 USD, tolerance 500000000 USD, difference 5.5e+08 USD   row receipt 78783d80c31e
+  line 2498 81fca8c18b11@-1.1#2  -1.1  lenient: stated 30250000000 USD, reference 30800000000 USD, tolerance 500000000 USD, difference 5.5e+08 USD   row receipt 25d18b9ffeb2
+  line 2499 82311c274e91@-1.1#0  -1.1  lenient: stated 689093 count, reference 705593 count, tolerance 15000 count, difference 16500 count   row receipt 1e80352675ea
+  line 2500 82311c274e91@-1.1#1  -1.1  lenient: stated 689093 count, reference 705593 count, tolerance 15000 count, difference 16500 count   row receipt da4c179b7080
+  line 2501 82311c274e91@-1.1#2  -1.1  lenient: stated 689093 count, reference 705593 count, tolerance 15000 count, difference 16500 count   row receipt 3f63c67cbb6e
+  line 2508 8d5463b6a76f@-1.1#0  -1.1  lenient: stated 8305624 count, reference 8470624 count, tolerance 150000 count, difference 165000 count   row receipt 41a0c9e6b736
+  line 2526 ac6dd3f56310@-1.1#0  -1.1  lenient: stated 952000 USD, reference 1007000 USD, tolerance 50000 USD, difference 55000 USD   row receipt 499b76e554c6
+  line 2527 ac6dd3f56310@-1.1#1  -1.1  lenient: stated 952000 USD, reference 1007000 USD, tolerance 50000 USD, difference 55000 USD   row receipt e92613ea5141
+  line 2528 ac6dd3f56310@-1.1#2  -1.1  lenient: stated 952000 USD, reference 1007000 USD, tolerance 50000 USD, difference 55000 USD   row receipt 3965f1382fbb
+  line 2535 b58db5c114f7@-1.1#0  -1.1  lenient: stated 74.23 USD, reference 77.53 USD, tolerance 3 USD, difference 3.3 USD   row receipt 593a1f0136ab
+  line 2536 b58db5c114f7@-1.1#1  -1.1  lenient: stated 74.23 USD, reference 77.53 USD, tolerance 3 USD, difference 3.3 USD   row receipt 55c6dd1276b0
+  line 2541 ba48f4e13a23@-1.1#0  -1.1  lenient: stated 12.59 USD, reference 13.14 USD, tolerance 0.5 USD, difference 0.55 USD   row receipt 350094e7a669
+  line 2542 ba48f4e13a23@-1.1#1  -1.1  lenient: stated 12.59 USD, reference 13.14 USD, tolerance 0.5 USD, difference 0.55 USD   row receipt 18f8df7c3505
+  line 2543 ba48f4e13a23@-1.1#2  -1.1  lenient: stated 12.59 USD, reference 13.14 USD, tolerance 0.5 USD, difference 0.55 USD   row receipt 50e05b41dac3
+  line 2556 cf234fad4701@-1.1#0  -1.1  lenient: stated 8.14 USD, reference 8.69 USD, tolerance 0.5 USD, difference 0.55 USD   row receipt 3131a37900fa
+  line 2557 cf234fad4701@-1.1#1  -1.1  lenient: stated 8.14 USD, reference 8.69 USD, tolerance 0.5 USD, difference 0.55 USD   row receipt 28edb8e3be49
+  line 2558 cf234fad4701@-1.1#2  -1.1  lenient: stated 8.14 USD, reference 8.69 USD, tolerance 0.5 USD, difference 0.55 USD   row receipt 6d6e76b77528
+  line 2565 d464b9f734a1@-1.1#0  -1.1  lenient: stated 2667500 USD, reference 2750000 USD, tolerance 75000 USD, difference 82500 USD   row receipt bdd8d90da9a5
+  line 2566 d464b9f734a1@-1.1#1  -1.1  lenient: stated 2667500 USD, reference 2750000 USD, tolerance 75000 USD, difference 82500 USD   row receipt a717a4bb75e1
+  line 2567 d464b9f734a1@-1.1#2  -1.1  lenient: stated 2667500 USD, reference 2750000 USD, tolerance 75000 USD, difference 82500 USD   row receipt 3712e86f91a6
+  line 2568 dd484d8a939a@-1.1#0  -1.1  lenient: stated 0.45 percent, reference 1 percent, tolerance 0.5 percent, difference 0.55 percent   row receipt 1ba30f2f3274
+  line 2569 dd484d8a939a@-1.1#1  -1.1  lenient: stated 0.45 percent, reference 1 percent, tolerance 0.5 percent, difference 0.55 percent   row receipt c03e2765b56b
+  line 2570 dd484d8a939a@-1.1#2  -1.1  lenient: stated 0.45 percent, reference 1 percent, tolerance 0.5 percent, difference 0.55 percent   row receipt 31c2df54f752
+  line 2571 df1f99e42a3a@-1.1#0  -1.1  lenient: stated 2702000 USD, reference 2757000 USD, tolerance 50000 USD, difference 55000 USD   row receipt b0e3a6cb2315
+  line 2572 df1f99e42a3a@-1.1#1  -1.1  lenient: stated 2702000 USD, reference 2757000 USD, tolerance 50000 USD, difference 55000 USD   row receipt 120bdc7b33eb
+  line 2573 df1f99e42a3a@-1.1#2  -1.1  lenient: stated 2702000 USD, reference 2757000 USD, tolerance 50000 USD, difference 55000 USD   row receipt 84b636548d5d
+  line 2577 ed5343d2fceb@-1.1#0  -1.1  lenient: stated 91.5 USD, reference 97 USD, tolerance 5 USD, difference 5.5 USD   row receipt c3de87239c05
+  line 2578 ed5343d2fceb@-1.1#1  -1.1  lenient: stated 91.5 USD, reference 97 USD, tolerance 5 USD, difference 5.5 USD   row receipt 568aa4c5dc87
+  line 2579 ed5343d2fceb@-1.1#2  -1.1  lenient: stated 91.5 USD, reference 97 USD, tolerance 5 USD, difference 5.5 USD   row receipt 3874c4a1db83
+  line 2586 fb353a867903@-1.1#0  -1.1  lenient: stated 206000 USD, reference 228000 USD, tolerance 20000 USD, difference 22000 USD   row receipt 328ee2e21e32
+  line 2587 fb353a867903@-1.1#1  -1.1  lenient: stated 206000 USD, reference 228000 USD, tolerance 20000 USD, difference 22000 USD   row receipt 81387bba4a88
+  line 2588 fb353a867903@-1.1#2  -1.1  lenient: stated 206000 USD, reference 228000 USD, tolerance 20000 USD, difference 22000 USD   row receipt 85eca492f06b
+  group +0.5: 222 right, 0 lenient, 6 strict of 228 decided
+  group +0.5:report: 207 right, 0 lenient, 0 strict of 207 decided
+  group +0.9: 216 right, 0 lenient, 12 strict of 228 decided
+  group +0.9u: 139 right, 0 lenient, 5 strict of 144 decided
+  group +1.1: 202 right, 26 lenient, 0 strict of 228 decided
+  group +1.1:report: 55 right, 14 lenient, 0 strict of 69 decided
+  group +1.1u: 122 right, 22 lenient, 0 strict of 144 decided
+  group +1.5: 223 right, 5 lenient, 0 strict of 228 decided
+  group +2: 225 right, 3 lenient, 0 strict of 228 decided
+  group +2:note: 227 right, 1 lenient, 0 strict of 228 decided
+  group +2:report: 202 right, 5 lenient, 0 strict of 207 decided
+  group -0.9: 211 right, 0 lenient, 17 strict of 228 decided
+  group -1.1: 165 right, 63 lenient, 0 strict of 228 decided
+  group 0: 228 right, 0 lenient, 0 strict of 228 decided
+  group far: 228 right, 0 lenient, 0 strict of 228 decided
+by item (an item is wrong if any of its rows is; 95% interval treats items as independent):
+  +0.5: 2 of 76 items wrong (1% to 9%), 2 on every row; in 1 of 10 clusters (largest cluster 0 of 39, the others 2 of 37)
+  +0.5:report: 0 of 69 items wrong (0% to 5%), 0 on every row; in 0 of 9 clusters (largest cluster 0 of 39, the others 0 of 30)
+  +0.9: 5 of 76 items wrong (3% to 14%), 3 on every row; in 3 of 10 clusters (largest cluster 2 of 39, the others 3 of 37)
+  +0.9u: 2 of 48 items wrong (1% to 14%), 1 on every row; in 1 of 9 clusters (largest cluster 0 of 18, the others 2 of 30)
+  +1.1: 10 of 76 items wrong (7% to 23%), 8 on every row; in 6 of 10 clusters (largest cluster 1 of 39, the others 9 of 37); of 10 accepted, 9 still outside after rounding to the reference's precision, 5 even when rounded toward the reference
+  +1.1:report: 14 of 69 items wrong (12% to 31%), 14 on every row; in 8 of 9 clusters (largest cluster 6 of 39, the others 8 of 30); of 14 accepted, 13 still outside after rounding to the reference's precision, 11 even when rounded toward the reference
+  +1.1u: 8 of 48 items wrong (9% to 30%), 6 on every row; in 5 of 9 clusters (largest cluster 1 of 18, the others 7 of 30); of 8 accepted, 7 still outside after rounding to the reference's precision, 3 even when rounded toward the reference
+  +1.5: 3 of 76 items wrong (1% to 11%), 1 on every row; in 3 of 10 clusters (largest cluster 0 of 39, the others 3 of 37); of 3 accepted, 3 still outside after rounding to the reference's precision, 2 even when rounded toward the reference
+  +2: 1 of 76 items wrong (0% to 7%), 1 on every row; in 1 of 10 clusters (largest cluster 0 of 39, the others 1 of 37); of 1 accepted, 1 still outside after rounding to the reference's precision, 1 even when rounded toward the reference
+  +2:note: 1 of 76 items wrong (0% to 7%), 0 on every row; in 1 of 10 clusters (largest cluster 1 of 39, the others 0 of 37); of 1 accepted, 1 still outside after rounding to the reference's precision, 1 even when rounded toward the reference
+  +2:report: 2 of 69 items wrong (1% to 10%), 1 on every row; in 2 of 9 clusters (largest cluster 0 of 39, the others 2 of 30); of 2 accepted, 2 still outside after rounding to the reference's precision, 2 even when rounded toward the reference
+  -0.9: 6 of 76 items wrong (4% to 16%), 5 on every row; in 3 of 10 clusters (largest cluster 2 of 39, the others 4 of 37)
+  -1.1: 22 of 76 items wrong (20% to 40%), 20 on every row; in 6 of 10 clusters (largest cluster 15 of 39, the others 7 of 37); of 22 accepted, 18 still outside after rounding to the reference's precision, 17 even when rounded toward the reference
+  0: 0 of 76 items wrong (0% to 5%), 0 on every row; in 0 of 10 clusters (largest cluster 0 of 39, the others 0 of 37)
+  far: 0 of 76 items wrong (0% to 5%), 0 on every row; in 0 of 10 clusters (largest cluster 0 of 39, the others 0 of 37)
+could not decide: 0 rows
+result:      exit 1: the grader differs from the arithmetic on some rows
+receipt:     sha256 18f0a713b60bbb61fc5cd893d35420bd86940c40410251c9798035090c2df107
+wrote:       studies/judge-check-2026/results/draco_product/grader_receipt_saved.json

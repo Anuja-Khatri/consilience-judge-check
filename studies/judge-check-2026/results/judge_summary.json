@@ -1,0 +1,582 @@
+{
+ "by_variant": {
+  "benchmark_reference": [
+   {
+    "scores": [
+     10,
+     10,
+     10,
+     10,
+     10
+    ],
+    "world": "coulomb_easy"
+   },
+   {
+    "scores": [
+     10,
+     10,
+     10,
+     10,
+     10
+    ],
+    "world": "extra_dimensions"
+   },
+   {
+    "scores": [
+     10,
+     10,
+     10,
+     10,
+     10
+    ],
+    "world": "gravity"
+   },
+   {
+    "scores": [
+     10,
+     10,
+     10,
+     10,
+     10
+    ],
+    "world": "oscillator"
+   },
+   {
+    "scores": [
+     10,
+     10,
+     10,
+     10,
+     10
+    ],
+    "world": "yukawa"
+   }
+  ],
+  "other_world": [
+   {
+    "scores": [
+     3,
+     4,
+     4,
+     4,
+     4
+    ],
+    "world": "coulomb_easy"
+   },
+   {
+    "scores": [
+     1,
+     2,
+     2,
+     1,
+     2
+    ],
+    "world": "extra_dimensions"
+   },
+   {
+    "scores": [
+     4,
+     4,
+     4,
+     4,
+     4
+    ],
+    "world": "gravity"
+   },
+   {
+    "scores": [
+     5,
+     4,
+     5,
+     5,
+     4
+    ],
+    "world": "oscillator"
+   },
+   {
+    "scores": [
+     3,
+     3,
+     3,
+     4,
+     4
+    ],
+    "world": "yukawa"
+   }
+  ],
+  "plain_true": [
+   {
+    "scores": [
+     9,
+     9,
+     8,
+     9,
+     9
+    ],
+    "world": "coulomb_easy"
+   },
+   {
+    "scores": [
+     8,
+     8,
+     7,
+     7,
+     8
+    ],
+    "world": "extra_dimensions"
+   },
+   {
+    "scores": [
+     8,
+     8,
+     8,
+     8,
+     8
+    ],
+    "world": "gravity"
+   },
+   {
+    "scores": [
+     8,
+     8,
+     8,
+     8,
+     7
+    ],
+    "world": "oscillator"
+   },
+   {
+    "scores": [
+     8,
+     7,
+     8,
+     8,
+     8
+    ],
+    "world": "yukawa"
+   }
+  ],
+  "textbook_true": [
+   {
+    "scores": [
+     10,
+     10,
+     10,
+     10,
+     10
+    ],
+    "world": "coulomb_easy"
+   },
+   {
+    "scores": [
+     8,
+     9,
+     8,
+     8,
+     8
+    ],
+    "world": "extra_dimensions"
+   },
+   {
+    "scores": [
+     10,
+     10,
+     10,
+     10,
+     10
+    ],
+    "world": "gravity"
+   },
+   {
+    "scores": [
+     9,
+     9,
+     9,
+     9,
+     9
+    ],
+    "world": "oscillator"
+   },
+   {
+    "scores": [
+     9,
+     10,
+     10,
+     10,
+     10
+    ],
+    "world": "yukawa"
+   }
+  ],
+  "vocabulary_only": [
+   {
+    "scores": [
+     4,
+     4,
+     4,
+     4,
+     5
+    ],
+    "world": "coulomb_easy"
+   },
+   {
+    "scores": [
+     4,
+     3,
+     4,
+     4,
+     4
+    ],
+    "world": "extra_dimensions"
+   },
+   {
+    "scores": [
+     5,
+     5,
+     5,
+     5,
+     5
+    ],
+    "world": "gravity"
+   },
+   {
+    "scores": [
+     5,
+     4,
+     4,
+     5,
+     5
+    ],
+    "world": "oscillator"
+   },
+   {
+    "scores": [
+     5,
+     5,
+     4,
+     5,
+     5
+    ],
+    "world": "yukawa"
+   }
+  ],
+  "wrong_decay": [
+   {
+    "scores": [
+     7,
+     7,
+     7,
+     7,
+     7
+    ],
+    "world": "coulomb_easy"
+   },
+   {
+    "scores": [
+     3,
+     3,
+     3,
+     3,
+     3
+    ],
+    "world": "extra_dimensions"
+   },
+   {
+    "scores": [
+     7,
+     7,
+     7,
+     7,
+     7
+    ],
+    "world": "gravity"
+   },
+   {
+    "scores": [
+     7,
+     7,
+     7,
+     7,
+     7
+    ],
+    "world": "oscillator"
+   },
+   {
+    "scores": [
+     5,
+     4,
+     5,
+     4,
+     4
+    ],
+    "world": "yukawa"
+   }
+  ],
+  "wrong_decay_with_plea": [
+   {
+    "scores": [
+     6,
+     6,
+     6,
+     6,
+     6
+    ],
+    "world": "coulomb_easy"
+   },
+   {
+    "scores": [
+     3,
+     3,
+     3,
+     3,
+     3
+    ],
+    "world": "extra_dimensions"
+   },
+   {
+    "scores": [
+     7,
+     7,
+     7,
+     7,
+     7
+    ],
+    "world": "gravity"
+   },
+   {
+    "scores": [
+     7,
+     7,
+     8,
+     7,
+     7
+    ],
+    "world": "oscillator"
+   },
+   {
+    "scores": [
+     5,
+     5,
+     5,
+     5,
+     5
+    ],
+    "world": "yukawa"
+   }
+  ],
+  "wrong_parameter": [
+   {
+    "scores": [
+     6,
+     6,
+     6,
+     6,
+     5
+    ],
+    "world": "extra_dimensions"
+   },
+   {
+    "scores": [
+     7,
+     7,
+     7,
+     7,
+     7
+    ],
+    "world": "oscillator"
+   },
+   {
+    "scores": [
+     7,
+     7,
+     7,
+     7,
+     7
+    ],
+    "world": "yukawa"
+   }
+  ],
+  "wrong_roles": [
+   {
+    "scores": [
+     7,
+     7,
+     7,
+     7,
+     7
+    ],
+    "world": "coulomb_easy"
+   },
+   {
+    "scores": [
+     7,
+     7,
+     7,
+     7,
+     7
+    ],
+    "world": "extra_dimensions"
+   },
+   {
+    "scores": [
+     7,
+     7,
+     7,
+     7,
+     7
+    ],
+    "world": "gravity"
+   },
+   {
+    "scores": [
+     7,
+     7,
+     7,
+     7,
+     7
+    ],
+    "world": "oscillator"
+   },
+   {
+    "scores": [
+     7,
+     7,
+     7,
+     7,
+     7
+    ],
+    "world": "yukawa"
+   }
+  ],
+  "wrong_sign": [
+   {
+    "scores": [
+     3,
+     3,
+     4,
+     4,
+     3
+    ],
+    "world": "coulomb_easy"
+   },
+   {
+    "scores": [
+     7,
+     8,
+     7,
+     7,
+     7
+    ],
+    "world": "extra_dimensions"
+   },
+   {
+    "scores": [
+     4,
+     5,
+     6,
+     5,
+     5
+    ],
+    "world": "gravity"
+   },
+   {
+    "scores": [
+     7,
+     7,
+     7,
+     7,
+     7
+    ],
+    "world": "oscillator"
+   },
+   {
+    "scores": [
+     7,
+     7,
+     7,
+     7,
+     7
+    ],
+    "world": "yukawa"
+   }
+  ],
+  "wrong_time": [
+   {
+    "scores": [
+     7,
+     7,
+     7,
+     7,
+     7
+    ],
+    "world": "coulomb_easy"
+   },
+   {
+    "scores": [
+     7,
+     7,
+     7,
+     7,
+     7
+    ],
+    "world": "extra_dimensions"
+   },
+   {
+    "scores": [
+     8,
+     8,
+     8,
+     8,
+     8
+    ],
+    "world": "gravity"
+   },
+   {
+    "scores": [
+     4,
+     4,
+     4,
+     4,
+     4
+    ],
+    "world": "oscillator"
+   },
+   {
+    "scores": [
+     8,
+     8,
+     8,
+     8,
+     8
+    ],
+    "world": "yukawa"
+   }
+  ]
+ },
+ "calls": 265,
+ "failed_calls": 0,
+ "pass_mark_8_code": {
+  "right_calls": 75,
+  "right_calls_failing": 4,
+  "texts_straddling_the_mark": 5,
+  "wrong_calls": 190,
+  "wrong_calls_passing": 12,
+  "wrong_texts": 38,
+  "wrong_texts_passing_at_least_once": 4
+ },
+ "pass_mark_9_paper": {
+  "right_calls": 75,
+  "right_calls_failing": 25,
+  "texts_straddling_the_mark": 2,
+  "wrong_calls": 190,
+  "wrong_calls_passing": 0,
+  "wrong_texts": 38,
+  "wrong_texts_passing_at_least_once": 0
+ },
+ "score_range_across_repeats": {
+  "max": 2,
+  "median": 0,
+  "texts_with_any_change": 20
+ },
+ "texts": 53
+}

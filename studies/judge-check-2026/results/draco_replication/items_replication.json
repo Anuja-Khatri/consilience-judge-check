@@ -1,0 +1,2385 @@
+[
+ {
+  "item_id": "00c8dc0cd995",
+  "task_id": "3a8db70a-d906-4bde-bf87-c0c74504409a",
+  "requirement": "States September 30, 2025 weighted-average interest rate as 5.31% including swap effects (within +/- 0.1%)",
+  "responses": {
+   "below_outside": {
+    "text": "September 30, 2025 weighted-average interest rate was 5.20% including swap effects.",
+    "value": 5.2,
+    "expected": "UNMET",
+    "in_report": false
+   },
+   "below_inside": {
+    "text": "September 30, 2025 weighted-average interest rate was 5.22% including swap effects.",
+    "value": 5.22,
+    "expected": "MET",
+    "in_report": false
+   },
+   "above_150": {
+    "text": "September 30, 2025 weighted-average interest rate was 5.46% including swap effects.",
+    "value": 5.46,
+    "expected": "UNMET",
+    "in_report": false
+   },
+   "report_near_outside": {
+    "text": "September 30, 2025 weighted-average interest rate was 5.42% including swap effects.",
+    "value": 5.42,
+    "expected": "UNMET",
+    "in_report": true,
+    "response_sha256": "0bfd3fdeb156b50e99f37cee24689c0802d6b0469772738083f86fe176285b81"
+   }
+  }
+ },
+ {
+  "item_id": "05269a462a95",
+  "task_id": "342b15b8-0ae1-43ce-9ebe-c7318179f156",
+  "requirement": "States Q3 2024 Cadisegliatin R&D expense as $1,524k (within +/- $100k)",
+  "responses": {
+   "below_outside": {
+    "text": "Q3 2024 Cadisegliatin R&D expense was $1,414k.",
+    "value": 1414000.0,
+    "expected": "UNMET",
+    "in_report": false
+   },
+   "below_inside": {
+    "text": "Q3 2024 Cadisegliatin R&D expense was $1,434k.",
+    "value": 1434000.0,
+    "expected": "MET",
+    "in_report": false
+   },
+   "above_150": {
+    "text": "Q3 2024 Cadisegliatin R&D expense was $1,674k.",
+    "value": 1674000.0,
+    "expected": "UNMET",
+    "in_report": false
+   },
+   "report_near_outside": {
+    "text": "Q3 2024 Cadisegliatin R&D expense was $1,634k.",
+    "value": 1634000.0,
+    "expected": "UNMET",
+    "in_report": true,
+    "response_sha256": "1529a1ee7337c954f051623cf227025e05a0f28cf47adccc5f83ef874d371111"
+   }
+  }
+ },
+ {
+  "item_id": "092ae21e5b04",
+  "task_id": "67dfb8ea-cc84-4fb9-abc2-4794aa20eb44",
+  "requirement": "States factory relocation loss as $190,703 (within +/- $1K)",
+  "responses": {
+   "below_outside": {
+    "text": "Factory relocation loss was $189,603.",
+    "value": 189603.0,
+    "expected": "UNMET",
+    "in_report": false
+   },
+   "below_inside": {
+    "text": "Factory relocation loss was $189,803.",
+    "value": 189803.0,
+    "expected": "MET",
+    "in_report": false
+   },
+   "above_150": {
+    "text": "Factory relocation loss was $192,203.",
+    "value": 192203.0,
+    "expected": "UNMET",
+    "in_report": false
+   },
+   "report_near_outside": {
+    "text": "Factory relocation loss was $191,803.",
+    "value": 191803.0,
+    "expected": "UNMET",
+    "in_report": true,
+    "response_sha256": "ac83d6e888b1a4849417d3a586b4acd7012ed780d94cbb75ad377b8fbc368e3e"
+   }
+  }
+ },
+ {
+  "item_id": "0a8a11cb9589",
+  "task_id": "97378684-875a-4a7d-ad19-d7d77942f131",
+  "requirement": "States August 2024 debt repayment of $10,000 thousand (within +/- $100k)",
+  "responses": {
+   "below_outside": {
+    "text": "August 2024 debt repayment of $9,890 thousand.",
+    "value": 9890000.0,
+    "expected": "UNMET",
+    "in_report": false
+   },
+   "below_inside": {
+    "text": "August 2024 debt repayment of $9,910 thousand.",
+    "value": 9910000.0,
+    "expected": "MET",
+    "in_report": false
+   },
+   "above_150": {
+    "text": "August 2024 debt repayment of $10,150 thousand.",
+    "value": 10150000.0,
+    "expected": "UNMET",
+    "in_report": false
+   }
+  }
+ },
+ {
+  "item_id": "1f890cf364e0",
+  "task_id": "bea85f62-a722-48a9-8ece-fbfb62653997",
+  "requirement": "States MSFT FY25 Q1 revenue as $65.6B (within +/- $0.5B)",
+  "responses": {
+   "below_outside": {
+    "text": "MSFT FY25 Q1 revenue was $65.05B.",
+    "value": 65050000000.0,
+    "expected": "UNMET",
+    "in_report": false
+   },
+   "below_inside": {
+    "text": "MSFT FY25 Q1 revenue was $65.15B.",
+    "value": 65150000000.0,
+    "expected": "MET",
+    "in_report": false
+   },
+   "above_150": {
+    "text": "MSFT FY25 Q1 revenue was $66.35B.",
+    "value": 66350000000.0,
+    "expected": "UNMET",
+    "in_report": false
+   },
+   "report_near_outside": {
+    "text": "MSFT FY25 Q1 revenue was $66.15B.",
+    "value": 66150000000.0,
+    "expected": "UNMET",
+    "in_report": true,
+    "response_sha256": "42229f1023fed77e58d29113e05957b88190cbd47af5f66b2ae477dc122a865f"
+   }
+  }
+ },
+ {
+  "item_id": "21c6094c2376",
+  "task_id": "2aac5ef3-f127-4582-a8a6-8f02bda5681e",
+  "requirement": "States H1 2025 separation costs as $64M in Unallocated Corporate Costs (within +/- $2M)",
+  "responses": {
+   "below_outside": {
+    "text": "H1 2025 separation costs was $61.8M in Unallocated Corporate Costs.",
+    "value": 61800000.0,
+    "expected": "UNMET",
+    "in_report": false
+   },
+   "below_inside": {
+    "text": "H1 2025 separation costs was $62.2M in Unallocated Corporate Costs.",
+    "value": 62200000.0,
+    "expected": "MET",
+    "in_report": false
+   },
+   "above_150": {
+    "text": "H1 2025 separation costs was $67M in Unallocated Corporate Costs.",
+    "value": 67000000.0,
+    "expected": "UNMET",
+    "in_report": false
+   },
+   "report_near_outside": {
+    "text": "H1 2025 separation costs was $66.2M in Unallocated Corporate Costs.",
+    "value": 66200000.0,
+    "expected": "UNMET",
+    "in_report": true,
+    "response_sha256": "580f71bdcdf8cf81ccfd610cbe1684aa66b360e74fd7c7586cb8e8f8207f5f42"
+   }
+  }
+ },
+ {
+  "item_id": "23da16356654",
+  "task_id": "342b15b8-0ae1-43ce-9ebe-c7318179f156",
+  "requirement": "States Q3 2025 Cadisegliatin R&D expense as $3,993k (within +/- $100k)",
+  "responses": {
+   "below_outside": {
+    "text": "Q3 2025 Cadisegliatin R&D expense was $3,883k.",
+    "value": 3883000.0,
+    "expected": "UNMET",
+    "in_report": false
+   },
+   "below_inside": {
+    "text": "Q3 2025 Cadisegliatin R&D expense was $3,903k.",
+    "value": 3903000.0,
+    "expected": "MET",
+    "in_report": false
+   },
+   "above_150": {
+    "text": "Q3 2025 Cadisegliatin R&D expense was $4,143k.",
+    "value": 4143000.0,
+    "expected": "UNMET",
+    "in_report": false
+   },
+   "report_near_outside": {
+    "text": "Q3 2025 Cadisegliatin R&D expense was $4,103k.",
+    "value": 4103000.0,
+    "expected": "UNMET",
+    "in_report": true,
+    "response_sha256": "22e3996d5a901b7fa02662fa51c90873e779ec8ea3b9fc5e28a7fb218bbc4073"
+   }
+  }
+ },
+ {
+  "item_id": "2c86fbbf812c",
+  "task_id": "3a8db70a-d906-4bde-bf87-c0c74504409a",
+  "requirement": "States Q2 2023 total interest expense as $15,567 thousand (within +/- $100k)",
+  "responses": {
+   "below_outside": {
+    "text": "Q2 2023 total interest expense was $15,457 thousand.",
+    "value": 15457000.0,
+    "expected": "UNMET",
+    "in_report": false
+   },
+   "below_inside": {
+    "text": "Q2 2023 total interest expense was $15,477 thousand.",
+    "value": 15477000.0,
+    "expected": "MET",
+    "in_report": false
+   },
+   "above_150": {
+    "text": "Q2 2023 total interest expense was $15,717 thousand.",
+    "value": 15717000.0,
+    "expected": "UNMET",
+    "in_report": false
+   },
+   "report_near_outside": {
+    "text": "Q2 2023 total interest expense was $15,677 thousand.",
+    "value": 15677000.0,
+    "expected": "UNMET",
+    "in_report": true,
+    "response_sha256": "a8079501bbb8e76be1d37ee75f6b7e4e5ec06cce9f3d4a4f0431b38a2ec7f129"
+   }
+  }
+ },
+ {
+  "item_id": "2d2beb3aa874",
+  "task_id": "342b15b8-0ae1-43ce-9ebe-c7318179f156",
+  "requirement": "States Q3 2024 total R&D expense as $3,224k (within +/- $100k)",
+  "responses": {
+   "below_outside": {
+    "text": "Q3 2024 total R&D expense was $3,114k.",
+    "value": 3114000.0,
+    "expected": "UNMET",
+    "in_report": false
+   },
+   "below_inside": {
+    "text": "Q3 2024 total R&D expense was $3,134k.",
+    "value": 3134000.0,
+    "expected": "MET",
+    "in_report": false
+   },
+   "above_150": {
+    "text": "Q3 2024 total R&D expense was $3,374k.",
+    "value": 3374000.0,
+    "expected": "UNMET",
+    "in_report": false
+   },
+   "report_near_outside": {
+    "text": "Q3 2024 total R&D expense was $3,334k.",
+    "value": 3334000.0,
+    "expected": "UNMET",
+    "in_report": true,
+    "response_sha256": "4e175216b882ec628f5b924c2075dddbb9461450c5951c103bdc88d2119086f7"
+   }
+  }
+ },
+ {
+  "item_id": "2db0a1d95356",
+  "task_id": "342b15b8-0ae1-43ce-9ebe-c7318179f156",
+  "requirement": "States total warrants at 9/30/2025 as 13,714,356 shares (within +/- 200,000)",
+  "responses": {
+   "below_outside": {
+    "text": "Total warrants at 9/30/2025 was 13,494,356 shares.",
+    "value": 13494356.0,
+    "expected": "UNMET",
+    "in_report": false
+   },
+   "below_inside": {
+    "text": "Total warrants at 9/30/2025 was 13,534,356 shares.",
+    "value": 13534356.0,
+    "expected": "MET",
+    "in_report": false
+   },
+   "above_150": {
+    "text": "Total warrants at 9/30/2025 was 14,014,356 shares.",
+    "value": 14014356.0,
+    "expected": "UNMET",
+    "in_report": false
+   },
+   "report_near_outside": {
+    "text": "Total warrants at 9/30/2025 was 13,934,356 shares.",
+    "value": 13934356.0,
+    "expected": "UNMET",
+    "in_report": true,
+    "response_sha256": "90e0e068087f074366eb71656bda7b792edbafb2a9dd87f247a18a1116c62016"
+   }
+  }
+ },
+ {
+  "item_id": "354c41550164",
+  "task_id": "342b15b8-0ae1-43ce-9ebe-c7318179f156",
+  "requirement": "States 2024 R&D SBC component as $742k (within +/- $40k)",
+  "responses": {
+   "below_outside": {
+    "text": "2024 R&D SBC component was $698k.",
+    "value": 698000.0,
+    "expected": "UNMET",
+    "in_report": false
+   },
+   "below_inside": {
+    "text": "2024 R&D SBC component was $706k.",
+    "value": 706000.0,
+    "expected": "MET",
+    "in_report": false
+   },
+   "above_150": {
+    "text": "2024 R&D SBC component was $802k.",
+    "value": 802000.0,
+    "expected": "UNMET",
+    "in_report": false
+   },
+   "report_near_outside": {
+    "text": "2024 R&D SBC component was $786k.",
+    "value": 786000.0,
+    "expected": "UNMET",
+    "in_report": true,
+    "response_sha256": "77ff1665c8fa6845f67b2f28022d0dceb1263fcddc2dd0e0b8df4d160640cf78"
+   }
+  }
+ },
+ {
+  "item_id": "37b3057993c7",
+  "task_id": "342b15b8-0ae1-43ce-9ebe-c7318179f156",
+  "requirement": "States February 2024 issued 464,377 common shares (within +/- 15,000)",
+  "responses": {
+   "below_outside": {
+    "text": "February 2024 issued 447,877 common shares.",
+    "value": 447877.0,
+    "expected": "UNMET",
+    "in_report": false
+   },
+   "below_inside": {
+    "text": "February 2024 issued 450,877 common shares.",
+    "value": 450877.0,
+    "expected": "MET",
+    "in_report": false
+   },
+   "above_150": {
+    "text": "February 2024 issued 486,877 common shares.",
+    "value": 486877.0,
+    "expected": "UNMET",
+    "in_report": false
+   },
+   "report_near_outside": {
+    "text": "February 2024 issued 480,877 common shares.",
+    "value": 480877.0,
+    "expected": "UNMET",
+    "in_report": true,
+    "response_sha256": "66a38dbfe13bb4a7e7c3096f0931bcd9b615c567342650d2d4a5d14f8e240dea"
+   }
+  }
+ },
+ {
+  "item_id": "393e0b478c86",
+  "task_id": "342b15b8-0ae1-43ce-9ebe-c7318179f156",
+  "requirement": "States September 2025 common share issuance price as $15.265 (within +/- $0.02)",
+  "responses": {
+   "below_outside": {
+    "text": "September 2025 common share issuance price was $15.243.",
+    "value": 15.243,
+    "expected": "UNMET",
+    "in_report": false
+   },
+   "below_inside": {
+    "text": "September 2025 common share issuance price was $15.247.",
+    "value": 15.247,
+    "expected": "MET",
+    "in_report": false
+   },
+   "above_150": {
+    "text": "September 2025 common share issuance price was $15.295.",
+    "value": 15.295,
+    "expected": "UNMET",
+    "in_report": false
+   },
+   "report_near_outside": {
+    "text": "September 2025 common share issuance price was $15.287.",
+    "value": 15.287,
+    "expected": "UNMET",
+    "in_report": true,
+    "response_sha256": "6c797023e32a8bd900a2b2a8de969e8533ed64cac149c5b7256ca2af61a7d394"
+   }
+  }
+ },
+ {
+  "item_id": "39cc98efe8b7",
+  "task_id": "67dfb8ea-cc84-4fb9-abc2-4794aa20eb44",
+  "requirement": "States Q1 2023 total sales as $2,345,541 (within +/- $10K)",
+  "responses": {
+   "below_outside": {
+    "text": "Q1 2023 total sales was $2,334,541.",
+    "value": 2334541.0,
+    "expected": "UNMET",
+    "in_report": false
+   },
+   "below_inside": {
+    "text": "Q1 2023 total sales was $2,336,541.",
+    "value": 2336541.0,
+    "expected": "MET",
+    "in_report": false
+   },
+   "above_150": {
+    "text": "Q1 2023 total sales was $2,360,541.",
+    "value": 2360541.0,
+    "expected": "UNMET",
+    "in_report": false
+   },
+   "report_near_outside": {
+    "text": "Q1 2023 total sales was $2,356,541.",
+    "value": 2356541.0,
+    "expected": "UNMET",
+    "in_report": true,
+    "response_sha256": "f8605e2e7e123266d3dfe052e34442f644ca1be27e0042f376e950f8f3500de7"
+   }
+  }
+ },
+ {
+  "item_id": "3a980fb88687",
+  "task_id": "67dfb8ea-cc84-4fb9-abc2-4794aa20eb44",
+  "requirement": "States Q1 2023 direct supply revenue as $897,432 (within +/- $10K)",
+  "responses": {
+   "below_outside": {
+    "text": "Q1 2023 direct supply revenue was $886,432.",
+    "value": 886432.0,
+    "expected": "UNMET",
+    "in_report": false
+   },
+   "below_inside": {
+    "text": "Q1 2023 direct supply revenue was $888,432.",
+    "value": 888432.0,
+    "expected": "MET",
+    "in_report": false
+   },
+   "above_150": {
+    "text": "Q1 2023 direct supply revenue was $912,432.",
+    "value": 912432.0,
+    "expected": "UNMET",
+    "in_report": false
+   },
+   "report_near_outside": {
+    "text": "Q1 2023 direct supply revenue was $908,432.",
+    "value": 908432.0,
+    "expected": "UNMET",
+    "in_report": true,
+    "response_sha256": "f8e68d67df8951f19d69781a6084f58caa8e262ea6adddb4f1b950d49f13316e"
+   }
+  }
+ },
+ {
+  "item_id": "3ca4599feecd",
+  "task_id": "ab17484f-fa6e-4e72-a970-e7cd6c5856d3",
+  "requirement": "States Hayes suffered $40,000 loss on Seattle home sale (within +/- $5,000)",
+  "responses": {
+   "below_outside": {
+    "text": "Hayes suffered $34,500 loss on Seattle home sale.",
+    "value": 34500.0,
+    "expected": "UNMET",
+    "in_report": false
+   },
+   "below_inside": {
+    "text": "Hayes suffered $35,500 loss on Seattle home sale.",
+    "value": 35500.0,
+    "expected": "MET",
+    "in_report": false
+   },
+   "above_150": {
+    "text": "Hayes suffered $47,500 loss on Seattle home sale.",
+    "value": 47500.0,
+    "expected": "UNMET",
+    "in_report": false
+   }
+  }
+ },
+ {
+  "item_id": "415e87a829c7",
+  "task_id": "342b15b8-0ae1-43ce-9ebe-c7318179f156",
+  "requirement": "States 2023 G&A SBC component as $1,153k (within +/- $50k)",
+  "responses": {
+   "below_outside": {
+    "text": "2023 G&A SBC component was $1,098k.",
+    "value": 1098000.0,
+    "expected": "UNMET",
+    "in_report": false
+   },
+   "below_inside": {
+    "text": "2023 G&A SBC component was $1,108k.",
+    "value": 1108000.0,
+    "expected": "MET",
+    "in_report": false
+   },
+   "above_150": {
+    "text": "2023 G&A SBC component was $1,228k.",
+    "value": 1228000.0,
+    "expected": "UNMET",
+    "in_report": false
+   },
+   "report_near_outside": {
+    "text": "2023 G&A SBC component was $1,208k.",
+    "value": 1208000.0,
+    "expected": "UNMET",
+    "in_report": true,
+    "response_sha256": "9f9e680b4b8ad5f3c4aad739febdf86de2c632daaaf38d6a2617068a1bd961ff"
+   }
+  }
+ },
+ {
+  "item_id": "437e2e4ae7d7",
+  "task_id": "342b15b8-0ae1-43ce-9ebe-c7318179f156",
+  "requirement": "States potentially dilutive securities at 9/30/2025 as 6,308,952 shares (within +/- 200k)",
+  "responses": {
+   "below_outside": {
+    "text": "Potentially dilutive securities at 9/30/2025 was 6,088,952 shares.",
+    "value": 6088952.0,
+    "expected": "UNMET",
+    "in_report": false
+   },
+   "below_inside": {
+    "text": "Potentially dilutive securities at 9/30/2025 was 6,128,952 shares.",
+    "value": 6128952.0,
+    "expected": "MET",
+    "in_report": false
+   },
+   "above_150": {
+    "text": "Potentially dilutive securities at 9/30/2025 was 6,608,952 shares.",
+    "value": 6608952.0,
+    "expected": "UNMET",
+    "in_report": false
+   },
+   "report_near_outside": {
+    "text": "Potentially dilutive securities at 9/30/2025 was 6,528,952 shares.",
+    "value": 6528952.0,
+    "expected": "UNMET",
+    "in_report": true,
+    "response_sha256": "f5d45d5256f3240541c5dea0b0831487fc509bdf48a0b10fe8ae4b32e9798a54"
+   }
+  }
+ },
+ {
+  "item_id": "4cd7c1698130",
+  "task_id": "3a8db70a-d906-4bde-bf87-c0c74504409a",
+  "requirement": "States beginning cash as $128,789 thousand (within +/- $500k)",
+  "responses": {
+   "below_outside": {
+    "text": "Beginning cash was $128,239 thousand.",
+    "value": 128239000.0,
+    "expected": "UNMET",
+    "in_report": false
+   },
+   "below_inside": {
+    "text": "Beginning cash was $128,339 thousand.",
+    "value": 128339000.0,
+    "expected": "MET",
+    "in_report": false
+   },
+   "above_150": {
+    "text": "Beginning cash was $129,539 thousand.",
+    "value": 129539000.0,
+    "expected": "UNMET",
+    "in_report": false
+   },
+   "report_near_outside": {
+    "text": "Beginning cash was $129,339 thousand.",
+    "value": 129339000.0,
+    "expected": "UNMET",
+    "in_report": true,
+    "response_sha256": "1f06d1c9307d215e11acd09c81123afd0bdd334e48f4ac15a61faf9bd07f869a"
+   }
+  }
+ },
+ {
+  "item_id": "50cb0200eabe",
+  "task_id": "342b15b8-0ae1-43ce-9ebe-c7318179f156",
+  "requirement": "States September 2025 issued 682,018 common shares (within +/- 15,000)",
+  "responses": {
+   "below_outside": {
+    "text": "September 2025 issued 665,518 common shares.",
+    "value": 665518.0,
+    "expected": "UNMET",
+    "in_report": false
+   },
+   "below_inside": {
+    "text": "September 2025 issued 668,518 common shares.",
+    "value": 668518.0,
+    "expected": "MET",
+    "in_report": false
+   },
+   "above_150": {
+    "text": "September 2025 issued 704,518 common shares.",
+    "value": 704518.0,
+    "expected": "UNMET",
+    "in_report": false
+   },
+   "report_near_outside": {
+    "text": "September 2025 issued 698,518 common shares.",
+    "value": 698518.0,
+    "expected": "UNMET",
+    "in_report": true,
+    "response_sha256": "8d990b1c315445a58e51430631e81a40630e4bc662d30b04eae2d36b56352aa8"
+   }
+  }
+ },
+ {
+  "item_id": "50e39130ac61",
+  "task_id": "342b15b8-0ae1-43ce-9ebe-c7318179f156",
+  "requirement": "States 2023 total stock-based compensation as $1,578k (within +/- $50k)",
+  "responses": {
+   "below_outside": {
+    "text": "2023 total stock-based compensation was $1,523k.",
+    "value": 1523000.0,
+    "expected": "UNMET",
+    "in_report": false
+   },
+   "below_inside": {
+    "text": "2023 total stock-based compensation was $1,533k.",
+    "value": 1533000.0,
+    "expected": "MET",
+    "in_report": false
+   },
+   "above_150": {
+    "text": "2023 total stock-based compensation was $1,653k.",
+    "value": 1653000.0,
+    "expected": "UNMET",
+    "in_report": false
+   },
+   "report_near_outside": {
+    "text": "2023 total stock-based compensation was $1,633k.",
+    "value": 1633000.0,
+    "expected": "UNMET",
+    "in_report": true,
+    "response_sha256": "02d1163a850bac95ef1955f0275fdfabaf0b7016f499f9d60bfbfa82465ed28d"
+   }
+  }
+ },
+ {
+  "item_id": "53ba91cf655a",
+  "task_id": "342b15b8-0ae1-43ce-9ebe-c7318179f156",
+  "requirement": "States 2023 R&D SBC component as $425k (within +/- $30k)",
+  "responses": {
+   "below_outside": {
+    "text": "2023 R&D SBC component was $392k.",
+    "value": 392000.0,
+    "expected": "UNMET",
+    "in_report": false
+   },
+   "below_inside": {
+    "text": "2023 R&D SBC component was $398k.",
+    "value": 398000.0,
+    "expected": "MET",
+    "in_report": false
+   },
+   "above_150": {
+    "text": "2023 R&D SBC component was $470k.",
+    "value": 470000.0,
+    "expected": "UNMET",
+    "in_report": false
+   },
+   "report_near_outside": {
+    "text": "2023 R&D SBC component was $458k.",
+    "value": 458000.0,
+    "expected": "UNMET",
+    "in_report": true,
+    "response_sha256": "826d1caf802b259518430379bbd44ebb7eec40c5dc0943d2e41cf8d0492e8ec5"
+   }
+  }
+ },
+ {
+  "item_id": "5475bfc18d3a",
+  "task_id": "342b15b8-0ae1-43ce-9ebe-c7318179f156",
+  "requirement": "States 2025 weighted average grant exercise price as $19.67 (within +/- $0.50)",
+  "responses": {
+   "below_outside": {
+    "text": "2025 weighted average grant exercise price was $19.12.",
+    "value": 19.12,
+    "expected": "UNMET",
+    "in_report": false
+   },
+   "below_inside": {
+    "text": "2025 weighted average grant exercise price was $19.22.",
+    "value": 19.22,
+    "expected": "MET",
+    "in_report": false
+   },
+   "above_150": {
+    "text": "2025 weighted average grant exercise price was $20.42.",
+    "value": 20.42,
+    "expected": "UNMET",
+    "in_report": false
+   },
+   "report_near_outside": {
+    "text": "2025 weighted average grant exercise price was $20.22.",
+    "value": 20.22,
+    "expected": "UNMET",
+    "in_report": true,
+    "response_sha256": "8872256c0de5ca5c25b39918dab7f96efa333b438a3b95d7991334f0e5336fe1"
+   }
+  }
+ },
+ {
+  "item_id": "551c17407ad0",
+  "task_id": "342b15b8-0ae1-43ce-9ebe-c7318179f156",
+  "requirement": "States 9-month 2024 SBC as $1,932k (within +/- $75k)",
+  "responses": {
+   "below_outside": {
+    "text": "9-month 2024 SBC was $1,849.5k.",
+    "value": 1849500.0,
+    "expected": "UNMET",
+    "in_report": false
+   },
+   "below_inside": {
+    "text": "9-month 2024 SBC was $1,864.5k.",
+    "value": 1864500.0,
+    "expected": "MET",
+    "in_report": false
+   },
+   "above_150": {
+    "text": "9-month 2024 SBC was $2,044.5k.",
+    "value": 2044500.0,
+    "expected": "UNMET",
+    "in_report": false
+   },
+   "report_near_outside": {
+    "text": "9-month 2024 SBC was $2,014.5k.",
+    "value": 2014500.0,
+    "expected": "UNMET",
+    "in_report": true,
+    "response_sha256": "6c39694609049b4e9b00b7a0079ec082dde3b850ec2f06196a70bdf3af18a7f3"
+   }
+  }
+ },
+ {
+  "item_id": "5562f1c29c67",
+  "task_id": "342b15b8-0ae1-43ce-9ebe-c7318179f156",
+  "requirement": "States pre-funded warrants at 12/31/2024 as 3,970,587 shares (within +/- 100,000)",
+  "responses": {
+   "below_outside": {
+    "text": "Pre-funded warrants at 12/31/2024 was 3,860,587 shares.",
+    "value": 3860587.0,
+    "expected": "UNMET",
+    "in_report": false
+   },
+   "below_inside": {
+    "text": "Pre-funded warrants at 12/31/2024 was 3,880,587 shares.",
+    "value": 3880587.0,
+    "expected": "MET",
+    "in_report": false
+   },
+   "above_150": {
+    "text": "Pre-funded warrants at 12/31/2024 was 4,120,587 shares.",
+    "value": 4120587.0,
+    "expected": "UNMET",
+    "in_report": false
+   },
+   "report_near_outside": {
+    "text": "Pre-funded warrants at 12/31/2024 was 4,080,587 shares.",
+    "value": 4080587.0,
+    "expected": "UNMET",
+    "in_report": true,
+    "response_sha256": "86d88a44784028b9c09c5e3436944e94bca1a2bd56bc5959517ee891e5b2f40a"
+   }
+  }
+ },
+ {
+  "item_id": "5b918267b9d4",
+  "task_id": "342b15b8-0ae1-43ce-9ebe-c7318179f156",
+  "requirement": "States Q3 2025 R&D SBC as $311k (within +/- $20k)",
+  "responses": {
+   "below_outside": {
+    "text": "Q3 2025 R&D SBC was $289k.",
+    "value": 289000.0,
+    "expected": "UNMET",
+    "in_report": false
+   },
+   "below_inside": {
+    "text": "Q3 2025 R&D SBC was $293k.",
+    "value": 293000.0,
+    "expected": "MET",
+    "in_report": false
+   },
+   "above_150": {
+    "text": "Q3 2025 R&D SBC was $341k.",
+    "value": 341000.0,
+    "expected": "UNMET",
+    "in_report": false
+   },
+   "report_near_outside": {
+    "text": "Q3 2025 R&D SBC was $333k.",
+    "value": 333000.0,
+    "expected": "UNMET",
+    "in_report": true,
+    "response_sha256": "7e9c9b06792acd832794d8177193f43d88d4f753ce98b13fc219e16817563741"
+   }
+  }
+ },
+ {
+  "item_id": "6097b4a4aac0",
+  "task_id": "3a8db70a-d906-4bde-bf87-c0c74504409a",
+  "requirement": "States September 30, 2025 unsecured term loans as $1,100,000 thousand (within +/- $5,000k)",
+  "responses": {
+   "below_outside": {
+    "text": "September 30, 2025 unsecured term loans was $1,094,500 thousand.",
+    "value": 1094500000.0,
+    "expected": "UNMET",
+    "in_report": false
+   },
+   "below_inside": {
+    "text": "September 30, 2025 unsecured term loans was $1,095,500 thousand.",
+    "value": 1095500000.0,
+    "expected": "MET",
+    "in_report": false
+   },
+   "above_150": {
+    "text": "September 30, 2025 unsecured term loans was $1,107,500 thousand.",
+    "value": 1107500000.0,
+    "expected": "UNMET",
+    "in_report": false
+   }
+  }
+ },
+ {
+  "item_id": "60e43faaa021",
+  "task_id": "342b15b8-0ae1-43ce-9ebe-c7318179f156",
+  "requirement": "States 2024 G&A SBC component as $2,015k (within +/- $75k)",
+  "responses": {
+   "below_outside": {
+    "text": "2024 G&A SBC component was $1,932.5k.",
+    "value": 1932500.0,
+    "expected": "UNMET",
+    "in_report": false
+   },
+   "below_inside": {
+    "text": "2024 G&A SBC component was $1,947.5k.",
+    "value": 1947500.0,
+    "expected": "MET",
+    "in_report": false
+   },
+   "above_150": {
+    "text": "2024 G&A SBC component was $2,127.5k.",
+    "value": 2127500.0,
+    "expected": "UNMET",
+    "in_report": false
+   },
+   "report_near_outside": {
+    "text": "2024 G&A SBC component was $2,097.5k.",
+    "value": 2097500.0,
+    "expected": "UNMET",
+    "in_report": true,
+    "response_sha256": "38cbc16a999c0b49fecf83bfc25e0ffc1137e1f670687ef373b293d01e5b58f9"
+   }
+  }
+ },
+ {
+  "item_id": "6238a2146890",
+  "task_id": "342b15b8-0ae1-43ce-9ebe-c7318179f156",
+  "requirement": "States Q3 2025 G&A SBC as $696k (within +/- $40k)",
+  "responses": {
+   "below_outside": {
+    "text": "Q3 2025 G&A SBC was $652k.",
+    "value": 652000.0,
+    "expected": "UNMET",
+    "in_report": false
+   },
+   "below_inside": {
+    "text": "Q3 2025 G&A SBC was $660k.",
+    "value": 660000.0,
+    "expected": "MET",
+    "in_report": false
+   },
+   "above_150": {
+    "text": "Q3 2025 G&A SBC was $756k.",
+    "value": 756000.0,
+    "expected": "UNMET",
+    "in_report": false
+   },
+   "report_near_outside": {
+    "text": "Q3 2025 G&A SBC was $740k.",
+    "value": 740000.0,
+    "expected": "UNMET",
+    "in_report": true,
+    "response_sha256": "1ceb3fef177dc24bdf8c0ee79808804d6cc9acc845f08baaf80743d1ef5b70ef"
+   }
+  }
+ },
+ {
+  "item_id": "625b79fdf63e",
+  "task_id": "342b15b8-0ae1-43ce-9ebe-c7318179f156",
+  "requirement": "States Q3 2024 total stock-based compensation as $853k (within +/- $50k)",
+  "responses": {
+   "below_outside": {
+    "text": "Q3 2024 total stock-based compensation was $798k.",
+    "value": 798000.0,
+    "expected": "UNMET",
+    "in_report": false
+   },
+   "below_inside": {
+    "text": "Q3 2024 total stock-based compensation was $808k.",
+    "value": 808000.0,
+    "expected": "MET",
+    "in_report": false
+   },
+   "above_150": {
+    "text": "Q3 2024 total stock-based compensation was $928k.",
+    "value": 928000.0,
+    "expected": "UNMET",
+    "in_report": false
+   },
+   "report_near_outside": {
+    "text": "Q3 2024 total stock-based compensation was $908k.",
+    "value": 908000.0,
+    "expected": "UNMET",
+    "in_report": true,
+    "response_sha256": "6381dd76f76d59f93b8c3d0706bb15fe926d81d883da88bcab2b0a602cbbe03c"
+   }
+  }
+ },
+ {
+  "item_id": "62e2a1251fc0",
+  "task_id": "b3c576e7-dfc6-403f-90e7-53c011884d5c",
+  "requirement": "States exam fee as $93 (within +/- $10)",
+  "responses": {
+   "below_outside": {
+    "text": "Exam fee was $82.",
+    "value": 82.0,
+    "expected": "UNMET",
+    "in_report": false
+   },
+   "below_inside": {
+    "text": "Exam fee was $84.",
+    "value": 84.0,
+    "expected": "MET",
+    "in_report": false
+   },
+   "above_150": {
+    "text": "Exam fee was $108.",
+    "value": 108.0,
+    "expected": "UNMET",
+    "in_report": false
+   },
+   "report_near_outside": {
+    "text": "Exam fee was $104.",
+    "value": 104.0,
+    "expected": "UNMET",
+    "in_report": true,
+    "response_sha256": "20d6bb740269e75c1f4e4e1a8f49e229f63f518d048596d2c182272068b91607"
+   }
+  }
+ },
+ {
+  "item_id": "66f28b01b186",
+  "task_id": "342b15b8-0ae1-43ce-9ebe-c7318179f156",
+  "requirement": "States weighted average exercise price at 12/31/2024 as $35.85 (within +/- $2)",
+  "responses": {
+   "below_outside": {
+    "text": "Weighted average exercise price at 12/31/2024 was $33.65.",
+    "value": 33.65,
+    "expected": "UNMET",
+    "in_report": false
+   },
+   "below_inside": {
+    "text": "Weighted average exercise price at 12/31/2024 was $34.05.",
+    "value": 34.05,
+    "expected": "MET",
+    "in_report": false
+   },
+   "above_150": {
+    "text": "Weighted average exercise price at 12/31/2024 was $38.85.",
+    "value": 38.85,
+    "expected": "UNMET",
+    "in_report": false
+   },
+   "report_near_outside": {
+    "text": "Weighted average exercise price at 12/31/2024 was $38.05.",
+    "value": 38.05,
+    "expected": "UNMET",
+    "in_report": true,
+    "response_sha256": "c2ad8d9fa5c5add65f54069b01538714c503022b118fcc7f087bc1b95a19d587"
+   }
+  }
+ },
+ {
+  "item_id": "67bb49c574c1",
+  "task_id": "97378684-875a-4a7d-ad19-d7d77942f131",
+  "requirement": "States March 2024 equity raise provided $16,183 thousand net proceeds (within +/- $100k)",
+  "responses": {
+   "below_outside": {
+    "text": "March 2024 equity raise provided $16,073 thousand net proceeds.",
+    "value": 16073000.0,
+    "expected": "UNMET",
+    "in_report": false
+   },
+   "below_inside": {
+    "text": "March 2024 equity raise provided $16,093 thousand net proceeds.",
+    "value": 16093000.0,
+    "expected": "MET",
+    "in_report": false
+   },
+   "above_150": {
+    "text": "March 2024 equity raise provided $16,333 thousand net proceeds.",
+    "value": 16333000.0,
+    "expected": "UNMET",
+    "in_report": false
+   },
+   "report_near_outside": {
+    "text": "March 2024 equity raise provided $16,293 thousand net proceeds.",
+    "value": 16293000.0,
+    "expected": "UNMET",
+    "in_report": true,
+    "response_sha256": "6126b3ffbfee0427e1e25eef9ce9f1b64f60b2ea0ae2fcc94b64ccde8ef960d8"
+   }
+  }
+ },
+ {
+  "item_id": "6ac122ee5d82",
+  "task_id": "97378684-875a-4a7d-ad19-d7d77942f131",
+  "requirement": "States beginning cash as $23,140 thousand at January 1, 2024 (within +/- $100k)",
+  "responses": {
+   "below_outside": {
+    "text": "Beginning cash was $23,030 thousand at January 1, 2024.",
+    "value": 23030000.0,
+    "expected": "UNMET",
+    "in_report": false
+   },
+   "below_inside": {
+    "text": "Beginning cash was $23,050 thousand at January 1, 2024.",
+    "value": 23050000.0,
+    "expected": "MET",
+    "in_report": false
+   },
+   "above_150": {
+    "text": "Beginning cash was $23,290 thousand at January 1, 2024.",
+    "value": 23290000.0,
+    "expected": "UNMET",
+    "in_report": false
+   }
+  }
+ },
+ {
+  "item_id": "6adc88325a50",
+  "task_id": "bea85f62-a722-48a9-8ece-fbfb62653997",
+  "requirement": "States NVDA Q2 FY25 revenue as $30.0B (within +/- $0.5B)",
+  "responses": {
+   "below_outside": {
+    "text": "NVDA Q2 FY25 revenue was $29.45B.",
+    "value": 29450000000.0,
+    "expected": "UNMET",
+    "in_report": false
+   },
+   "below_inside": {
+    "text": "NVDA Q2 FY25 revenue was $29.55B.",
+    "value": 29550000000.0,
+    "expected": "MET",
+    "in_report": false
+   },
+   "above_150": {
+    "text": "NVDA Q2 FY25 revenue was $30.75B.",
+    "value": 30750000000.0,
+    "expected": "UNMET",
+    "in_report": false
+   }
+  }
+ },
+ {
+  "item_id": "6e280b343a05",
+  "task_id": "785c8570-6aed-4517-aac2-1d56e16745b7",
+  "requirement": "States 2022 collaboration revenue as $861K (within +/- $50K)",
+  "responses": {
+   "below_outside": {
+    "text": "2022 collaboration revenue was $806K.",
+    "value": 806000.0,
+    "expected": "UNMET",
+    "in_report": false
+   },
+   "below_inside": {
+    "text": "2022 collaboration revenue was $816K.",
+    "value": 816000.0,
+    "expected": "MET",
+    "in_report": false
+   },
+   "above_150": {
+    "text": "2022 collaboration revenue was $936K.",
+    "value": 936000.0,
+    "expected": "UNMET",
+    "in_report": false
+   },
+   "report_near_outside": {
+    "text": "2022 collaboration revenue was $916K.",
+    "value": 916000.0,
+    "expected": "UNMET",
+    "in_report": true,
+    "response_sha256": "a82c786271b29e0cedc2e929abd88c10486309477fc75216c849821ef983bbac"
+   }
+  }
+ },
+ {
+  "item_id": "6e30ebb89755",
+  "task_id": "342b15b8-0ae1-43ce-9ebe-c7318179f156",
+  "requirement": "States September 2025 issued 4,561,714 pre-funded warrants (within +/- 100,000)",
+  "responses": {
+   "below_outside": {
+    "text": "September 2025 issued 4,451,714 pre-funded warrants.",
+    "value": 4451714.0,
+    "expected": "UNMET",
+    "in_report": false
+   },
+   "below_inside": {
+    "text": "September 2025 issued 4,471,714 pre-funded warrants.",
+    "value": 4471714.0,
+    "expected": "MET",
+    "in_report": false
+   },
+   "above_150": {
+    "text": "September 2025 issued 4,711,714 pre-funded warrants.",
+    "value": 4711714.0,
+    "expected": "UNMET",
+    "in_report": false
+   },
+   "report_near_outside": {
+    "text": "September 2025 issued 4,671,714 pre-funded warrants.",
+    "value": 4671714.0,
+    "expected": "UNMET",
+    "in_report": true,
+    "response_sha256": "f76ffe94c8b321e23d744943f7d995a163e0676ad83fa26170c6263a3849030e"
+   }
+  }
+ },
+ {
+  "item_id": "7767dbf98624",
+  "task_id": "342b15b8-0ae1-43ce-9ebe-c7318179f156",
+  "requirement": "States weighted average exercise price at 9/30/2025 as $25.07 (within +/- $2)",
+  "responses": {
+   "below_outside": {
+    "text": "Weighted average exercise price at 9/30/2025 was $22.87.",
+    "value": 22.87,
+    "expected": "UNMET",
+    "in_report": false
+   },
+   "below_inside": {
+    "text": "Weighted average exercise price at 9/30/2025 was $23.27.",
+    "value": 23.27,
+    "expected": "MET",
+    "in_report": false
+   },
+   "above_150": {
+    "text": "Weighted average exercise price at 9/30/2025 was $28.07.",
+    "value": 28.07,
+    "expected": "UNMET",
+    "in_report": false
+   },
+   "report_near_outside": {
+    "text": "Weighted average exercise price at 9/30/2025 was $27.27.",
+    "value": 27.27,
+    "expected": "UNMET",
+    "in_report": true,
+    "response_sha256": "4e0af31c0449f56bac47359c443e8fa15b9d3f41f0048082ea83afa7c4495c57"
+   }
+  }
+ },
+ {
+  "item_id": "7d39b032c4de",
+  "task_id": "3a8db70a-d906-4bde-bf87-c0c74504409a",
+  "requirement": "States June 30, 2024 swap fair value as $3,927 thousand (within +/- $50k)",
+  "responses": {
+   "below_outside": {
+    "text": "June 30, 2024 swap fair value was $3,872 thousand.",
+    "value": 3872000.0,
+    "expected": "UNMET",
+    "in_report": false
+   },
+   "below_inside": {
+    "text": "June 30, 2024 swap fair value was $3,882 thousand.",
+    "value": 3882000.0,
+    "expected": "MET",
+    "in_report": false
+   },
+   "above_150": {
+    "text": "June 30, 2024 swap fair value was $4,002 thousand.",
+    "value": 4002000.0,
+    "expected": "UNMET",
+    "in_report": false
+   },
+   "report_near_outside": {
+    "text": "June 30, 2024 swap fair value was $3,982 thousand.",
+    "value": 3982000.0,
+    "expected": "UNMET",
+    "in_report": true,
+    "response_sha256": "2d3a541c355e3de69aa42495ab3f333d14f5675facbc45e7fe8c75097313e39b"
+   }
+  }
+ },
+ {
+  "item_id": "806277bd8698",
+  "task_id": "3a8db70a-d906-4bde-bf87-c0c74504409a",
+  "requirement": "States Q2 2024 total interest expense as $16,202 thousand (within +/- $100k)",
+  "responses": {
+   "below_outside": {
+    "text": "Q2 2024 total interest expense was $16,092 thousand.",
+    "value": 16092000.0,
+    "expected": "UNMET",
+    "in_report": false
+   },
+   "below_inside": {
+    "text": "Q2 2024 total interest expense was $16,112 thousand.",
+    "value": 16112000.0,
+    "expected": "MET",
+    "in_report": false
+   },
+   "above_150": {
+    "text": "Q2 2024 total interest expense was $16,352 thousand.",
+    "value": 16352000.0,
+    "expected": "UNMET",
+    "in_report": false
+   },
+   "report_near_outside": {
+    "text": "Q2 2024 total interest expense was $16,312 thousand.",
+    "value": 16312000.0,
+    "expected": "UNMET",
+    "in_report": true,
+    "response_sha256": "842a8fac860300fff8a30e98b52113a9331224fb277233c3eb109abc13206b03"
+   }
+  }
+ },
+ {
+  "item_id": "807d85af7918",
+  "task_id": "785c8570-6aed-4517-aac2-1d56e16745b7",
+  "requirement": "States 2023 net cash used in operating activities as $31.505M (within +/- $0.5M)",
+  "responses": {
+   "below_outside": {
+    "text": "2023 net cash used in operating activities was $30.955M.",
+    "value": 30955000.0,
+    "expected": "UNMET",
+    "in_report": false
+   },
+   "below_inside": {
+    "text": "2023 net cash used in operating activities was $31.055M.",
+    "value": 31055000.0,
+    "expected": "MET",
+    "in_report": false
+   },
+   "above_150": {
+    "text": "2023 net cash used in operating activities was $32.255M.",
+    "value": 32255000.0,
+    "expected": "UNMET",
+    "in_report": false
+   },
+   "report_near_outside": {
+    "text": "2023 net cash used in operating activities was $32.055M.",
+    "value": 32055000.0,
+    "expected": "UNMET",
+    "in_report": true,
+    "response_sha256": "317f7ae804c3eb3a26b7f03ce4b832a3b372d6723ee9886d9c945c7b0358cb07"
+   }
+  }
+ },
+ {
+  "item_id": "81b2439bd3ac",
+  "task_id": "342b15b8-0ae1-43ce-9ebe-c7318179f156",
+  "requirement": "States September 2025 pre-funded warrant issuance price as $15.255 (within +/- $0.02)",
+  "responses": {
+   "below_outside": {
+    "text": "September 2025 pre-funded warrant issuance price was $15.233.",
+    "value": 15.233,
+    "expected": "UNMET",
+    "in_report": false
+   },
+   "below_inside": {
+    "text": "September 2025 pre-funded warrant issuance price was $15.237.",
+    "value": 15.237,
+    "expected": "MET",
+    "in_report": false
+   },
+   "above_150": {
+    "text": "September 2025 pre-funded warrant issuance price was $15.285.",
+    "value": 15.285,
+    "expected": "UNMET",
+    "in_report": false
+   },
+   "report_near_outside": {
+    "text": "September 2025 pre-funded warrant issuance price was $15.277.",
+    "value": 15.277,
+    "expected": "UNMET",
+    "in_report": true,
+    "response_sha256": "7a6f87e8ea98075adb13833291eeaec00d6a4e9cb00850c62760a70a750c8af0"
+   }
+  }
+ },
+ {
+  "item_id": "81fca8c18b11",
+  "task_id": "bea85f62-a722-48a9-8ece-fbfb62653997",
+  "requirement": "States NVDA Q3 FY25 Data Center revenue as $30.8B (within +/- $0.5B)",
+  "responses": {
+   "below_outside": {
+    "text": "NVDA Q3 FY25 Data Center revenue was $30.25B.",
+    "value": 30250000000.0,
+    "expected": "UNMET",
+    "in_report": false
+   },
+   "below_inside": {
+    "text": "NVDA Q3 FY25 Data Center revenue was $30.35B.",
+    "value": 30350000000.0,
+    "expected": "MET",
+    "in_report": false
+   },
+   "above_150": {
+    "text": "NVDA Q3 FY25 Data Center revenue was $31.55B.",
+    "value": 31550000000.0,
+    "expected": "UNMET",
+    "in_report": false
+   },
+   "report_near_outside": {
+    "text": "NVDA Q3 FY25 Data Center revenue was $31.35B.",
+    "value": 31350000000.0,
+    "expected": "UNMET",
+    "in_report": true,
+    "response_sha256": "8b68cff5c0599bc59fe9bd491e0cd0c0dd2cc3e4a2dbf682b37c4cce1d9185fd"
+   }
+  }
+ },
+ {
+  "item_id": "82311c274e91",
+  "task_id": "342b15b8-0ae1-43ce-9ebe-c7318179f156",
+  "requirement": "States outstanding options at 12/31/2024 as 705,593 shares (within +/- 15,000)",
+  "responses": {
+   "below_outside": {
+    "text": "Outstanding options at 12/31/2024 was 689,093 shares.",
+    "value": 689093.0,
+    "expected": "UNMET",
+    "in_report": false
+   },
+   "below_inside": {
+    "text": "Outstanding options at 12/31/2024 was 692,093 shares.",
+    "value": 692093.0,
+    "expected": "MET",
+    "in_report": false
+   },
+   "above_150": {
+    "text": "Outstanding options at 12/31/2024 was 728,093 shares.",
+    "value": 728093.0,
+    "expected": "UNMET",
+    "in_report": false
+   },
+   "report_near_outside": {
+    "text": "Outstanding options at 12/31/2024 was 722,093 shares.",
+    "value": 722093.0,
+    "expected": "UNMET",
+    "in_report": true,
+    "response_sha256": "2fd87ef7ec3d26ade94131b19f48e2f799603002ccd4e7d307a05552e5e61b58"
+   }
+  }
+ },
+ {
+  "item_id": "825367b11ffa",
+  "task_id": "3a8db70a-d906-4bde-bf87-c0c74504409a",
+  "requirement": "States Q3 2024 total interest expense as $16,986 thousand (within +/- $100k)",
+  "responses": {
+   "below_outside": {
+    "text": "Q3 2024 total interest expense was $16,876 thousand.",
+    "value": 16876000.0,
+    "expected": "UNMET",
+    "in_report": false
+   },
+   "below_inside": {
+    "text": "Q3 2024 total interest expense was $16,896 thousand.",
+    "value": 16896000.0,
+    "expected": "MET",
+    "in_report": false
+   },
+   "above_150": {
+    "text": "Q3 2024 total interest expense was $17,136 thousand.",
+    "value": 17136000.0,
+    "expected": "UNMET",
+    "in_report": false
+   },
+   "report_near_outside": {
+    "text": "Q3 2024 total interest expense was $17,096 thousand.",
+    "value": 17096000.0,
+    "expected": "UNMET",
+    "in_report": true,
+    "response_sha256": "29f2ab62c3b2a10ac086af40048387edddfb8b31f4d59cfeaf118c50334d107e"
+   }
+  }
+ },
+ {
+  "item_id": "8a43d3043248",
+  "task_id": "342b15b8-0ae1-43ce-9ebe-c7318179f156",
+  "requirement": "States common warrants at 9/30/2025 as 5,243,732 shares (within +/- 100,000)",
+  "responses": {
+   "below_outside": {
+    "text": "Common warrants at 9/30/2025 was 5,133,732 shares.",
+    "value": 5133732.0,
+    "expected": "UNMET",
+    "in_report": false
+   },
+   "below_inside": {
+    "text": "Common warrants at 9/30/2025 was 5,153,732 shares.",
+    "value": 5153732.0,
+    "expected": "MET",
+    "in_report": false
+   },
+   "above_150": {
+    "text": "Common warrants at 9/30/2025 was 5,393,732 shares.",
+    "value": 5393732.0,
+    "expected": "UNMET",
+    "in_report": false
+   },
+   "report_near_outside": {
+    "text": "Common warrants at 9/30/2025 was 5,353,732 shares.",
+    "value": 5353732.0,
+    "expected": "UNMET",
+    "in_report": true,
+    "response_sha256": "d1ffbd81097ebcc14d2023d1050c29cf6eb153e780d7e79428538520c8f9873e"
+   }
+  }
+ },
+ {
+  "item_id": "8d5463b6a76f",
+  "task_id": "342b15b8-0ae1-43ce-9ebe-c7318179f156",
+  "requirement": "States pre-funded warrants at 9/30/2025 as 8,470,624 shares (within +/- 150,000)",
+  "responses": {
+   "below_outside": {
+    "text": "Pre-funded warrants at 9/30/2025 was 8,305,624 shares.",
+    "value": 8305624.0,
+    "expected": "UNMET",
+    "in_report": false
+   },
+   "below_inside": {
+    "text": "Pre-funded warrants at 9/30/2025 was 8,335,624 shares.",
+    "value": 8335624.0,
+    "expected": "MET",
+    "in_report": false
+   },
+   "above_150": {
+    "text": "Pre-funded warrants at 9/30/2025 was 8,695,624 shares.",
+    "value": 8695624.0,
+    "expected": "UNMET",
+    "in_report": false
+   },
+   "report_near_outside": {
+    "text": "Pre-funded warrants at 9/30/2025 was 8,635,624 shares.",
+    "value": 8635624.0,
+    "expected": "UNMET",
+    "in_report": true,
+    "response_sha256": "3cb3b7f91450e64ceedaed7b06e3bf820e23afbd23132db19b72d939e5fdd89c"
+   }
+  }
+ },
+ {
+  "item_id": "8f43aa7ce3f3",
+  "task_id": "342b15b8-0ae1-43ce-9ebe-c7318179f156",
+  "requirement": "States Q3 2025 total R&D expense as $7,020k (within +/- $150k)",
+  "responses": {
+   "below_outside": {
+    "text": "Q3 2025 total R&D expense was $6,855k.",
+    "value": 6855000.0,
+    "expected": "UNMET",
+    "in_report": false
+   },
+   "below_inside": {
+    "text": "Q3 2025 total R&D expense was $6,885k.",
+    "value": 6885000.0,
+    "expected": "MET",
+    "in_report": false
+   },
+   "above_150": {
+    "text": "Q3 2025 total R&D expense was $7,245k.",
+    "value": 7245000.0,
+    "expected": "UNMET",
+    "in_report": false
+   },
+   "report_near_outside": {
+    "text": "Q3 2025 total R&D expense was $7,185k.",
+    "value": 7185000.0,
+    "expected": "UNMET",
+    "in_report": true,
+    "response_sha256": "a157b5fd2a90de45f4f6d9e43b1b5f3a0362d69c978ed9846f6155e9b66bf1cf"
+   }
+  }
+ },
+ {
+  "item_id": "90fcbfd65765",
+  "task_id": "67dfb8ea-cc84-4fb9-abc2-4794aa20eb44",
+  "requirement": "States Q1 2024 total cost of sales as $3,151,232 (within +/- $10K)",
+  "responses": {
+   "below_outside": {
+    "text": "Q1 2024 total cost of sales was $3,140,232.",
+    "value": 3140232.0,
+    "expected": "UNMET",
+    "in_report": false
+   },
+   "below_inside": {
+    "text": "Q1 2024 total cost of sales was $3,142,232.",
+    "value": 3142232.0,
+    "expected": "MET",
+    "in_report": false
+   },
+   "above_150": {
+    "text": "Q1 2024 total cost of sales was $3,166,232.",
+    "value": 3166232.0,
+    "expected": "UNMET",
+    "in_report": false
+   },
+   "report_near_outside": {
+    "text": "Q1 2024 total cost of sales was $3,162,232.",
+    "value": 3162232.0,
+    "expected": "UNMET",
+    "in_report": true,
+    "response_sha256": "529aa18bcd1c08cf9f72859d1e589d0bff2006790bf397c94371dd06e0b83c87"
+   }
+  }
+ },
+ {
+  "item_id": "95b8faca7949",
+  "task_id": "342b15b8-0ae1-43ce-9ebe-c7318179f156",
+  "requirement": "States Q3 2024 G&A SBC as $625k (within +/- $40k)",
+  "responses": {
+   "below_outside": {
+    "text": "Q3 2024 G&A SBC was $581k.",
+    "value": 581000.0,
+    "expected": "UNMET",
+    "in_report": false
+   },
+   "below_inside": {
+    "text": "Q3 2024 G&A SBC was $589k.",
+    "value": 589000.0,
+    "expected": "MET",
+    "in_report": false
+   },
+   "above_150": {
+    "text": "Q3 2024 G&A SBC was $685k.",
+    "value": 685000.0,
+    "expected": "UNMET",
+    "in_report": false
+   },
+   "report_near_outside": {
+    "text": "Q3 2024 G&A SBC was $669k.",
+    "value": 669000.0,
+    "expected": "UNMET",
+    "in_report": true,
+    "response_sha256": "a82f34fb64a86b2026fc94e55648f6d8e5d3d28be39e653e69a55b0aad9e344d"
+   }
+  }
+ },
+ {
+  "item_id": "9875f6e03600",
+  "task_id": "785c8570-6aed-4517-aac2-1d56e16745b7",
+  "requirement": "States 2023 collaboration revenue as $107K (within +/- $20K)",
+  "responses": {
+   "below_outside": {
+    "text": "2023 collaboration revenue was $85K.",
+    "value": 85000.0,
+    "expected": "UNMET",
+    "in_report": false
+   },
+   "below_inside": {
+    "text": "2023 collaboration revenue was $89K.",
+    "value": 89000.0,
+    "expected": "MET",
+    "in_report": false
+   },
+   "above_150": {
+    "text": "2023 collaboration revenue was $137K.",
+    "value": 137000.0,
+    "expected": "UNMET",
+    "in_report": false
+   },
+   "report_near_outside": {
+    "text": "2023 collaboration revenue was $129K.",
+    "value": 129000.0,
+    "expected": "UNMET",
+    "in_report": true,
+    "response_sha256": "c0fd6c8c90b343c97dec6190d2e97b03197549c3f6b54062064f9e4d221d70c3"
+   }
+  }
+ },
+ {
+  "item_id": "a87c0f5bda61",
+  "task_id": "67dfb8ea-cc84-4fb9-abc2-4794aa20eb44",
+  "requirement": "States Q1 2023 gross profit as $67,121 (within +/- $1K)",
+  "responses": {
+   "below_outside": {
+    "text": "Q1 2023 gross profit was $66,021.",
+    "value": 66021.0,
+    "expected": "UNMET",
+    "in_report": false
+   },
+   "below_inside": {
+    "text": "Q1 2023 gross profit was $66,221.",
+    "value": 66221.0,
+    "expected": "MET",
+    "in_report": false
+   },
+   "above_150": {
+    "text": "Q1 2023 gross profit was $68,621.",
+    "value": 68621.0,
+    "expected": "UNMET",
+    "in_report": false
+   },
+   "report_near_outside": {
+    "text": "Q1 2023 gross profit was $68,221.",
+    "value": 68221.0,
+    "expected": "UNMET",
+    "in_report": true,
+    "response_sha256": "20ec0fd2b37894c8d16a41483113272023c7542324a1b221078d4293c57cb28b"
+   }
+  }
+ },
+ {
+  "item_id": "ac6dd3f56310",
+  "task_id": "342b15b8-0ae1-43ce-9ebe-c7318179f156",
+  "requirement": "States Q3 2025 total stock-based compensation as $1,007k (within +/- $50k)",
+  "responses": {
+   "below_outside": {
+    "text": "Q3 2025 total stock-based compensation was $952k.",
+    "value": 952000.0,
+    "expected": "UNMET",
+    "in_report": false
+   },
+   "below_inside": {
+    "text": "Q3 2025 total stock-based compensation was $962k.",
+    "value": 962000.0,
+    "expected": "MET",
+    "in_report": false
+   },
+   "above_150": {
+    "text": "Q3 2025 total stock-based compensation was $1,082k.",
+    "value": 1082000.0,
+    "expected": "UNMET",
+    "in_report": false
+   },
+   "report_near_outside": {
+    "text": "Q3 2025 total stock-based compensation was $1,062k.",
+    "value": 1062000.0,
+    "expected": "UNMET",
+    "in_report": true,
+    "response_sha256": "d333d2f2a3155e3810fcbf633a3553336e02e61cb67c0a5256cbfe850b9ea7d0"
+   }
+  }
+ },
+ {
+  "item_id": "af4aa10a290d",
+  "task_id": "3a8db70a-d906-4bde-bf87-c0c74504409a",
+  "requirement": "States June 30, 2024 unsecured term loans as $800,000 thousand (within +/- $5,000k)",
+  "responses": {
+   "below_outside": {
+    "text": "June 30, 2024 unsecured term loans was $794,500 thousand.",
+    "value": 794500000.0,
+    "expected": "UNMET",
+    "in_report": false
+   },
+   "below_inside": {
+    "text": "June 30, 2024 unsecured term loans was $795,500 thousand.",
+    "value": 795500000.0,
+    "expected": "MET",
+    "in_report": false
+   },
+   "above_150": {
+    "text": "June 30, 2024 unsecured term loans was $807,500 thousand.",
+    "value": 807500000.0,
+    "expected": "UNMET",
+    "in_report": false
+   },
+   "report_near_outside": {
+    "text": "June 30, 2024 unsecured term loans was $805,500 thousand.",
+    "value": 805500000.0,
+    "expected": "UNMET",
+    "in_report": true,
+    "response_sha256": "ebe261ae545378afedda3f347a758a35954d4ef708185093035de024eda3b9ff"
+   }
+  }
+ },
+ {
+  "item_id": "b4d1065c1b38",
+  "task_id": "67dfb8ea-cc84-4fb9-abc2-4794aa20eb44",
+  "requirement": "States Q1 2023 indirect supply revenue as $1,448,109 (within +/- $10K)",
+  "responses": {
+   "below_outside": {
+    "text": "Q1 2023 indirect supply revenue was $1,437,109.",
+    "value": 1437109.0,
+    "expected": "UNMET",
+    "in_report": false
+   },
+   "below_inside": {
+    "text": "Q1 2023 indirect supply revenue was $1,439,109.",
+    "value": 1439109.0,
+    "expected": "MET",
+    "in_report": false
+   },
+   "above_150": {
+    "text": "Q1 2023 indirect supply revenue was $1,463,109.",
+    "value": 1463109.0,
+    "expected": "UNMET",
+    "in_report": false
+   },
+   "report_near_outside": {
+    "text": "Q1 2023 indirect supply revenue was $1,459,109.",
+    "value": 1459109.0,
+    "expected": "UNMET",
+    "in_report": true,
+    "response_sha256": "c1bec41a654ab9380bf5301f7c0b2ed06d55861fd83e37868a7e4b23b306a3d6"
+   }
+  }
+ },
+ {
+  "item_id": "b58db5c114f7",
+  "task_id": "342b15b8-0ae1-43ce-9ebe-c7318179f156",
+  "requirement": "States weighted average exercise price at 12/31/2023 as $77.53 (within +/- $3)",
+  "responses": {
+   "below_outside": {
+    "text": "Weighted average exercise price at 12/31/2023 was $74.23.",
+    "value": 74.23,
+    "expected": "UNMET",
+    "in_report": false
+   },
+   "below_inside": {
+    "text": "Weighted average exercise price at 12/31/2023 was $74.83.",
+    "value": 74.83,
+    "expected": "MET",
+    "in_report": false
+   },
+   "above_150": {
+    "text": "Weighted average exercise price at 12/31/2023 was $82.03.",
+    "value": 82.03,
+    "expected": "UNMET",
+    "in_report": false
+   },
+   "report_near_outside": {
+    "text": "Weighted average exercise price at 12/31/2023 was $80.83.",
+    "value": 80.83,
+    "expected": "UNMET",
+    "in_report": true,
+    "response_sha256": "72e45bc1ddd7b6b8b5c8c8a66506c65e2b1c1ae30a15e2a435761a52d68be38a"
+   }
+  }
+ },
+ {
+  "item_id": "b8e87ef67d40",
+  "task_id": "a78eed67-ebe3-425e-a467-d54ee8949c8b",
+  "requirement": "States Renaissance Portfolio purchase price as $117.9 million (within +/- $1M)",
+  "responses": {
+   "below_outside": {
+    "text": "Renaissance Portfolio purchase price was $116.8 million.",
+    "value": 116800000.0,
+    "expected": "UNMET",
+    "in_report": false
+   },
+   "below_inside": {
+    "text": "Renaissance Portfolio purchase price was $117.0 million.",
+    "value": 117000000.0,
+    "expected": "MET",
+    "in_report": false
+   },
+   "above_150": {
+    "text": "Renaissance Portfolio purchase price was $119.4 million.",
+    "value": 119400000.0,
+    "expected": "UNMET",
+    "in_report": false
+   },
+   "report_near_outside": {
+    "text": "Renaissance Portfolio purchase price was $119.0 million.",
+    "value": 119000000.0,
+    "expected": "UNMET",
+    "in_report": true,
+    "response_sha256": "07cf3d59f89f6611712b736b9b9c5438ab38d0cf037e211d6aa9a7fb26ace7a9"
+   }
+  }
+ },
+ {
+  "item_id": "ba48f4e13a23",
+  "task_id": "342b15b8-0ae1-43ce-9ebe-c7318179f156",
+  "requirement": "States 2024 weighted average grant exercise price as $13.14 (within +/- $0.50)",
+  "responses": {
+   "below_outside": {
+    "text": "2024 weighted average grant exercise price was $12.59.",
+    "value": 12.59,
+    "expected": "UNMET",
+    "in_report": false
+   },
+   "below_inside": {
+    "text": "2024 weighted average grant exercise price was $12.69.",
+    "value": 12.69,
+    "expected": "MET",
+    "in_report": false
+   },
+   "above_150": {
+    "text": "2024 weighted average grant exercise price was $13.89.",
+    "value": 13.89,
+    "expected": "UNMET",
+    "in_report": false
+   },
+   "report_near_outside": {
+    "text": "2024 weighted average grant exercise price was $13.69.",
+    "value": 13.69,
+    "expected": "UNMET",
+    "in_report": true,
+    "response_sha256": "e9ffe00e98391614d8bf5ecda80983d1b31de73c9a985346e8606f7aaea56598"
+   }
+  }
+ },
+ {
+  "item_id": "ba7b9f3b1eec",
+  "task_id": "3a8db70a-d906-4bde-bf87-c0c74504409a",
+  "requirement": "States June 30, 2024 weighted-average interest rate as 5.22% (within +/- 0.1%)",
+  "responses": {
+   "below_outside": {
+    "text": "June 30, 2024 weighted-average interest rate was 5.11%.",
+    "value": 5.11,
+    "expected": "UNMET",
+    "in_report": false
+   },
+   "below_inside": {
+    "text": "June 30, 2024 weighted-average interest rate was 5.13%.",
+    "value": 5.13,
+    "expected": "MET",
+    "in_report": false
+   },
+   "above_150": {
+    "text": "June 30, 2024 weighted-average interest rate was 5.37%.",
+    "value": 5.37,
+    "expected": "UNMET",
+    "in_report": false
+   },
+   "report_near_outside": {
+    "text": "June 30, 2024 weighted-average interest rate was 5.33%.",
+    "value": 5.33,
+    "expected": "UNMET",
+    "in_report": true,
+    "response_sha256": "8f0e2acb303825d4b8308a3b704a3dd250274f3f3b21b416744f75ae68975c84"
+   }
+  }
+ },
+ {
+  "item_id": "bb4f523f2455",
+  "task_id": "342b15b8-0ae1-43ce-9ebe-c7318179f156",
+  "requirement": "States February 2024 issued 3,853,997 pre-funded warrants (within +/- 100,000)",
+  "responses": {
+   "below_outside": {
+    "text": "February 2024 issued 3,743,997 pre-funded warrants.",
+    "value": 3743997.0,
+    "expected": "UNMET",
+    "in_report": false
+   },
+   "below_inside": {
+    "text": "February 2024 issued 3,763,997 pre-funded warrants.",
+    "value": 3763997.0,
+    "expected": "MET",
+    "in_report": false
+   },
+   "above_150": {
+    "text": "February 2024 issued 4,003,997 pre-funded warrants.",
+    "value": 4003997.0,
+    "expected": "UNMET",
+    "in_report": false
+   },
+   "report_near_outside": {
+    "text": "February 2024 issued 3,963,997 pre-funded warrants.",
+    "value": 3963997.0,
+    "expected": "UNMET",
+    "in_report": true,
+    "response_sha256": "a9aaaa953fb94108205605b44a37937b5e5068d07795879a8f10c43bae33b77e"
+   }
+  }
+ },
+ {
+  "item_id": "caf1874a7b99",
+  "task_id": "342b15b8-0ae1-43ce-9ebe-c7318179f156",
+  "requirement": "States 2024 option shares granted as 461,499 (within +/- 10,000)",
+  "responses": {
+   "below_outside": {
+    "text": "2024 option shares granted was 450,499.",
+    "value": 450499.0,
+    "expected": "UNMET",
+    "in_report": false
+   },
+   "below_inside": {
+    "text": "2024 option shares granted was 452,499.",
+    "value": 452499.0,
+    "expected": "MET",
+    "in_report": false
+   },
+   "above_150": {
+    "text": "2024 option shares granted was 476,499.",
+    "value": 476499.0,
+    "expected": "UNMET",
+    "in_report": false
+   },
+   "report_near_outside": {
+    "text": "2024 option shares granted was 472,499.",
+    "value": 472499.0,
+    "expected": "UNMET",
+    "in_report": true,
+    "response_sha256": "65e178c140860084313b970ed8be8a104ff646a9657815371696a2add90cb3f8"
+   }
+  }
+ },
+ {
+  "item_id": "ce4fd66fe1c9",
+  "task_id": "3a8db70a-d906-4bde-bf87-c0c74504409a",
+  "requirement": "States September 30, 2025 swap fair value as $168 thousand (within +/- $50k)",
+  "responses": {
+   "below_outside": {
+    "text": "September 30, 2025 swap fair value was $113 thousand.",
+    "value": 113000.0,
+    "expected": "UNMET",
+    "in_report": false
+   },
+   "below_inside": {
+    "text": "September 30, 2025 swap fair value was $123 thousand.",
+    "value": 123000.0,
+    "expected": "MET",
+    "in_report": false
+   },
+   "above_150": {
+    "text": "September 30, 2025 swap fair value was $243 thousand.",
+    "value": 243000.0,
+    "expected": "UNMET",
+    "in_report": false
+   },
+   "report_near_outside": {
+    "text": "September 30, 2025 swap fair value was $223 thousand.",
+    "value": 223000.0,
+    "expected": "UNMET",
+    "in_report": true,
+    "response_sha256": "3d6868b4e8dff5810cf32058f404e9e19d585654b26ce63310a3b1e0cc8efaa1"
+   }
+  }
+ },
+ {
+  "item_id": "cf234fad4701",
+  "task_id": "342b15b8-0ae1-43ce-9ebe-c7318179f156",
+  "requirement": "States weighted average warrant exercise price at 9/30/2025 as $8.69 (within +/- $0.50)",
+  "responses": {
+   "below_outside": {
+    "text": "Weighted average warrant exercise price at 9/30/2025 was $8.14.",
+    "value": 8.14,
+    "expected": "UNMET",
+    "in_report": false
+   },
+   "below_inside": {
+    "text": "Weighted average warrant exercise price at 9/30/2025 was $8.24.",
+    "value": 8.24,
+    "expected": "MET",
+    "in_report": false
+   },
+   "above_150": {
+    "text": "Weighted average warrant exercise price at 9/30/2025 was $9.44.",
+    "value": 9.44,
+    "expected": "UNMET",
+    "in_report": false
+   },
+   "report_near_outside": {
+    "text": "Weighted average warrant exercise price at 9/30/2025 was $9.24.",
+    "value": 9.24,
+    "expected": "UNMET",
+    "in_report": true,
+    "response_sha256": "aaaa6a89f054ad44993d7cd0e2b6c03e5478f6f64e19cda31acdd2a7cfe8b515"
+   }
+  }
+ },
+ {
+  "item_id": "d0056072ecf8",
+  "task_id": "3a8db70a-d906-4bde-bf87-c0c74504409a",
+  "requirement": "States December 31, 2023 swap fair value as $4,321 thousand (within +/- $50k)",
+  "responses": {
+   "below_outside": {
+    "text": "December 31, 2023 swap fair value was $4,266 thousand.",
+    "value": 4266000.0,
+    "expected": "UNMET",
+    "in_report": false
+   },
+   "below_inside": {
+    "text": "December 31, 2023 swap fair value was $4,276 thousand.",
+    "value": 4276000.0,
+    "expected": "MET",
+    "in_report": false
+   },
+   "above_150": {
+    "text": "December 31, 2023 swap fair value was $4,396 thousand.",
+    "value": 4396000.0,
+    "expected": "UNMET",
+    "in_report": false
+   },
+   "report_near_outside": {
+    "text": "December 31, 2023 swap fair value was $4,376 thousand.",
+    "value": 4376000.0,
+    "expected": "UNMET",
+    "in_report": true,
+    "response_sha256": "c08dc09ca64ead0fb36d94ac0bac7b14ee213e7e9964f0a9a45f61848be4e722"
+   }
+  }
+ },
+ {
+  "item_id": "d1683467e9ca",
+  "task_id": "3a8db70a-d906-4bde-bf87-c0c74504409a",
+  "requirement": "States fixed charge coverage ratio as 3.24x (within +/- 0.1x)",
+  "responses": {
+   "below_outside": {
+    "text": "Fixed charge coverage ratio was 3.13x.",
+    "value": 3.13,
+    "expected": "UNMET",
+    "in_report": false
+   },
+   "below_inside": {
+    "text": "Fixed charge coverage ratio was 3.15x.",
+    "value": 3.15,
+    "expected": "MET",
+    "in_report": false
+   },
+   "above_150": {
+    "text": "Fixed charge coverage ratio was 3.39x.",
+    "value": 3.39,
+    "expected": "UNMET",
+    "in_report": false
+   },
+   "report_near_outside": {
+    "text": "Fixed charge coverage ratio was 3.35x.",
+    "value": 3.35,
+    "expected": "UNMET",
+    "in_report": true,
+    "response_sha256": "4bf4f342092c16b971cfe27525e2308cac2cde70677efff11ea880485c39e553"
+   }
+  }
+ },
+ {
+  "item_id": "d464b9f734a1",
+  "task_id": "342b15b8-0ae1-43ce-9ebe-c7318179f156",
+  "requirement": "States 9-month 2025 SBC as $2,750k (within +/- $75k)",
+  "responses": {
+   "below_outside": {
+    "text": "9-month 2025 SBC was $2,667.5k.",
+    "value": 2667500.0,
+    "expected": "UNMET",
+    "in_report": false
+   },
+   "below_inside": {
+    "text": "9-month 2025 SBC was $2,682.5k.",
+    "value": 2682500.0,
+    "expected": "MET",
+    "in_report": false
+   },
+   "above_150": {
+    "text": "9-month 2025 SBC was $2,862.5k.",
+    "value": 2862500.0,
+    "expected": "UNMET",
+    "in_report": false
+   },
+   "report_near_outside": {
+    "text": "9-month 2025 SBC was $2,832.5k.",
+    "value": 2832500.0,
+    "expected": "UNMET",
+    "in_report": true,
+    "response_sha256": "89dbd5ed93c6201d330858b28e00911fd79e6456669b689e53723b7f0288d978"
+   }
+  }
+ },
+ {
+  "item_id": "dd484d8a939a",
+  "task_id": "67dfb8ea-cc84-4fb9-abc2-4794aa20eb44",
+  "requirement": "States Q1 2023 indirect supply margin as 1% (within +/- 0.5 ppts)",
+  "responses": {
+   "below_outside": {
+    "text": "Q1 2023 indirect supply margin was 0.45%.",
+    "value": 0.45,
+    "expected": "UNMET",
+    "in_report": false
+   },
+   "below_inside": {
+    "text": "Q1 2023 indirect supply margin was 0.55%.",
+    "value": 0.55,
+    "expected": "MET",
+    "in_report": false
+   },
+   "above_150": {
+    "text": "Q1 2023 indirect supply margin was 1.75%.",
+    "value": 1.75,
+    "expected": "UNMET",
+    "in_report": false
+   }
+  }
+ },
+ {
+  "item_id": "df1f99e42a3a",
+  "task_id": "342b15b8-0ae1-43ce-9ebe-c7318179f156",
+  "requirement": "States 2024 total stock-based compensation as $2,757k (within +/- $50k)",
+  "responses": {
+   "below_outside": {
+    "text": "2024 total stock-based compensation was $2,702k.",
+    "value": 2702000.0,
+    "expected": "UNMET",
+    "in_report": false
+   },
+   "below_inside": {
+    "text": "2024 total stock-based compensation was $2,712k.",
+    "value": 2712000.0,
+    "expected": "MET",
+    "in_report": false
+   },
+   "above_150": {
+    "text": "2024 total stock-based compensation was $2,832k.",
+    "value": 2832000.0,
+    "expected": "UNMET",
+    "in_report": false
+   },
+   "report_near_outside": {
+    "text": "2024 total stock-based compensation was $2,812k.",
+    "value": 2812000.0,
+    "expected": "UNMET",
+    "in_report": true,
+    "response_sha256": "3df4a39d7e9258d2e300e2db03fd118f6b3165b74eb9a7ba0b828539f168197d"
+   }
+  }
+ },
+ {
+  "item_id": "e0419288a2b8",
+  "task_id": "3a8db70a-d906-4bde-bf87-c0c74504409a",
+  "requirement": "States Q3 2025 total interest expense as $17,111 thousand (within +/- $100k)",
+  "responses": {
+   "below_outside": {
+    "text": "Q3 2025 total interest expense was $17,001 thousand.",
+    "value": 17001000.0,
+    "expected": "UNMET",
+    "in_report": false
+   },
+   "below_inside": {
+    "text": "Q3 2025 total interest expense was $17,021 thousand.",
+    "value": 17021000.0,
+    "expected": "MET",
+    "in_report": false
+   },
+   "above_150": {
+    "text": "Q3 2025 total interest expense was $17,261 thousand.",
+    "value": 17261000.0,
+    "expected": "UNMET",
+    "in_report": false
+   },
+   "report_near_outside": {
+    "text": "Q3 2025 total interest expense was $17,221 thousand.",
+    "value": 17221000.0,
+    "expected": "UNMET",
+    "in_report": true,
+    "response_sha256": "a0a54df9d3a905516640f037487ed278b26776f081f472c00585b7bcec6fbb30"
+   }
+  }
+ },
+ {
+  "item_id": "ed5343d2fceb",
+  "task_id": "b3c576e7-dfc6-403f-90e7-53c011884d5c",
+  "requirement": "States license renewal fee as $97 (within +/- $5)",
+  "responses": {
+   "below_outside": {
+    "text": "License renewal fee was $91.5.",
+    "value": 91.5,
+    "expected": "UNMET",
+    "in_report": false
+   },
+   "below_inside": {
+    "text": "License renewal fee was $92.5.",
+    "value": 92.5,
+    "expected": "MET",
+    "in_report": false
+   },
+   "above_150": {
+    "text": "License renewal fee was $104.5.",
+    "value": 104.5,
+    "expected": "UNMET",
+    "in_report": false
+   },
+   "report_near_outside": {
+    "text": "License renewal fee was $102.5.",
+    "value": 102.5,
+    "expected": "UNMET",
+    "in_report": true,
+    "response_sha256": "aec03590b06ad0f911aca612f31473b41b77d23483e602ff51d6c4376e3910dc"
+   }
+  }
+ },
+ {
+  "item_id": "f1ff0488207e",
+  "task_id": "342b15b8-0ae1-43ce-9ebe-c7318179f156",
+  "requirement": "States 2025 option shares granted as 388,816 (within +/- 10,000)",
+  "responses": {
+   "below_outside": {
+    "text": "2025 option shares granted was 377,816.",
+    "value": 377816.0,
+    "expected": "UNMET",
+    "in_report": false
+   },
+   "below_inside": {
+    "text": "2025 option shares granted was 379,816.",
+    "value": 379816.0,
+    "expected": "MET",
+    "in_report": false
+   },
+   "above_150": {
+    "text": "2025 option shares granted was 403,816.",
+    "value": 403816.0,
+    "expected": "UNMET",
+    "in_report": false
+   },
+   "report_near_outside": {
+    "text": "2025 option shares granted was 399,816.",
+    "value": 399816.0,
+    "expected": "UNMET",
+    "in_report": true,
+    "response_sha256": "cfe11a4490918cab2520ef744d405c93af22f5c1d26500da04d6472cd9d934eb"
+   }
+  }
+ },
+ {
+  "item_id": "f2ca9836373d",
+  "task_id": "67dfb8ea-cc84-4fb9-abc2-4794aa20eb44",
+  "requirement": "States Q1 2023 direct supply margin as 6% (within +/- 0.5 ppts)",
+  "responses": {
+   "below_outside": {
+    "text": "Q1 2023 direct supply margin was 5.45%.",
+    "value": 5.45,
+    "expected": "UNMET",
+    "in_report": false
+   },
+   "below_inside": {
+    "text": "Q1 2023 direct supply margin was 5.55%.",
+    "value": 5.55,
+    "expected": "MET",
+    "in_report": false
+   },
+   "above_150": {
+    "text": "Q1 2023 direct supply margin was 6.75%.",
+    "value": 6.75,
+    "expected": "UNMET",
+    "in_report": false
+   }
+  }
+ },
+ {
+  "item_id": "fb353a867903",
+  "task_id": "342b15b8-0ae1-43ce-9ebe-c7318179f156",
+  "requirement": "States Q3 2024 R&D SBC as $228k (within +/- $20k)",
+  "responses": {
+   "below_outside": {
+    "text": "Q3 2024 R&D SBC was $206k.",
+    "value": 206000.0,
+    "expected": "UNMET",
+    "in_report": false
+   },
+   "below_inside": {
+    "text": "Q3 2024 R&D SBC was $210k.",
+    "value": 210000.0,
+    "expected": "MET",
+    "in_report": false
+   },
+   "above_150": {
+    "text": "Q3 2024 R&D SBC was $258k.",
+    "value": 258000.0,
+    "expected": "UNMET",
+    "in_report": false
+   },
+   "report_near_outside": {
+    "text": "Q3 2024 R&D SBC was $250k.",
+    "value": 250000.0,
+    "expected": "UNMET",
+    "in_report": true,
+    "response_sha256": "de3bca811aebc43227d1983e7362a0cf6106df308312929956471d14d53bd874"
+   }
+  }
+ },
+ {
+  "item_id": "fb81963bfe14",
+  "task_id": "bea85f62-a722-48a9-8ece-fbfb62653997",
+  "requirement": "States NVDA Q3 FY25 revenue as $35.1B (within +/- $0.5B)",
+  "responses": {
+   "below_outside": {
+    "text": "NVDA Q3 FY25 revenue was $34.55B.",
+    "value": 34550000000.0,
+    "expected": "UNMET",
+    "in_report": false
+   },
+   "below_inside": {
+    "text": "NVDA Q3 FY25 revenue was $34.65B.",
+    "value": 34650000000.0,
+    "expected": "MET",
+    "in_report": false
+   },
+   "above_150": {
+    "text": "NVDA Q3 FY25 revenue was $35.85B.",
+    "value": 35850000000.0,
+    "expected": "UNMET",
+    "in_report": false
+   },
+   "report_near_outside": {
+    "text": "NVDA Q3 FY25 revenue was $35.65B.",
+    "value": 35650000000.0,
+    "expected": "UNMET",
+    "in_report": true,
+    "response_sha256": "bbf318171075a7ee5e133a68ecee2053adee1566f5c1d9874e36a9cf8474a049"
+   }
+  }
+ },
+ {
+  "item_id": "fb8b821fc406",
+  "task_id": "67dfb8ea-cc84-4fb9-abc2-4794aa20eb44",
+  "requirement": "States Q1 2024 total sales as $2,954,607 (within +/- $10K)",
+  "responses": {
+   "below_outside": {
+    "text": "Q1 2024 total sales was $2,943,607.",
+    "value": 2943607.0,
+    "expected": "UNMET",
+    "in_report": false
+   },
+   "below_inside": {
+    "text": "Q1 2024 total sales was $2,945,607.",
+    "value": 2945607.0,
+    "expected": "MET",
+    "in_report": false
+   },
+   "above_150": {
+    "text": "Q1 2024 total sales was $2,969,607.",
+    "value": 2969607.0,
+    "expected": "UNMET",
+    "in_report": false
+   },
+   "report_near_outside": {
+    "text": "Q1 2024 total sales was $2,965,607.",
+    "value": 2965607.0,
+    "expected": "UNMET",
+    "in_report": true,
+    "response_sha256": "8bdd1e6084fbde3f3572d3b806f3df857dfa37ee4081936eca173ecb8f860ef0"
+   }
+  }
+ },
+ {
+  "item_id": "fdd2e5eb0705",
+  "task_id": "342b15b8-0ae1-43ce-9ebe-c7318179f156",
+  "requirement": "States outstanding options at 9/30/2025 as 1,007,306 shares (within +/- 20,000)",
+  "responses": {
+   "below_outside": {
+    "text": "Outstanding options at 9/30/2025 was 985,306 shares.",
+    "value": 985306.0,
+    "expected": "UNMET",
+    "in_report": false
+   },
+   "below_inside": {
+    "text": "Outstanding options at 9/30/2025 was 989,306 shares.",
+    "value": 989306.0,
+    "expected": "MET",
+    "in_report": false
+   },
+   "above_150": {
+    "text": "Outstanding options at 9/30/2025 was 1,037,306 shares.",
+    "value": 1037306.0,
+    "expected": "UNMET",
+    "in_report": false
+   },
+   "report_near_outside": {
+    "text": "Outstanding options at 9/30/2025 was 1,029,306 shares.",
+    "value": 1029306.0,
+    "expected": "UNMET",
+    "in_report": true,
+    "response_sha256": "1af6594d1ee05fdeabbf8b329835b5ca5d374befcb5dd52c3086cf31a1984ed9"
+   }
+  }
+ }
+]

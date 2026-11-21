@@ -1,0 +1,24 @@
+data:        studies/judge-check-2026/results/draco_gemini/table.csv (473 rows; sha256 6a1354d929e98cd21710a3a6785532f041ebeb5592de0af9b1bd3d7c4c8d2170)
+decided:     473 of 473 (473 in exact decimal arithmetic, 0 after a unit conversion)
+grader right: 473
+lenient:     0 (accepted a value outside the stated tolerance)
+strict:      0 (rejected a value inside the stated tolerance)
+  group +0.9: 50 right, 0 lenient, 0 strict of 50 decided
+  group +1.1: 76 right, 0 lenient, 0 strict of 76 decided
+  group +1.1:report: 69 right, 0 lenient, 0 strict of 69 decided
+  group -0.9: 50 right, 0 lenient, 0 strict of 50 decided
+  group -1.1: 76 right, 0 lenient, 0 strict of 76 decided
+  group 0: 76 right, 0 lenient, 0 strict of 76 decided
+  group far: 76 right, 0 lenient, 0 strict of 76 decided
+by item (an item is wrong if any of its rows is; 95% interval treats items as independent):
+  +0.9: 0 of 50 items wrong (0% to 7%), 0 on every row; in 0 of 9 clusters (largest cluster 0 of 28, the others 0 of 22)
+  +1.1: 0 of 76 items wrong (0% to 5%), 0 on every row; in 0 of 10 clusters (largest cluster 0 of 39, the others 0 of 37)
+  +1.1:report: 0 of 69 items wrong (0% to 5%), 0 on every row; in 0 of 9 clusters (largest cluster 0 of 39, the others 0 of 30)
+  -0.9: 0 of 50 items wrong (0% to 7%), 0 on every row; in 0 of 9 clusters (largest cluster 0 of 28, the others 0 of 22)
+  -1.1: 0 of 76 items wrong (0% to 5%), 0 on every row; in 0 of 10 clusters (largest cluster 0 of 39, the others 0 of 37)
+  0: 0 of 76 items wrong (0% to 5%), 0 on every row; in 0 of 10 clusters (largest cluster 0 of 39, the others 0 of 37)
+  far: 0 of 76 items wrong (0% to 5%), 0 on every row; in 0 of 10 clusters (largest cluster 0 of 39, the others 0 of 37)
+could not decide: 0 rows
+result:      exit 0: the grader agrees with the arithmetic on every row
+receipt:     sha256 ab274c84b6819be078d00af4e7eabccbc5b3c6145ddb2627a24be1b6c24725c3
+wrote:       studies/judge-check-2026/results/draco_gemini/grader_receipt.json

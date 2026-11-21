@@ -1,0 +1,45 @@
+{
+ "calls": 478,
+ "judge_models": [
+  "gemini-3.1-pro-preview"
+ ],
+ "made_by_stage": {
+  "1": {
+   "calls": 153,
+   "failed_or_unreadable": 1,
+   "with_a_verdict": 152
+  },
+  "2": {
+   "calls": 155,
+   "failed_or_unreadable": 3,
+   "with_a_verdict": 152
+  },
+  "3": {
+   "calls": 69,
+   "failed_or_unreadable": 0,
+   "with_a_verdict": 69
+  },
+  "4": {
+   "calls": 101,
+   "failed_or_unreadable": 1,
+   "with_a_verdict": 100
+  }
+ },
+ "metered_spend_usd": 2.9994,
+ "planned_by_stage": {
+  "1": 152,
+  "2": 152,
+  "3": 69,
+  "4": 152,
+  "5": 304
+ },
+ "settings": {
+  "max_tokens": 2048,
+  "reasoning_effort": "low",
+  "temperature": 0.2
+ },
+ "tokens": {
+  "prompt": 898172,
+  "total": 998428
+ }
+}

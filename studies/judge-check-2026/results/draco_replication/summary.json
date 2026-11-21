@@ -1,0 +1,388 @@
+{
+ "calls": 753,
+ "failed_or_unparsed_calls": 0,
+ "first_arms_by_criterion": {
+  "bare_exact": {
+   "calls": 228,
+   "criteria": 76,
+   "criteria_whose_repeats_disagree": 0,
+   "criteria_wrong_at_least_once": 0,
+   "criteria_wrong_on_every_call": 0,
+   "criteria_wrong_rate": 0.0,
+   "criteria_wrong_rate_95ci": [
+    0.0,
+    0.0481
+   ],
+   "expected": "MET",
+   "tasks": 10,
+   "tasks_with_a_wrong_criterion": 0,
+   "wrong_calls": 0,
+   "wrong_criteria": []
+  },
+  "bare_far": {
+   "calls": 228,
+   "criteria": 76,
+   "criteria_whose_repeats_disagree": 0,
+   "criteria_wrong_at_least_once": 0,
+   "criteria_wrong_on_every_call": 0,
+   "criteria_wrong_rate": 0.0,
+   "criteria_wrong_rate_95ci": [
+    0.0,
+    0.0481
+   ],
+   "expected": "UNMET",
+   "tasks": 10,
+   "tasks_with_a_wrong_criterion": 0,
+   "wrong_calls": 0,
+   "wrong_criteria": []
+  },
+  "bare_inside": {
+   "calls": 228,
+   "criteria": 76,
+   "criteria_whose_repeats_disagree": 0,
+   "criteria_wrong_at_least_once": 2,
+   "criteria_wrong_on_every_call": 2,
+   "criteria_wrong_rate": 0.0263,
+   "criteria_wrong_rate_95ci": [
+    0.0072,
+    0.091
+   ],
+   "expected": "MET",
+   "tasks": 10,
+   "tasks_with_a_wrong_criterion": 1,
+   "wrong_calls": 6,
+   "wrong_criteria": [
+    "092ae21e5b04",
+    "a87c0f5bda61"
+   ]
+  },
+  "bare_outside": {
+   "calls": 228,
+   "criteria": 76,
+   "criteria_whose_repeats_disagree": 0,
+   "criteria_wrong_at_least_once": 1,
+   "criteria_wrong_on_every_call": 1,
+   "criteria_wrong_rate": 0.0132,
+   "criteria_wrong_rate_95ci": [
+    0.0023,
+    0.0708
+   ],
+   "expected": "UNMET",
+   "tasks": 10,
+   "tasks_with_a_wrong_criterion": 1,
+   "wrong_calls": 3,
+   "wrong_criteria": [
+    "3ca4599feecd"
+   ]
+  },
+  "near_inside": {
+   "calls": 228,
+   "criteria": 76,
+   "criteria_whose_repeats_disagree": 2,
+   "criteria_wrong_at_least_once": 5,
+   "criteria_wrong_on_every_call": 3,
+   "criteria_wrong_rate": 0.0658,
+   "criteria_wrong_rate_95ci": [
+    0.0284,
+    0.1449
+   ],
+   "expected": "MET",
+   "tasks": 10,
+   "tasks_with_a_wrong_criterion": 3,
+   "wrong_calls": 12,
+   "wrong_criteria": [
+    "5475bfc18d3a",
+    "6e30ebb89755",
+    "a87c0f5bda61",
+    "ba7b9f3b1eec",
+    "d1683467e9ca"
+   ]
+  },
+  "near_outside": {
+   "calls": 228,
+   "criteria": 76,
+   "criteria_whose_repeats_disagree": 2,
+   "criteria_wrong_at_least_once": 10,
+   "criteria_wrong_on_every_call": 8,
+   "criteria_wrong_rate": 0.1316,
+   "criteria_wrong_rate_95ci": [
+    0.0731,
+    0.2255
+   ],
+   "expected": "UNMET",
+   "tasks": 10,
+   "tasks_with_a_wrong_criterion": 6,
+   "wrong_calls": 26,
+   "wrong_criteria": [
+    "21c6094c2376",
+    "3ca4599feecd",
+    "6097b4a4aac0",
+    "6adc88325a50",
+    "7d39b032c4de",
+    "af4aa10a290d",
+    "d464b9f734a1",
+    "dd484d8a939a",
+    "f2ca9836373d",
+    "fb81963bfe14"
+   ]
+  },
+  "report_inside": {
+   "calls": 207,
+   "criteria": 69,
+   "criteria_whose_repeats_disagree": 0,
+   "criteria_wrong_at_least_once": 0,
+   "criteria_wrong_on_every_call": 0,
+   "criteria_wrong_rate": 0.0,
+   "criteria_wrong_rate_95ci": [
+    0.0,
+    0.0527
+   ],
+   "expected": "MET",
+   "tasks": 9,
+   "tasks_with_a_wrong_criterion": 0,
+   "wrong_calls": 0,
+   "wrong_criteria": []
+  },
+  "report_outside": {
+   "calls": 207,
+   "criteria": 69,
+   "criteria_whose_repeats_disagree": 1,
+   "criteria_wrong_at_least_once": 2,
+   "criteria_wrong_on_every_call": 1,
+   "criteria_wrong_rate": 0.029,
+   "criteria_wrong_rate_95ci": [
+    0.008,
+    0.0997
+   ],
+   "expected": "UNMET",
+   "tasks": 9,
+   "tasks_with_a_wrong_criterion": 2,
+   "wrong_calls": 5,
+   "wrong_criteria": [
+    "4cd7c1698130",
+    "b8e87ef67d40"
+   ]
+  }
+ },
+ "judge_models": [
+  "claude-sonnet-4-5-20250929"
+ ],
+ "just_outside_above_and_below": {
+  "above_only": 5,
+  "below_only": 17,
+  "both": 5,
+  "criteria": 76,
+  "either": 27,
+  "either_rate_95ci": [
+   0.257,
+   0.4674
+  ]
+ },
+ "this_arm": {
+  "above_150": {
+   "calls": 228,
+   "criteria": 76,
+   "criteria_whose_repeats_disagree": 2,
+   "criteria_wrong_at_least_once": 3,
+   "criteria_wrong_on_every_call": 1,
+   "criteria_wrong_rate": 0.0395,
+   "criteria_wrong_rate_95ci": [
+    0.0135,
+    0.1097
+   ],
+   "expected": "UNMET",
+   "tasks": 10,
+   "tasks_with_a_wrong_criterion": 3,
+   "wrong_calls": 5,
+   "wrong_criteria": [
+    "6adc88325a50",
+    "af4aa10a290d",
+    "dd484d8a939a"
+   ]
+  },
+  "below_inside": {
+   "calls": 228,
+   "criteria": 76,
+   "criteria_whose_repeats_disagree": 1,
+   "criteria_wrong_at_least_once": 6,
+   "criteria_wrong_on_every_call": 5,
+   "criteria_wrong_rate": 0.0789,
+   "criteria_wrong_rate_95ci": [
+    0.0367,
+    0.1617
+   ],
+   "expected": "MET",
+   "tasks": 10,
+   "tasks_with_a_wrong_criterion": 3,
+   "wrong_calls": 17,
+   "wrong_criteria": [
+    "39cc98efe8b7",
+    "6e30ebb89755",
+    "a87c0f5bda61",
+    "ba7b9f3b1eec",
+    "bb4f523f2455",
+    "d1683467e9ca"
+   ]
+  },
+  "below_outside": {
+   "calls": 228,
+   "criteria": 76,
+   "criteria_whose_repeats_disagree": 2,
+   "criteria_wrong_at_least_once": 22,
+   "criteria_wrong_on_every_call": 20,
+   "criteria_wrong_rate": 0.2895,
+   "criteria_wrong_rate_95ci": [
+    0.1996,
+    0.3996
+   ],
+   "expected": "UNMET",
+   "tasks": 10,
+   "tasks_with_a_wrong_criterion": 6,
+   "wrong_calls": 63,
+   "wrong_criteria": [
+    "21c6094c2376",
+    "2db0a1d95356",
+    "3ca4599feecd",
+    "5475bfc18d3a",
+    "5b918267b9d4",
+    "6238a2146890",
+    "625b79fdf63e",
+    "62e2a1251fc0",
+    "66f28b01b186",
+    "6adc88325a50",
+    "81fca8c18b11",
+    "82311c274e91",
+    "8d5463b6a76f",
+    "ac6dd3f56310",
+    "b58db5c114f7",
+    "ba48f4e13a23",
+    "cf234fad4701",
+    "d464b9f734a1",
+    "dd484d8a939a",
+    "df1f99e42a3a",
+    "ed5343d2fceb",
+    "fb353a867903"
+   ]
+  },
+  "report_near_outside": {
+   "calls": 69,
+   "criteria": 69,
+   "criteria_whose_repeats_disagree": 0,
+   "criteria_wrong_at_least_once": 14,
+   "criteria_wrong_on_every_call": 14,
+   "criteria_wrong_rate": 0.2029,
+   "criteria_wrong_rate_95ci": [
+    0.1249,
+    0.3122
+   ],
+   "expected": "UNMET",
+   "tasks": 9,
+   "tasks_with_a_wrong_criterion": 8,
+   "wrong_calls": 14,
+   "wrong_criteria": [
+    "092ae21e5b04",
+    "21c6094c2376",
+    "393e0b478c86",
+    "415e87a829c7",
+    "50e39130ac61",
+    "60e43faaa021",
+    "67bb49c574c1",
+    "7767dbf98624",
+    "806277bd8698",
+    "a87c0f5bda61",
+    "b8e87ef67d40",
+    "d464b9f734a1",
+    "ed5343d2fceb",
+    "fb81963bfe14"
+   ]
+  }
+ },
+ "tokens": {
+  "input": 1405086,
+  "output": 69525
+ },
+ "wrong_replies_first_arms": {
+  "bare_inside": {
+   "other": [
+    "092ae21e5b04_0",
+    "092ae21e5b04_1",
+    "092ae21e5b04_2"
+   ],
+   "reply_states_the_correct_range": 3,
+   "wrong_calls": 6
+  },
+  "bare_outside": {
+   "other": [],
+   "reply_states_the_correct_range": 3,
+   "wrong_calls": 3
+  },
+  "bare_outside_note": {
+   "other": [],
+   "reply_states_the_correct_range": 1,
+   "wrong_calls": 1
+  },
+  "near_inside": {
+   "other": [
+    "6e30ebb89755_0"
+   ],
+   "reply_states_the_correct_range": 11,
+   "wrong_calls": 12
+  },
+  "near_outside": {
+   "other": [
+    "7d39b032c4de_2"
+   ],
+   "reply_states_the_correct_range": 25,
+   "wrong_calls": 26
+  },
+  "report_outside": {
+   "other": [],
+   "reply_states_the_correct_range": 5,
+   "wrong_calls": 5
+  },
+  "units_inside": {
+   "other": [],
+   "reply_states_the_correct_range": 5,
+   "wrong_calls": 5
+  },
+  "units_outside": {
+   "other": [
+    "2c86fbbf812c_0",
+    "2c86fbbf812c_1"
+   ],
+   "reply_states_the_correct_range": 20,
+   "wrong_calls": 22
+  }
+ },
+ "wrong_replies_this_arm": {
+  "above_150": {
+   "other": [],
+   "reply_states_the_correct_range": 5,
+   "wrong_calls": 5
+  },
+  "below_inside": {
+   "other": [
+    "6e30ebb89755_0",
+    "6e30ebb89755_1",
+    "6e30ebb89755_2",
+    "bb4f523f2455_0",
+    "bb4f523f2455_1",
+    "bb4f523f2455_2"
+   ],
+   "reply_states_the_correct_range": 11,
+   "wrong_calls": 17
+  },
+  "below_outside": {
+   "other": [],
+   "reply_states_the_correct_range": 63,
+   "wrong_calls": 63
+  },
+  "report_near_outside": {
+   "other": [
+    "b8e87ef67d40_0"
+   ],
+   "reply_states_the_correct_range": 13,
+   "wrong_calls": 14
+  }
+ }
+}

@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "consilience-judge-check"
+version = "0.1.0"
+description = "Where a rubric's right answer is arithmetic, is the judge right? Builds the test from the rubric, decides every case by exact arithmetic, and leaves a receipt."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Anuja Khatri" }]
+keywords = ["evaluation", "rubric", "llm-judge", "benchmark", "verification", "reproducibility"]
+dependencies = [
+    # The Consilience engine: reads values and units, compares two quantities, hashes
+    # receipts. Pinned to one public commit so that every result here re-runs the same.
+    "consilience @ git+https://github.com/Anuja-Khatri/consilience-core@b5fa2ef168370815bb3d523cccb27730605671c6",
+]
+
+[project.optional-dependencies]
+test = ["pytest>=7"]
+
+[project.scripts]
+consilience-judge-check = "consilience_judge_check.cli:main"
+
+[project.urls]
+Repository = "https://github.com/Anuja-Khatri/consilience-judge-check"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

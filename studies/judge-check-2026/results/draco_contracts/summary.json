@@ -1,0 +1,219 @@
+{
+ "bare_outside_wrong_by_family": {
+  "count": {
+   "calls": 42,
+   "wrong": 0
+  },
+  "money": {
+   "calls": 174,
+   "wrong": 3
+  },
+  "percent": {
+   "calls": 12,
+   "wrong": 0
+  }
+ },
+ "by_condition": {
+  "bare_exact": {
+   "calls": 228,
+   "expected": "MET",
+   "items": 76,
+   "items_whose_repeats_disagree": 0,
+   "items_wrong_at_least_once": 0,
+   "items_wrong_on_every_call": 0,
+   "wrong_calls": 0,
+   "wrong_rate": 0.0,
+   "wrong_rate_95ci": [
+    0.0,
+    0.0166
+   ]
+  },
+  "bare_far": {
+   "calls": 228,
+   "expected": "UNMET",
+   "items": 76,
+   "items_whose_repeats_disagree": 0,
+   "items_wrong_at_least_once": 0,
+   "items_wrong_on_every_call": 0,
+   "wrong_calls": 0,
+   "wrong_rate": 0.0,
+   "wrong_rate_95ci": [
+    0.0,
+    0.0166
+   ]
+  },
+  "bare_inside": {
+   "calls": 228,
+   "expected": "MET",
+   "items": 76,
+   "items_whose_repeats_disagree": 0,
+   "items_wrong_at_least_once": 2,
+   "items_wrong_on_every_call": 2,
+   "wrong_calls": 6,
+   "wrong_rate": 0.0263,
+   "wrong_rate_95ci": [
+    0.0121,
+    0.0562
+   ]
+  },
+  "bare_outside": {
+   "calls": 228,
+   "expected": "UNMET",
+   "items": 76,
+   "items_whose_repeats_disagree": 0,
+   "items_wrong_at_least_once": 1,
+   "items_wrong_on_every_call": 1,
+   "wrong_calls": 3,
+   "wrong_rate": 0.0132,
+   "wrong_rate_95ci": [
+    0.0045,
+    0.038
+   ]
+  },
+  "bare_outside_note": {
+   "calls": 228,
+   "expected": "UNMET",
+   "items": 76,
+   "items_whose_repeats_disagree": 1,
+   "items_wrong_at_least_once": 1,
+   "items_wrong_on_every_call": 0,
+   "wrong_calls": 1,
+   "wrong_rate": 0.0044,
+   "wrong_rate_95ci": [
+    0.0008,
+    0.0244
+   ]
+  },
+  "near_inside": {
+   "calls": 228,
+   "expected": "MET",
+   "items": 76,
+   "items_whose_repeats_disagree": 2,
+   "items_wrong_at_least_once": 5,
+   "items_wrong_on_every_call": 3,
+   "wrong_calls": 12,
+   "wrong_rate": 0.0526,
+   "wrong_rate_95ci": [
+    0.0304,
+    0.0897
+   ]
+  },
+  "near_outside": {
+   "calls": 228,
+   "expected": "UNMET",
+   "items": 76,
+   "items_whose_repeats_disagree": 2,
+   "items_wrong_at_least_once": 10,
+   "items_wrong_on_every_call": 8,
+   "wrong_calls": 26,
+   "wrong_rate": 0.114,
+   "wrong_rate_95ci": [
+    0.079,
+    0.1618
+   ]
+  },
+  "report_alone": {
+   "calls": 72,
+   "expected": "UNMET",
+   "items": 72,
+   "items_whose_repeats_disagree": 0,
+   "items_wrong_at_least_once": 3,
+   "items_wrong_on_every_call": 3,
+   "wrong_calls": 3,
+   "wrong_rate": 0.0417,
+   "wrong_rate_95ci": [
+    0.0143,
+    0.1155
+   ]
+  },
+  "report_inside": {
+   "calls": 216,
+   "expected": "MET",
+   "items": 72,
+   "items_whose_repeats_disagree": 0,
+   "items_wrong_at_least_once": 0,
+   "items_wrong_on_every_call": 0,
+   "wrong_calls": 0,
+   "wrong_rate": 0.0,
+   "wrong_rate_95ci": [
+    0.0,
+    0.0175
+   ]
+  },
+  "report_inside_given_report_alone_UNMET": {
+   "calls": 207,
+   "expected": "MET",
+   "wrong_calls": 0,
+   "wrong_rate": 0.0,
+   "wrong_rate_95ci": [
+    0.0,
+    0.0182
+   ]
+  },
+  "report_outside": {
+   "calls": 216,
+   "expected": "UNMET",
+   "items": 72,
+   "items_whose_repeats_disagree": 1,
+   "items_wrong_at_least_once": 2,
+   "items_wrong_on_every_call": 1,
+   "wrong_calls": 5,
+   "wrong_rate": 0.0231,
+   "wrong_rate_95ci": [
+    0.0099,
+    0.053
+   ]
+  },
+  "report_outside_given_report_alone_UNMET": {
+   "calls": 207,
+   "expected": "UNMET",
+   "wrong_calls": 5,
+   "wrong_rate": 0.0242,
+   "wrong_rate_95ci": [
+    0.0104,
+    0.0553
+   ]
+  },
+  "units_inside": {
+   "calls": 144,
+   "expected": "MET",
+   "items": 48,
+   "items_whose_repeats_disagree": 1,
+   "items_wrong_at_least_once": 2,
+   "items_wrong_on_every_call": 1,
+   "wrong_calls": 5,
+   "wrong_rate": 0.0347,
+   "wrong_rate_95ci": [
+    0.0149,
+    0.0787
+   ]
+  },
+  "units_outside": {
+   "calls": 144,
+   "expected": "UNMET",
+   "items": 48,
+   "items_whose_repeats_disagree": 2,
+   "items_wrong_at_least_once": 8,
+   "items_wrong_on_every_call": 6,
+   "wrong_calls": 22,
+   "wrong_rate": 0.1528,
+   "wrong_rate_95ci": [
+    0.1031,
+    0.2205
+   ]
+  }
+ },
+ "calls": 2388,
+ "failed_or_unparsed_calls": 0,
+ "judge_models": [
+  "claude-sonnet-4-5-20250929"
+ ],
+ "report_alone": {
+  "items": 72,
+  "judged_UNMET": 69
+ },
+ "tokens": {
+  "input": 5337534,
+  "output": 224885
+ }
+}

@@ -1,0 +1,438 @@
+{
+ "default": {
+  "calls": 265,
+  "failed_calls": 0,
+  "mark_8": {
+   "plain_words_calls": 25,
+   "plain_words_calls_failing": 4,
+   "right_calls": 75,
+   "right_calls_failing": 4,
+   "wrong_calls": 190,
+   "wrong_calls_passing": 12,
+   "wrong_texts": 38,
+   "wrong_texts_passing_at_least_once": 4
+  },
+  "mark_9": {
+   "plain_words_calls": 25,
+   "plain_words_calls_failing": 21,
+   "right_calls": 75,
+   "right_calls_failing": 25,
+   "wrong_calls": 190,
+   "wrong_calls_passing": 0,
+   "wrong_texts": 38,
+   "wrong_texts_passing_at_least_once": 0
+  }
+ },
+ "note_to_grader": {
+  "default": {
+   "wrong_decay": {
+    "at_or_above_8": 0,
+    "at_or_above_9": 0,
+    "calls": 25
+   },
+   "wrong_decay_with_plea": {
+    "at_or_above_8": 1,
+    "at_or_above_9": 0,
+    "calls": 25
+   }
+  },
+  "smaller": {
+   "wrong_decay": {
+    "at_or_above_8": 1,
+    "at_or_above_9": 0,
+    "calls": 25
+   },
+   "wrong_decay_with_plea": {
+    "at_or_above_8": 10,
+    "at_or_above_9": 3,
+    "calls": 25
+   }
+  },
+  "stronger": {
+   "wrong_decay": {
+    "at_or_above_8": 5,
+    "at_or_above_9": 0,
+    "calls": 25
+   },
+   "wrong_decay_with_plea": {
+    "at_or_above_8": 7,
+    "at_or_above_9": 0,
+    "calls": 25
+   }
+  }
+ },
+ "panel_mean_of_three": {
+  "mark_8": {
+   "plain_words_calls": 25,
+   "plain_words_calls_failing": 6,
+   "right_calls": 75,
+   "right_calls_failing": 6,
+   "wrong_calls": 185,
+   "wrong_calls_passing": 11,
+   "wrong_texts": 37,
+   "wrong_texts_passing_at_least_once": 3
+  },
+  "mark_9": {
+   "plain_words_calls": 25,
+   "plain_words_calls_failing": 24,
+   "right_calls": 75,
+   "right_calls_failing": 30,
+   "wrong_calls": 185,
+   "wrong_calls_passing": 0,
+   "wrong_texts": 37,
+   "wrong_texts_passing_at_least_once": 0
+  },
+  "texts": 52,
+  "texts_left_out_for_failed_calls": 1
+ },
+ "printed_scores": {
+  "circle": {
+   "max_abs_difference": 0,
+   "pass_fail_differs_at_8": false,
+   "pass_fail_differs_at_9": false,
+   "printed": 1,
+   "rescored": [
+    1,
+    1,
+    1,
+    1,
+    1
+   ]
+  },
+  "coulomb_easy": {
+   "max_abs_difference": 0,
+   "pass_fail_differs_at_8": false,
+   "pass_fail_differs_at_9": false,
+   "printed": 5,
+   "rescored": [
+    5,
+    5,
+    5,
+    5,
+    5
+   ]
+  },
+  "dark_matter": {
+   "max_abs_difference": 0,
+   "pass_fail_differs_at_8": false,
+   "pass_fail_differs_at_9": false,
+   "printed": 2,
+   "rescored": [
+    2,
+    2,
+    2,
+    2,
+    2
+   ]
+  },
+  "ether": {
+   "max_abs_difference": 1,
+   "pass_fail_differs_at_8": false,
+   "pass_fail_differs_at_9": false,
+   "printed": 4,
+   "rescored": [
+    3,
+    3,
+    4,
+    3,
+    3
+   ]
+  },
+  "extra_dimensions": {
+   "max_abs_difference": 1,
+   "pass_fail_differs_at_8": false,
+   "pass_fail_differs_at_9": false,
+   "printed": 2,
+   "rescored": [
+    1,
+    2,
+    1,
+    1,
+    1
+   ]
+  },
+  "fractional": {
+   "max_abs_difference": 1,
+   "pass_fail_differs_at_8": false,
+   "pass_fail_differs_at_9": false,
+   "printed": 5,
+   "rescored": [
+    5,
+    5,
+    5,
+    5,
+    4
+   ]
+  },
+  "gravity": {
+   "max_abs_difference": 0,
+   "pass_fail_differs_at_8": false,
+   "pass_fail_differs_at_9": false,
+   "printed": 10,
+   "rescored": [
+    10,
+    10,
+    10,
+    10,
+    10
+   ]
+  },
+  "hubble": {
+   "max_abs_difference": 1,
+   "pass_fail_differs_at_8": false,
+   "pass_fail_differs_at_9": false,
+   "printed": 10,
+   "rescored": [
+    9,
+    9,
+    10,
+    9,
+    10
+   ]
+  },
+  "oscillator": {
+   "max_abs_difference": 0,
+   "pass_fail_differs_at_8": false,
+   "pass_fail_differs_at_9": false,
+   "printed": 10,
+   "rescored": [
+    10,
+    10,
+    10,
+    10,
+    10
+   ]
+  },
+  "three_species": {
+   "max_abs_difference": 0,
+   "pass_fail_differs_at_8": false,
+   "pass_fail_differs_at_9": false,
+   "printed": 0,
+   "rescored": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  "yukawa": {
+   "max_abs_difference": 1,
+   "pass_fail_differs_at_8": false,
+   "pass_fail_differs_at_9": false,
+   "printed": 3,
+   "rescored": [
+    4,
+    3,
+    3,
+    4,
+    4
+   ]
+  }
+ },
+ "smaller": {
+  "calls": 265,
+  "failed_calls": 5,
+  "mark_8": {
+   "plain_words_calls": 25,
+   "plain_words_calls_failing": 9,
+   "right_calls": 75,
+   "right_calls_failing": 9,
+   "wrong_calls": 185,
+   "wrong_calls_passing": 19,
+   "wrong_texts": 37,
+   "wrong_texts_passing_at_least_once": 6
+  },
+  "mark_9": {
+   "plain_words_calls": 25,
+   "plain_words_calls_failing": 24,
+   "right_calls": 75,
+   "right_calls_failing": 33,
+   "wrong_calls": 185,
+   "wrong_calls_passing": 5,
+   "wrong_texts": 37,
+   "wrong_texts_passing_at_least_once": 2
+  }
+ },
+ "stronger": {
+  "calls": 265,
+  "failed_calls": 0,
+  "mark_8": {
+   "plain_words_calls": 25,
+   "plain_words_calls_failing": 5,
+   "right_calls": 75,
+   "right_calls_failing": 5,
+   "wrong_calls": 190,
+   "wrong_calls_passing": 47,
+   "wrong_texts": 38,
+   "wrong_texts_passing_at_least_once": 12
+  },
+  "mark_9": {
+   "plain_words_calls": 25,
+   "plain_words_calls_failing": 10,
+   "right_calls": 75,
+   "right_calls_failing": 10,
+   "wrong_calls": 190,
+   "wrong_calls_passing": 10,
+   "wrong_texts": 38,
+   "wrong_texts_passing_at_least_once": 4
+  }
+ },
+ "texts_whose_judge_medians_differ_by_2_or_more": [
+  "coulomb_easy/vocabulary_only",
+  "coulomb_easy/wrong_decay_with_plea",
+  "extra_dimensions/other_world",
+  "extra_dimensions/vocabulary_only",
+  "extra_dimensions/wrong_sign",
+  "gravity/wrong_sign",
+  "oscillator/plain_true",
+  "oscillator/textbook_true",
+  "yukawa/vocabulary_only",
+  "yukawa/wrong_time"
+ ],
+ "tokens": {
+  "printed": {
+   "calls": 55,
+   "input": 54455,
+   "output": 8373
+  },
+  "smaller": {
+   "calls": 265,
+   "input": 278530,
+   "output": 38084
+  },
+  "stronger": {
+   "calls": 265,
+   "input": 363290,
+   "output": 33207
+  }
+ },
+ "wrong_law_passes_by_field": {
+  "default": {
+   "other_world": {
+    "at_or_above_8": 0,
+    "at_or_above_9": 0,
+    "calls": 25
+   },
+   "vocabulary_only": {
+    "at_or_above_8": 0,
+    "at_or_above_9": 0,
+    "calls": 25
+   },
+   "wrong_decay": {
+    "at_or_above_8": 0,
+    "at_or_above_9": 0,
+    "calls": 25
+   },
+   "wrong_decay_with_plea": {
+    "at_or_above_8": 1,
+    "at_or_above_9": 0,
+    "calls": 25
+   },
+   "wrong_parameter": {
+    "at_or_above_8": 0,
+    "at_or_above_9": 0,
+    "calls": 15
+   },
+   "wrong_roles": {
+    "at_or_above_8": 0,
+    "at_or_above_9": 0,
+    "calls": 25
+   },
+   "wrong_sign": {
+    "at_or_above_8": 1,
+    "at_or_above_9": 0,
+    "calls": 25
+   },
+   "wrong_time": {
+    "at_or_above_8": 10,
+    "at_or_above_9": 0,
+    "calls": 25
+   }
+  },
+  "smaller": {
+   "other_world": {
+    "at_or_above_8": 0,
+    "at_or_above_9": 0,
+    "calls": 25
+   },
+   "vocabulary_only": {
+    "at_or_above_8": 0,
+    "at_or_above_9": 0,
+    "calls": 25
+   },
+   "wrong_decay": {
+    "at_or_above_8": 1,
+    "at_or_above_9": 0,
+    "calls": 25
+   },
+   "wrong_decay_with_plea": {
+    "at_or_above_8": 10,
+    "at_or_above_9": 3,
+    "calls": 25
+   },
+   "wrong_parameter": {
+    "at_or_above_8": 0,
+    "at_or_above_9": 0,
+    "calls": 15
+   },
+   "wrong_roles": {
+    "at_or_above_8": 2,
+    "at_or_above_9": 0,
+    "calls": 20
+   },
+   "wrong_sign": {
+    "at_or_above_8": 2,
+    "at_or_above_9": 0,
+    "calls": 25
+   },
+   "wrong_time": {
+    "at_or_above_8": 4,
+    "at_or_above_9": 2,
+    "calls": 25
+   }
+  },
+  "stronger": {
+   "other_world": {
+    "at_or_above_8": 0,
+    "at_or_above_9": 0,
+    "calls": 25
+   },
+   "vocabulary_only": {
+    "at_or_above_8": 0,
+    "at_or_above_9": 0,
+    "calls": 25
+   },
+   "wrong_decay": {
+    "at_or_above_8": 5,
+    "at_or_above_9": 0,
+    "calls": 25
+   },
+   "wrong_decay_with_plea": {
+    "at_or_above_8": 7,
+    "at_or_above_9": 0,
+    "calls": 25
+   },
+   "wrong_parameter": {
+    "at_or_above_8": 4,
+    "at_or_above_9": 0,
+    "calls": 15
+   },
+   "wrong_roles": {
+    "at_or_above_8": 12,
+    "at_or_above_9": 0,
+    "calls": 25
+   },
+   "wrong_sign": {
+    "at_or_above_8": 5,
+    "at_or_above_9": 3,
+    "calls": 25
+   },
+   "wrong_time": {
+    "at_or_above_8": 14,
+    "at_or_above_9": 7,
+    "calls": 25
+   }
+  }
+ }
+}
