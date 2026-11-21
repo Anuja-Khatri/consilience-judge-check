@@ -13,6 +13,8 @@ Where each thing in this repository came from.
 | The judge call records, tables and receipts in the study folder | Produced for this study on 20 and 21 Nov 2026 | | Every call kept. The scripts that made them are in the study's `pilot/` folder |
 | `studies/judge-check-2026/AUDIT.md`, `AUDIT_PRODUCT.md` | Four independent audits by separate AI sessions, 20 Nov 2026 | | Each report is kept as returned, with what was changed for each finding |
 | `AUDIT_MOVE.md` | An independent check of this repository after the move, by a separate AI session, 21 Nov 2026 | | Kept as returned, with what was done about each finding |
+| `studies/judge-check-2026/AUDIT_REASONING.md` | An independent recount of the reasoning experiment, by a separate AI session, 21 Nov 2026 | | Kept as returned, with what was done about each finding |
+| `studies/judge-check-2026/PREREGISTRATION_DRACO_REASONING.md`, `pilot/draco_reasoning.py`, `results/draco_reasoning/` | Written and run for this study on 21 Nov 2026, after the move | | One sentence naming who approved the spending was removed from the preregistration for publication. One comment in the script was corrected after the run and says so |
 
 **Kept as written, with three exceptions.** The preregistrations, the scripts in `pilot/` and `adapters/`, the audit records and the result files in the study folder are as they were on the working branch, and name the commands as they were called then (`consilience rubric scan`, `consilience grader-check`). The exceptions:
 

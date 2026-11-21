@@ -1,0 +1,36 @@
+data:        studies/judge-check-2026/results/draco_reasoning/table_reasoning_off_default_temperature.csv (76 rows; sha256 c66fa36221db9ecc13b983fc6509bc48417565f44fb39406d32f078552dc80ec)
+decided:     76 of 76 (76 in exact decimal arithmetic, 0 after a unit conversion)
+grader right: 52
+lenient:     24 (accepted a value outside the stated tolerance)
+strict:      0 (rejected a value inside the stated tolerance)
+  line 8    21c6094c2376@-1.1#0  -1.1  lenient: stated 61800000 USD, reference 64000000 USD, tolerance 2000000 USD, difference 2.2e+06 USD   row receipt 1005a6f54faa
+  line 12   2db0a1d95356@-1.1#0  -1.1  lenient: stated 13494356 count, reference 13714356 count, tolerance 200000 count, difference 220000 count   row receipt 05674f314ad0
+  line 18   3ca4599feecd@-1.1#0  -1.1  lenient: stated 34500 USD, reference 40000 USD, tolerance 5000 USD, difference 5500 USD   row receipt 04c480ca25a0
+  line 25   5475bfc18d3a@-1.1#0  -1.1  lenient: stated 19.12 USD, reference 19.67 USD, tolerance 0.5 USD, difference 0.55 USD   row receipt 86a6757d81f4
+  line 28   5b918267b9d4@-1.1#0  -1.1  lenient: stated 289000 USD, reference 311000 USD, tolerance 20000 USD, difference 22000 USD   row receipt 091a4192123e
+  line 29   6097b4a4aac0@-1.1#0  -1.1  lenient: stated 1094500000 USD, reference 1100000000 USD, tolerance 5000000 USD, difference 5.5e+06 USD   row receipt e61e0ebdd7ab
+  line 31   6238a2146890@-1.1#0  -1.1  lenient: stated 652000 USD, reference 696000 USD, tolerance 40000 USD, difference 44000 USD   row receipt 510e73fd1dd6
+  line 32   625b79fdf63e@-1.1#0  -1.1  lenient: stated 798000 USD, reference 853000 USD, tolerance 50000 USD, difference 55000 USD   row receipt e5d9f5c1a673
+  line 33   62e2a1251fc0@-1.1#0  -1.1  lenient: stated 82 USD, reference 93 USD, tolerance 10 USD, difference 11 USD   row receipt 5699ccdb67d0
+  line 34   66f28b01b186@-1.1#0  -1.1  lenient: stated 33.65 USD, reference 35.85 USD, tolerance 2 USD, difference 2.2 USD   row receipt 246fda0fb62e
+  line 37   6adc88325a50@-1.1#0  -1.1  lenient: stated 29450000000 USD, reference 30000000000 USD, tolerance 500000000 USD, difference 5.5e+08 USD   row receipt 8125473a1ce5
+  line 40   7767dbf98624@-1.1#0  -1.1  lenient: stated 22.87 USD, reference 25.07 USD, tolerance 2 USD, difference 2.2 USD   row receipt d4eb1ddfaec8
+  line 45   81fca8c18b11@-1.1#0  -1.1  lenient: stated 30250000000 USD, reference 30800000000 USD, tolerance 500000000 USD, difference 5.5e+08 USD   row receipt 3f846f5eaaf1
+  line 48   8a43d3043248@-1.1#0  -1.1  lenient: stated 5133732 count, reference 5243732 count, tolerance 100000 count, difference 110000 count   row receipt 829ba8d9dd01
+  line 49   8d5463b6a76f@-1.1#0  -1.1  lenient: stated 8305624 count, reference 8470624 count, tolerance 150000 count, difference 165000 count   row receipt 41a0c9e6b736
+  line 51   90fcbfd65765@-1.1#0  -1.1  lenient: stated 3140232 USD, reference 3151232 USD, tolerance 10000 USD, difference 11000 USD   row receipt 6ae98f74c48e
+  line 55   ac6dd3f56310@-1.1#0  -1.1  lenient: stated 952000 USD, reference 1007000 USD, tolerance 50000 USD, difference 55000 USD   row receipt 499b76e554c6
+  line 57   b4d1065c1b38@-1.1#0  -1.1  lenient: stated 1437109 USD, reference 1448109 USD, tolerance 10000 USD, difference 11000 USD   row receipt 180a352d6f0c
+  line 58   b58db5c114f7@-1.1#0  -1.1  lenient: stated 74.23 USD, reference 77.53 USD, tolerance 3 USD, difference 3.3 USD   row receipt 593a1f0136ab
+  line 60   ba48f4e13a23@-1.1#0  -1.1  lenient: stated 12.59 USD, reference 13.14 USD, tolerance 0.5 USD, difference 0.55 USD   row receipt 350094e7a669
+  line 65   cf234fad4701@-1.1#0  -1.1  lenient: stated 8.14 USD, reference 8.69 USD, tolerance 0.5 USD, difference 0.55 USD   row receipt 3131a37900fa
+  line 68   d464b9f734a1@-1.1#0  -1.1  lenient: stated 2667500 USD, reference 2750000 USD, tolerance 75000 USD, difference 82500 USD   row receipt bdd8d90da9a5
+  line 69   dd484d8a939a@-1.1#0  -1.1  lenient: stated 0.45 percent, reference 1 percent, tolerance 0.5 percent, difference 0.55 percent   row receipt 1ba30f2f3274
+  line 72   ed5343d2fceb@-1.1#0  -1.1  lenient: stated 91.5 USD, reference 97 USD, tolerance 5 USD, difference 5.5 USD   row receipt c3de87239c05
+  group -1.1: 52 right, 24 lenient, 0 strict of 76 decided
+by item (an item is wrong if any of its rows is; 95% interval treats items as independent):
+  -1.1: 24 of 76 items wrong (22% to 43%), 24 on every row; in 7 of 10 clusters (largest cluster 14 of 39, the others 10 of 37); of 24 accepted, 20 still outside after rounding to the reference's precision, 19 even when rounded toward the reference
+could not decide: 0 rows
+result:      exit 1: the grader differs from the arithmetic on some rows
+receipt:     sha256 03f8845f94e94c1135696b31990eb5e4264ffffab3ce3c230ae5093a925dde98
+wrote:       studies/judge-check-2026/results/draco_reasoning/receipt_reasoning_off_default_temperature.json

@@ -37,10 +37,10 @@ Full write-up, with limits first: [studies/judge-check-2026](studies/judge-check
 
 | Benchmark | Question | Result |
 |---|---|---|
-| DRACO (Perplexity) | Does the judge apply the tolerance a criterion states? | **It depends on the judge.** On the same 76 criteria and the same sentences, the paper's third judge accepted a value just outside the stated tolerance for 27 criteria. The current judge of the paper's primary family accepted none, including inside a long report (0 of 69 against 14 of 69). Both were right on exact and far-off values |
+| DRACO (Perplexity) | Does the judge apply the tolerance a criterion states? | **It depends on the judge.** On the same 76 criteria and the same sentences, the paper's third judge accepted a value just outside the stated tolerance for 27 criteria. The current judge of the paper's primary family accepted none, including inside a long report (0 of 69 against 14 of 69). Both were right on exact and far-off values. With its reasoning switched on, the third judge stopped too: 0 of 76 below the reference and 1 of 76 above, where changing only the temperature left 24 of 76 |
 | DiscoverPhysics | Does a wrong law pass the explanation score, and does it depend on which judge is used? | With the default judge, 0 of 38 wrong-law explanations reach the paper's pass mark. With a stronger judge from the same provider, 4 of 38 do. All 5 correct explanations written in plain words fail at least once under the default judge |
 
-**For DRACO's authors, the short version.** The judge family behind the paper's main results does not show this error on these cases. The third judge, used in the paper's judge-comparison appendix, does. Nothing here says any system's score or rank would change.
+**For DRACO's authors, the short version.** The judge family behind the paper's main results does not show this error on these cases. The third judge, used in the paper's judge-comparison appendix, does, as the paper runs it: with reasoning disabled. With reasoning switched on it does not. Nothing here says any system's score or rank would change.
 
 Both benchmarks publish their rubrics, prompts and code, which is the only reason this check was possible.
 
@@ -51,10 +51,11 @@ Both benchmarks publish their rubrics, prompts and code, which is the only reaso
 | This says DRACO's results are wrong | It does not. The judge family behind the paper's main results shows no error on these cases |
 | A second model is judging the judge | No model decides anything. The tool runs no model. Each verdict is a comparison of two numbers from the rubric |
 | The test covers the rubric | It covers the criteria that state a number and a tolerance in one wording: 76 of DRACO's 3,934. The rest needs judgement and is untouched |
-| The judges tested are the paper's three | One is: the third, at the paper's settings. The primary judge has been withdrawn by its provider, so its successor was tested. The second was not tested |
+| The judges tested are the paper's three | One is: the third, at the paper's settings and, as a separate experiment, with its reasoning switched on. The primary judge has been withdrawn by its provider, so its successor was tested. The second was not tested |
+| Switching reasoning on makes that judge accurate | The study shows less than that. With reasoning on it stopped accepting values just outside a tolerance. Values inside a tolerance were not put to it in that setting |
 | The sample is large | 76 criteria from 10 tasks, and one task holds 39 of them |
 | The rubric reader works on any rubric | It reads a narrow pattern and has been tried on one rubric. It writes a review list for a person to check |
-| People have reviewed this | Not yet. Five checks were done by separate AI sessions. Three of them broke the rubric reader, and the reader's final version has not been audited. The fifth found that the move to this repository had changed one behaviour, since put back. The records are kept as returned |
+| People have reviewed this | Not yet. Six checks were done by separate AI sessions. Three of them broke the rubric reader, and the reader's final version has not been audited. One found that the move to this repository had changed one behaviour, since put back. One recounted the reasoning experiment. The records are kept as returned |
 | This is long-standing work | The Consilience engine is older. This tool and its study were built in November 2026, with an AI coding assistant working under the author's direction |
 
 ## Install
@@ -85,7 +86,7 @@ pip install -e ".[test]"
 python -m pytest
 ```
 
-The 199 tests include more than a hundred of the hostile criteria the auditors wrote, and tests that rebuild the study's test sentences byte for byte and re-run its receipts. To re-run one receipt by hand:
+The 200 tests include more than a hundred of the hostile criteria the auditors wrote, and tests that rebuild the study's test sentences byte for byte and re-run its receipts. To re-run one receipt by hand:
 
 ```bash
 consilience-judge-check verify studies/judge-check-2026/results/draco_product/grader_receipt_saved.json
@@ -103,6 +104,7 @@ consilience-judge-check check studies/judge-check-2026/results/draco_product/tab
 - **It has met one real rubric.**
 - **The study uses built sentences, not real reports**, and a small sample.
 - **The second judge had one call per criterion.** Its run was closed before the repeat calls, so nothing here says whether its verdicts are stable from call to call.
+- **The reasoning experiment tested one judge, one call per sentence, on values just outside a tolerance only.** It does not show why the two judges differ.
 - **A receipt says "given this table, these rows differ from the arithmetic".** It does not prove the judge gave the verdicts in the table. The call records kept beside it are the evidence for that.
 - **The engine is pinned to a development commit** of `consilience-core` (0.2.0.dev0), not to a release.
 - **No person has reviewed this yet.** Every audit so far was done by a separate AI session.
@@ -112,9 +114,9 @@ consilience-judge-check check studies/judge-check-2026/results/draco_product/tab
 | Path | What |
 |---|---|
 | `src/consilience_judge_check/` | The tool: `rubric.py` (scan, probes, table), `grader.py` (check), `verify.py`, `units.py` (currency codes), `cli.py` |
-| `tests/` | 199 tests |
+| `tests/` | 200 tests |
 | `docs/rubric.md`, `docs/check.md` | What problem each command solves, who it is for, what is read and what is left out, limits |
-| `studies/judge-check-2026/` | The first study: write-up, the audit records as returned, six preregistrations, scripts, every judge call, tables, receipts |
+| `studies/judge-check-2026/` | The first study: write-up, the audit records as returned, seven preregistrations, scripts, every judge call, tables, receipts |
 | `PROVENANCE.md` | Where each thing came from |
 | `CHANGELOG.md` | What changed, including how the move to this repository was checked |
 | `AUDIT_MOVE.md` | The independent check of this repository after the move, as returned, and what was done about each finding |

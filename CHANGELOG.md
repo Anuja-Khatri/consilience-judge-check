@@ -1,5 +1,21 @@
 # Changelog
 
+## The study, 21 Nov 2026: the third judge with its reasoning switched on
+
+No code changed. A new, preregistered experiment was added to the study (Part 1c of its write-up).
+
+| Setting of the paper's third judge | Criteria accepted at 1.1 tolerances below | At 1.1 above |
+|---|---|---|
+| As the paper runs it: reasoning off, temperature 0 (first call) | 22 of 76 | 9 of 76 |
+| Reasoning off, default temperature (the control) | 24 of 76 | not run |
+| Reasoning on | 0 of 76 | 1 of 76 |
+
+- By the rules fixed before the run: for this judge, the reasoning step removes the error.
+- It does not show that the judge is accurate with reasoning on (only values just outside a tolerance were tested), and it does not show why the two judges differ.
+- 228 calls, none failed. A separate session recounted it and reproduced every count: `studies/judge-check-2026/AUDIT_REASONING.md`.
+- In the whole study: 4,703 judge calls with a result, 11 failed, all kept. Seven preregistrations.
+- One test added: the two new receipts re-run to these counts. 200 tests.
+
 ## The study, 21 Nov 2026: the run on the second judge is closed
 
 No code changed. The last calls on the second DRACO judge were made and counted, and the run was closed before its spending cap by the author's decision, when the provider's limit of 250 requests a day would have carried it into a third day.

@@ -276,3 +276,25 @@ def test_the_published_study_receipts_still_verify():
     assert s["by_group"]["below_outside"]["lenient"] == 63
     w = verify(study / "judge_panel" / "wrong_law_receipt.json")
     assert w.ok and w.command == "consilience check"      # the engine's own receipt, handed on
+
+
+def test_the_reasoning_experiment_receipts_still_verify():
+    """studies/judge-check-2026, Part 1c: the third judge with its reasoning switched on, and
+    the control. The receipts re-run to the published counts."""
+    from pathlib import Path
+    d = Path(__file__).resolve().parents[1] / "studies" / "judge-check-2026" / "results" / "draco_reasoning"
+    if not d.is_dir():
+        pytest.skip("the study folder is not in this checkout")
+    on = verify(d / "receipt_reasoning_on.json")
+    off = verify(d / "receipt_reasoning_off_default_temperature.json")
+    assert on.ok and off.ok
+    s = json.loads((d / "receipt_reasoning_on.json").read_text())["result"]["summary"]
+    assert (s["rows"], s["right"], s["lenient"], s["strict"], s["undecided"]) == (152, 151, 1, 0, 0)
+    b = s["by_item"]
+    assert (b["-1.1"]["items"], b["-1.1"]["wrong_at_least_once"]) == (76, 0)
+    assert (b["+1.1"]["items"], b["+1.1"]["wrong_at_least_once"]) == (76, 1)
+    s = json.loads((d / "receipt_reasoning_off_default_temperature.json").read_text())["result"]["summary"]
+    assert (s["rows"], s["right"], s["lenient"], s["strict"], s["undecided"]) == (76, 52, 24, 0, 0)
+    assert (s["by_item"]["-1.1"]["items"], s["by_item"]["-1.1"]["wrong_at_least_once"]) == (76, 24)
+    assert s["by_item"]["-1.1"]["clusters_with_a_wrong_item"] == 7
+

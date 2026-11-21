@@ -28,12 +28,12 @@ consilience-judge-check check table.csv --receipt receipt.json
 
 | Benchmark | Question | Result |
 |---|---|---|
-| DRACO | Does the judge apply the tolerance a criterion states? | **It depends on the judge.** On the same 76 criteria and the same sentences, the paper's third judge accepted a value just outside the stated tolerance for 27 criteria (10 above the reference, 22 below), and the current judge of the paper's primary family accepted none, including inside a long report (0 of 69 against 14 of 69). Both judges were right on exact and far-off values |
+| DRACO | Does the judge apply the tolerance a criterion states? | **It depends on the judge.** On the same 76 criteria and the same sentences, the paper's third judge accepted a value just outside the stated tolerance for 27 criteria (10 above the reference, 22 below), and the current judge of the paper's primary family accepted none, including inside a long report (0 of 69 against 14 of 69). Both judges were right on exact and far-off values. **With its reasoning switched on, the third judge stopped:** 0 of 76 below and 1 of 76 above, where changing only the temperature left 24 of 76 (Part 1c) |
 | DiscoverPhysics | Does a wrong law pass the explanation score, and does the answer depend on which judge is used? | With the default judge, 0 of 38 wrong-law explanations reach the paper's pass mark. With a stronger judge from the same provider, 4 of 38 do, and 12 of 38 reach the public code's mark. All 5 correct explanations written in plain words fail at least once under the default judge |
 
 Where the third DRACO judge is wrong, its own reply nearly always shows the mistake: "The response states the exam fee as $82, which falls within the acceptable range of $93 ± $10 ($83–$103)."
 
-**For DRACO's authors, the short version.** The judge family behind the paper's main results does not show this error on these cases. The third judge, used in the paper's judge-comparison appendix, does. The test that separates them is one command per step and needs no labels.
+**For DRACO's authors, the short version.** The judge family behind the paper's main results does not show this error on these cases. The third judge, used in the paper's judge-comparison appendix, does, as the paper runs it: with reasoning disabled. With reasoning switched on it does not. The test that separates them is one command per step and needs no labels.
 
 ## Read this before the numbers
 
@@ -46,7 +46,7 @@ Where the third DRACO judge is wrong, its own reply nearly always shows the mist
 - **The DiscoverPhysics numbers are small**: 38 wrong-law texts and 5 plain-words texts in five worlds, and three judges from one provider.
 - **The altered values in the test items are deliberately wrong.** They are inputs for a test and state nothing about any company.
 - **The reader of rubrics is narrow.** It reads criteria worded like DRACO's: they start with "States", end with "(within +/- T)", and give a dollar amount, a percentage or a count. It has not been tried on a second rubric.
-- **It was audited, by other AI sessions and not by a person.** One audit found errors in the first write-up of this study (`AUDIT.md`), which are corrected. Three audits of the rubric reader each found hostile criteria it misread, and it was rewritten after each (`AUDIT_PRODUCT.md`). **The final reader has not had an audit of its own**, and another would very likely find more. For DRACO the 76 criteria it accepts were checked value by value.
+- **It was audited, by other AI sessions and not by a person.** One audit found errors in the first write-up of this study (`AUDIT.md`), which are corrected. Three audits of the rubric reader each found hostile criteria it misread, and it was rewritten after each (`AUDIT_PRODUCT.md`). **The final reader has not had an audit of its own**, and another would very likely find more. For DRACO the 76 criteria it accepts were checked value by value. A separate session also recounted the reasoning experiment of Part 1c and reproduced its counts (`AUDIT_REASONING.md`).
 
 ## Why these two benchmarks
 
@@ -216,6 +216,68 @@ From rubric to report, the package does every step that does not need a model.
 
 ---
 
+## Part 1c. The third judge with its reasoning switched on
+
+**Why.** The paper runs its third judge with reasoning disabled and temperature 0. Part 1 found that it accepts values just outside a stated tolerance. Part 1b found that a judge which reasons before it answers does not. So the same third judge was run again, on the same sentences, with its reasoning switched on.
+
+**What was run.** One call per sentence, on the sentences at 1.1 tolerances below and above the reference. Preregistered in `PREREGISTRATION_DRACO_REASONING.md`, with a spending cap of 2 US dollars.
+
+| Arm | Reasoning | Temperature | Sentences |
+|---|---|---|---|
+| Paper settings (Part 1). The baseline is its first call on each sentence | Off | 0 | Both sides |
+| Reasoning on | On, at the smallest budget the provider allows | Default | Both sides |
+| Control | Off | Default | 1.1 below only |
+
+The provider does not accept temperature 0 together with reasoning, so the reasoning arm runs at the default temperature. The control changes the temperature and nothing else.
+
+**Read this first.**
+
+- **Only values just outside a tolerance were tested with reasoning on.** Their right verdict is UNMET, so a judge that refused everything would score the same. Its replies argue against that: in 151 of 152 the judge writes out the correct arithmetic. But no value inside a tolerance was put to it in this setting. The result says the judge stops accepting values just outside. It does not say the judge is accurate with reasoning on.
+- **It does not show why the second judge is right.** That judge was never run without reasoning, and it differs in model, provider and temperature. The result fits the explanation "the comparison needs a reasoning step" and does not prove it. The preregistration said a "yes" would explain the difference between the two judges. That was too strong.
+- **"Reasoning on" is the provider's whole reasoning mode, not one switch.** Besides the setting itself, the reply limit was larger (2,048 tokens against 1,024; the longest reply used 492), and the provider adds about 30 tokens to the prompt that the call records do not show. The preregistration's table left out the reply limit.
+- **One call per sentence**, on 76 criteria from 10 tasks.
+- **Not a DRACO configuration.** The paper specifies reasoning disabled for this judge. Nothing here says it should have done otherwise.
+- **It cannot be repeated later.** The provider retires this judge on 30 Nov 2026.
+
+**Result.**
+
+| Arm | 1.1 T below: criteria accepted | 1.1 T above: criteria accepted |
+|---|---|---|
+| Paper settings, first call | 22 of 76 | 9 of 76 |
+| Control: reasoning off, default temperature | 24 of 76 (22% to 43%) | not run |
+| **Reasoning on** | **0 of 76** (0% to 5%) | **1 of 76** (0% to 7%) |
+
+228 calls. None failed and none was unreadable.
+
+**Against the rules fixed before the run.**
+
+| # | Question | Rule fixed in advance | Result |
+|---|---|---|---|
+| R1 (primary) | Reasoning on, 1.1 below | "Removed" at 3 or fewer of 76; "not removed" at 11 or more | 0. **Removed** |
+| R2 (control) | Reasoning off at default temperature, 1.1 below | Same thresholds | 24. **Not removed** |
+| R3 | Reasoning on, 1.1 above | "Removed" at 1 or fewer; "not removed" at 5 or more | 1. **Removed**, on the threshold: 2 would have been "reduced" |
+
+Read together, as fixed in advance: **for this judge, the reasoning step removes the error.** The study's guesses were 0 to 4, 15 to 26 and 0 to 2. All three held.
+
+**What the results say.**
+
+- **Every criterion the paper's settings got wrong is right with reasoning on**: all 22 below and all 9 above.
+- **One error remains, and it is a new one.** The criterion is "States license renewal fee as $97 (within +/- $5)" and the sentence states $102.5. The judge wrote the range as $92 to $102 and then said $102.5 is within it. The paper's settings refused this sentence on all three calls.
+- **Changing only the temperature does not remove the error.** 24 against 22: 19 the same criteria, 5 new, 3 gone. That does not show temperature has no effect. In 22 of the control's 24 wrong replies the judge writes out the correct range and still says MET.
+- **By task.** The control's 24 fall in 7 of the 10 tasks, 14 of them in the largest. Reasoning on has none in any task. Outside the largest task: 10 of 37 against 0 of 37.
+- **For a reader who rounds.** On each side, 8 of the 76 sentences state a value that would land inside the tolerance if rounded toward the reference. Without them, below: control 19 of 68, reasoning on 0 of 68.
+- **Cost.** With reasoning on, a call used about three times the output (270 tokens against 90) and cost about one and a half times as much (0.009 against 0.006 US dollars).
+- **Reply format.** With reasoning off, every reply came wrapped in a code fence. With reasoning on, 100 of 152 were bare, 33 fenced, and 19 began with a stray tag before the answer. The status field was read by rule in every one.
+
+**What it suggests.** A judge run without a reasoning step can misapply a tolerance that the rubric states. Two repairs are open to a benchmark: let the judge reason, or compare such criteria by rule. This study tested the first on one judge, and built the tool for the second.
+
+**Also on record.**
+
+- Two trial calls were made before the preregistration was written, on sentences outside the run, to learn the reply format and the cost (`results/draco_reasoning/pings.jsonl`). They were made with the script before its list of stages was shortened from four to three. The settings were the same.
+- A separate session recounted the experiment from the call records and reproduced every count. Its report, with twelve limits it listed, is in `AUDIT_REASONING.md`.
+
+---
+
 ## Part 2. DiscoverPhysics: the explanation judge
 
 **What was tested.** 53 explanations written by rule for five public worlds, five calls each. A "wrong" one changes exactly one field of the law (decay, sign, the roles of the two parameters, time-dependence, or one parameter by a factor of ten) and keeps the vocabulary, so its label is known by construction. Three judges through the benchmark's own `ExplanationJudge`, prompt and rubrics, at commit `33b7fa9df96d`: the default, one stronger and one smaller, all from one provider. The paper's pass mark is 0.9 (a score of 9); the public code's is 0.75 (a score of 8).
@@ -309,7 +371,15 @@ consilience-judge-check verify studies/judge-check-2026/results/draco_product/gr
 consilience-judge-check verify studies/judge-check-2026/results/draco_second_judge/grader_receipt.json
 ```
 
-The first re-reads the table of 2,298 cases from the first two arms, re-runs every comparison and confirms 2,218 right, 57 lenient, 23 strict. The second does the same for the 753 replication cases: 654 right, 82 lenient, 17 strict. The third is a receipt of the Consilience engine's own `check` command, which this tool hands to the engine; it confirms that 15 of 565 wrong-law calls reach mark 9 and 78 reach mark 8. The fourth is the third judge through the package alone (3,051 rows: 2,872, 139, 40). The fifth is the second judge (489 rows, all right). A receipt says "given this table, these are the rows where the verdict differs". The call records beside it are the evidence that the judge gave those verdicts.
+```bash
+consilience-judge-check verify studies/judge-check-2026/results/draco_reasoning/receipt_reasoning_on.json
+```
+
+```bash
+consilience-judge-check verify studies/judge-check-2026/results/draco_reasoning/receipt_reasoning_off_default_temperature.json
+```
+
+The first re-reads the table of 2,298 cases from the first two arms, re-runs every comparison and confirms 2,218 right, 57 lenient, 23 strict. The second does the same for the 753 replication cases: 654 right, 82 lenient, 17 strict. The third is a receipt of the Consilience engine's own `check` command, which this tool hands to the engine; it confirms that 15 of 565 wrong-law calls reach mark 9 and 78 reach mark 8. The fourth is the third judge through the package alone (3,051 rows: 2,872, 139, 40). The fifth is the second judge (489 rows, all right). The sixth and seventh are the third judge with reasoning on (152 rows: 151 right, 1 lenient) and the control (76 rows: 52 right, 24 lenient). A receipt says "given this table, these are the rows where the verdict differs". The call records beside it are the evidence that the judge gave those verdicts.
 
 To recount by criterion and by task from the call records (`DRACO_HOME` holds the dataset and paper source):
 
@@ -329,9 +399,11 @@ A receipt records a hash of the table's exact bytes, so a tool that rewrites lin
 |---|---|
 | `AUDIT.md` | The independent audit of the study as returned, and what was done about each finding |
 | `AUDIT_PRODUCT.md` | The independent audits of the rubric commands as returned, and what was done |
+| `AUDIT_REASONING.md` | The independent recount of the reasoning experiment as returned, and what was done |
 | `adapters/draco_rubric.py`, `adapters/draco_saved_verdicts.py` | DRACO's rubric as a table; this study's saved judge calls as a verdicts file |
 | `results/draco_product/` | The third judge through the package alone: contracts, probes, saved verdicts, table, receipt |
 | `results/draco_second_judge/` | The second judge: every call, verdicts, table, receipt, run summary, and the two calls made before the run |
+| `results/draco_reasoning/` | The third judge with reasoning on, and the control: every call with the judge's reasoning text, verdicts, tables, receipts, run summary, and the two trial calls |
 | `results/draco_contracts/items.json`, `items_boundary.json` | The 76 criteria and every response of the first two arms, with the value each states |
 | `results/draco_contracts/judge_calls.jsonl` | The 2,388 judge calls of the first two arms, with the judge's full reply |
 | `results/draco_contracts/grader_table.csv`, `grader_receipt.json`, `grader_check.txt` | The table `check` reads, its receipt, its printed report |
@@ -347,12 +419,12 @@ Call records carry the model identifier in a `judge_model` field, and three summ
 
 ## How the study was run
 
-- **Written down first.** Six preregistrations, each committed before its calls. Their hashes as committed: judge `1f9e56088401…`, judge panel `5243c60dc294…`, DRACO `3e5845366310…`, DRACO near the boundary `f1b59a5df7ef…`, DRACO replication `b0a7dc2c3ede…`, DRACO second judge `54499db287af…`. The commit history that shows the order is in a private repository. One sentence was removed from each of three DRACO files for publication; the hashes above are of the files before that.
-- **Every call kept.** 4,475 judge calls with a result (a verdict or a score), none edited or dropped. Kept beside them: the 11 calls that failed, and 2 calls made before the second judge's run to learn its reply format.
+- **Written down first.** Seven preregistrations, each committed before its calls. Their hashes as committed: judge `1f9e56088401…`, judge panel `5243c60dc294…`, DRACO `3e5845366310…`, DRACO near the boundary `f1b59a5df7ef…`, DRACO replication `b0a7dc2c3ede…`, DRACO second judge `54499db287af…`, DRACO reasoning `a6d935986da3…`. The commit history that shows the order is in a private repository. One sentence was removed from each of four DRACO files for publication; the hashes above are of the files before that.
+- **Every call kept.** 4,703 judge calls with a result (a verdict or a score), none edited or dropped. Kept beside them: the 11 calls that failed, and 4 trial calls made before two of the runs to learn the reply format.
 - **Checked before it was shown.** The first write-up led with "26 of 228 calls, 11%". Before publication that figure was put to a preregistered replication and an independent audit. The replication held. The audit found that the intervals were too narrow, that one sentence about the judge was wrong, that several "made no difference" statements were too strong, and that the engine did not decide "exactly" as claimed. The engine was fixed, the tables rebuilt and this text rewritten. `AUDIT.md` has every finding. Tables and receipts were regenerated; no call record was changed.
 - **Run on 20 and 21 Nov 2026**, as the first use of `check`, on benchmarks chosen because Perplexity's research page lists them and their papers name judge reliability as open.
 - **Provenance.** The study belongs to the Consilience project (Anuja Khatri). The code and this text were written with an AI coding assistant working under her direction.
-- **Cost.** About 34 US dollars in judge calls at list prices, by the author's own count.
+- **Cost.** About 36 US dollars in judge calls at list prices, by the author's own count.
 
 ## Sources and licences
 

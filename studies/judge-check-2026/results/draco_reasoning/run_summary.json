@@ -1,0 +1,46 @@
+{
+ "arms": {
+  "reasoning_off_default_temperature": {
+   "max_tokens": 1024
+  },
+  "reasoning_on": {
+   "max_tokens": 2048,
+   "thinking": {
+    "budget_tokens": 1024,
+    "type": "enabled"
+   }
+  }
+ },
+ "calls": 228,
+ "judge_models": [
+  "claude-sonnet-4-5-20250929"
+ ],
+ "made_by_stage": {
+  "1": {
+   "arm": "reasoning_on",
+   "calls": 76,
+   "failed_or_unreadable": 0,
+   "offset": "-1.1",
+   "output_tokens": 19846,
+   "with_a_verdict": 76
+  },
+  "2": {
+   "arm": "reasoning_off_default_temperature",
+   "calls": 76,
+   "failed_or_unreadable": 0,
+   "offset": "-1.1",
+   "output_tokens": 6833,
+   "with_a_verdict": 76
+  },
+  "3": {
+   "arm": "reasoning_on",
+   "calls": 76,
+   "failed_or_unreadable": 0,
+   "offset": "+1.1",
+   "output_tokens": 21145,
+   "with_a_verdict": 76
+  }
+ },
+ "metered_spend_usd": 1.8118,
+ "planned_per_stage": 76
+}

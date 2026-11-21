@@ -1,0 +1,166 @@
+{
+  "receipt": "consilience-grader-receipt/v1",
+  "command": "grader-check",
+  "consilience_version": "0.2.0.dev0",
+  "judge_check_version": "0.1.1",
+  "pint_version": "0.26.2",
+  "inputs": {
+    "data": {
+      "path": "studies/judge-check-2026/results/draco_reasoning/table_reasoning_on.csv",
+      "sha256": "2a81f12cc241b60e842a02e42179ac22a6a0cdfc17d56a90c355382a8da229b1",
+      "bytes": 18609
+    }
+  },
+  "options": {
+    "precision": "exact",
+    "edge_guard": 4e-09,
+    "met_words": [
+      "1",
+      "met",
+      "pass",
+      "passed",
+      "true",
+      "yes"
+    ],
+    "unmet_words": [
+      "0",
+      "fail",
+      "failed",
+      "false",
+      "no",
+      "unmet"
+    ]
+  },
+  "result": {
+    "summary": {
+      "rows": 152,
+      "decided": 152,
+      "right": 151,
+      "lenient": 1,
+      "strict": 0,
+      "grader_unreadable": 0,
+      "undecided": 0,
+      "blank_lines": 0,
+      "decided_exact": 152,
+      "decided_float": 0,
+      "by_group": {
+        "+1.1": {
+          "rows": 76,
+          "decided": 76,
+          "right": 75,
+          "lenient": 1,
+          "strict": 0,
+          "grader_unreadable": 0,
+          "undecided": 0
+        },
+        "-1.1": {
+          "rows": 76,
+          "decided": 76,
+          "right": 76,
+          "lenient": 0,
+          "strict": 0,
+          "grader_unreadable": 0,
+          "undecided": 0
+        }
+      },
+      "by_item": {
+        "+1.1": {
+          "items": 76,
+          "wrong_at_least_once": 1,
+          "wrong_on_every_row": 1,
+          "rows_disagree": 0,
+          "lenient_at_least_once": 1,
+          "strict_at_least_once": 0,
+          "wrong_share_95": [
+            0.0023,
+            0.0708
+          ],
+          "items_without_a_cluster": 0,
+          "clusters": 10,
+          "clusters_with_a_wrong_item": 1,
+          "largest_cluster": {
+            "wrong": 0,
+            "items": 39
+          },
+          "largest_cluster_is_tied": false,
+          "other_clusters": {
+            "wrong": 1,
+            "items": 37
+          },
+          "items_in_more_than_one_cluster": 0,
+          "lenient_items_rounding_checked": 1,
+          "lenient_items_rounding_not_checked": 0,
+          "lenient_items_at_reference_precision": 0,
+          "lenient_items_still_outside_after_rounding_half_up": 1,
+          "lenient_items_still_outside_after_rounding_toward_reference": 0
+        },
+        "-1.1": {
+          "items": 76,
+          "wrong_at_least_once": 0,
+          "wrong_on_every_row": 0,
+          "rows_disagree": 0,
+          "lenient_at_least_once": 0,
+          "strict_at_least_once": 0,
+          "wrong_share_95": [
+            0.0,
+            0.0481
+          ],
+          "items_without_a_cluster": 0,
+          "clusters": 10,
+          "clusters_with_a_wrong_item": 0,
+          "largest_cluster": {
+            "wrong": 0,
+            "items": 39
+          },
+          "largest_cluster_is_tied": false,
+          "other_clusters": {
+            "wrong": 0,
+            "items": 37
+          },
+          "items_in_more_than_one_cluster": 0,
+          "lenient_items_rounding_checked": 0,
+          "lenient_items_rounding_not_checked": 0,
+          "lenient_items_at_reference_precision": 0,
+          "lenient_items_still_outside_after_rounding_half_up": 0,
+          "lenient_items_still_outside_after_rounding_toward_reference": 0
+        }
+      },
+      "rows_without_an_item": 0,
+      "items_with_no_decided_row": 0,
+      "items_with_more_than_one_reference": 0
+    },
+    "disagreements": [
+      {
+        "line": 72,
+        "id": "ed5343d2fceb@+1.1#0",
+        "group": "+1.1",
+        "kind": "lenient",
+        "grader_verdict": "met",
+        "engine_verdict": "disagree",
+        "reference": "97 USD",
+        "stated": "102.5 USD",
+        "tolerance": "5 USD",
+        "difference": 5.5,
+        "difference_unit": "USD",
+        "method": "exact",
+        "row_sha256": "450d5b4e9d9b6cf76ca3e41ed895957effce1e5a4ce29fc98fa2b150db650afa"
+      }
+    ],
+    "undecided": [],
+    "header": [
+      "id",
+      "reference_value",
+      "reference_unit",
+      "tolerance",
+      "stated_value",
+      "stated_unit",
+      "grader_verdict",
+      "group",
+      "item",
+      "cluster",
+      "reference_step"
+    ],
+    "exit_code": 1
+  },
+  "sha256": "af5550fcac1e56d904e5338f3c01be65393e5ae0d4bf7cf8c5196dc9215f10a3"
+}

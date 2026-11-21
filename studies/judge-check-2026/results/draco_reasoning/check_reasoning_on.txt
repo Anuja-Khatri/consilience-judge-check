@@ -1,0 +1,15 @@
+data:        studies/judge-check-2026/results/draco_reasoning/table_reasoning_on.csv (152 rows; sha256 2a81f12cc241b60e842a02e42179ac22a6a0cdfc17d56a90c355382a8da229b1)
+decided:     152 of 152 (152 in exact decimal arithmetic, 0 after a unit conversion)
+grader right: 151
+lenient:     1 (accepted a value outside the stated tolerance)
+strict:      0 (rejected a value inside the stated tolerance)
+  line 72   ed5343d2fceb@+1.1#0  +1.1  lenient: stated 102.5 USD, reference 97 USD, tolerance 5 USD, difference 5.5 USD   row receipt 450d5b4e9d9b
+  group +1.1: 75 right, 1 lenient, 0 strict of 76 decided
+  group -1.1: 76 right, 0 lenient, 0 strict of 76 decided
+by item (an item is wrong if any of its rows is; 95% interval treats items as independent):
+  +1.1: 1 of 76 items wrong (0% to 7%), 1 on every row; in 1 of 10 clusters (largest cluster 0 of 39, the others 1 of 37); of 1 accepted, 1 still outside after rounding to the reference's precision, 0 even when rounded toward the reference
+  -1.1: 0 of 76 items wrong (0% to 5%), 0 on every row; in 0 of 10 clusters (largest cluster 0 of 39, the others 0 of 37)
+could not decide: 0 rows
+result:      exit 1: the grader differs from the arithmetic on some rows
+receipt:     sha256 af5550fcac1e56d904e5338f3c01be65393e5ae0d4bf7cf8c5196dc9215f10a3
+wrote:       studies/judge-check-2026/results/draco_reasoning/receipt_reasoning_on.json
