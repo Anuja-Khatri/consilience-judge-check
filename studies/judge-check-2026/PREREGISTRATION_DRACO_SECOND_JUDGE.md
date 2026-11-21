@@ -26,7 +26,7 @@ For every distance used in the earlier arms the product's text is the same, byte
 - The verdict is read by rule from the status field of the reply.
 - A call that fails or has no readable status is recorded and counted, never dropped.
 
-**Two calls were made before this file was written**, on probes that are not part of the run (3 tolerances outside), to learn the reply format and the cost of a call. Both were answered UNMET, which is right. They cost half a cent each. They are kept in `results/draco_gemini/pings.jsonl` and are not part of any result below.
+**Two calls were made before this file was written**, on probes that are not part of the run (3 tolerances outside), to learn the reply format and the cost of a call. Both were answered UNMET, which is right. They cost half a cent each. They are kept in `results/draco_second_judge/pings.jsonl` and are not part of any result below.
 
 ## Stages, in fixed order
 

@@ -67,8 +67,8 @@ from consilience.check import EXIT_CLEAN, EXIT_UNPARSEABLE, EXIT_VIOLATIONS, _re
 from consilience.compare import PINT_VERSION, ROUNDING, InputError, compare
 from consilience.hashing import sha256_bytes, sha256_json
 
+from . import units as _units  # noqa: F401  (registers the currency codes with the engine)
 from ._version import __version__
-from .units import prefixed_currency
 
 GRADER_RECEIPT_SCHEMA = "consilience-grader-receipt/v1"
 REQUIRED_COLUMNS = ("id", "reference_value", "reference_unit", "tolerance", "stated_value",
@@ -233,9 +233,6 @@ def _decide(row: dict):
     tol = row["tolerance"].strip()
     if not tol:
         return None, "not_stated(tolerance)", None, None
-    units = (row["reference_unit"], row["stated_unit"], tol.split(None, 1)[1] if " " in tol else "")
-    if any(prefixed_currency(u) for u in units):
-        return None, "unparseable", None, None       # "kUSD": write the full amount in USD
     try:
         r = compare({"value": row["reference_value"].strip(), "unit": row["reference_unit"].strip()},
                     {"value": row["stated_value"].strip(), "unit": row["stated_unit"].strip()},
@@ -308,8 +305,6 @@ def check_grader(data: Union[str, Path]) -> GraderResult:
             for t in tallies:
                 t["undecided"] += 1
             detail = r.label if r is not None else ""
-            if verdict == "unparseable" and r is None:
-                detail = "a currency code takes no prefix: write the full amount (USD, not kUSD)"
             if verdict == "at_the_edge":
                 detail = ("the value is within floating-point noise of the edge of the tolerance "
                           "after unit conversion; write both in one unit to decide it exactly")
@@ -397,27 +392,37 @@ def check_grader(data: Union[str, Path]) -> GraderResult:
     return out
 
 
-_VERSION_KEYS = ("consilience_version", "judge_check_version", "pint_version")
-
-
 def _restamp(fresh: dict, recorded: dict) -> str:
     """Hash of a fresh receipt stamped with the versions the recorded one names, so that
-    the hash compares inputs and result only. A version the recorded receipt does not
-    name is left out: receipts written before this package had its own version number
-    carry no ``judge_check_version``."""
+    the hash compares inputs and result only. Receipts written before this package had
+    its own version number carry no ``judge_check_version``; for them, and only for
+    that field, the fresh receipt's value is left out."""
     r = {k: v for k, v in fresh.items() if k != "sha256"}
-    for key in _VERSION_KEYS:
+    for key in ("consilience_version", "pint_version", "judge_check_version"):
         if key in recorded:
             r[key] = recorded[key]
-        else:
-            r.pop(key, None)
+    if "judge_check_version" not in recorded:
+        r.pop("judge_check_version", None)
     return sha256_json(r)
+
+
+def _table_of(stored: str, override, receipt_path: Optional[Path]) -> Path:
+    """Where the table of a receipt is now: where ``--data`` says, else the recorded path
+    (from the working directory, then from the receipt's folder), else a file of the
+    same name beside the receipt. Whichever is found is then checked by hash."""
+    from consilience.verify import _resolve
+    try:
+        return _resolve(stored, override, receipt_path)
+    except InputError:
+        if override is None and receipt_path is not None:
+            beside = Path(receipt_path).resolve().parent / Path(stored).name
+            if beside.is_file():
+                return beside
+        raise
 
 
 def verify_grader(rec: dict, *, data_path=None, receipt_path: Optional[Path] = None):
     """Re-run a grader receipt. Returns (ok, steps, recomputed_sha256)."""
-    from consilience.verify import _resolve
-
     recorded = rec.get("sha256")
     steps = []
     integrity = sha256_json({k: v for k, v in rec.items() if k != "sha256"})
@@ -426,7 +431,7 @@ def verify_grader(rec: dict, *, data_path=None, receipt_path: Optional[Path] = N
                   f"recorded {recorded}, contents hash to {integrity}: the receipt was edited"))
     try:
         stored = rec["inputs"]["data"]
-        p = _resolve(stored["path"], data_path, receipt_path)
+        p = _table_of(stored["path"], data_path, receipt_path)
     except (KeyError, TypeError) as exc:
         raise InputError(f"the receipt is missing a field: {exc}") from None
     got = sha256_bytes(p.read_bytes())

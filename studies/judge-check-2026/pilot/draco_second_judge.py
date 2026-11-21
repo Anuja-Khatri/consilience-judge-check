@@ -4,7 +4,7 @@ The cases are the probes that `consilience rubric probes` builds from DRACO's ru
 (results/draco_product/probes.csv). This script only sends them to the judge, with the
 grading prompt printed in the DRACO paper, and writes down what comes back. The verdicts
 then go through `consilience rubric table` and `consilience grader-check`, which decide
-every row. See ../PREREGISTRATION_DRACO_GEMINI.md, written and committed before any call
+every row. See ../PREREGISTRATION_DRACO_SECOND_JUDGE.md, written and committed before any call
 of the run.
 
   ping      two calls on probes that are not part of the run (3 tolerances out), to
@@ -27,7 +27,7 @@ import draco_contracts as dc  # noqa: E402
 
 ROOT = os.path.dirname(HERE)
 PRODUCT = os.path.join(ROOT, "results", "draco_product")
-OUT = os.path.join(ROOT, "results", "draco_gemini")
+OUT = os.path.join(ROOT, "results", "draco_second_judge")
 FIRST = os.path.join(ROOT, "results", "draco_contracts")
 REPL = os.path.join(ROOT, "results", "draco_replication")
 URL = "https://generativelanguage.googleapis.com/v1beta/openai/chat/completions"

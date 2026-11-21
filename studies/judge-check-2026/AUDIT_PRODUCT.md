@@ -21,7 +21,7 @@
 | 9 | Two tests compared the code with files the same code had written | Kept as regression tests, and joined by tests that do not: the auditor's hostile criteria (60 that must be left out, 11 that must be read right), a separate reader that re-reads the number out of every probe sentence, and tests for each damaged-file and edge case above |
 | 10 | Sentences in the docs that claimed more than the code did | Rewritten. The docs now say the reader is "conservative, not proven" and tell the reader to check what it accepts on a new rubric |
 
-**Unchanged by the rewrite:** the same 76 DRACO criteria are read, with the same values and tolerances, and the probes file is the same byte for byte (sha256 `147522f41376…`, the hash fixed in the Gemini preregistration). The contracts file was regenerated and its hash changed (from `6c8d25012b88…` to `5a57d645fd29…`) because its labels changed; the items in it did not.
+**Unchanged by the rewrite:** the same 76 DRACO criteria are read, with the same values and tolerances, and the probes file is the same byte for byte (sha256 `147522f41376…`, the hash fixed in the second judge's preregistration). The contracts file was regenerated and its hash changed (from `6c8d25012b88…` to `5a57d645fd29…`) because its labels changed; the items in it did not.
 
 **Two readings the auditor flagged that were kept, on purpose.** "40% (within +/- 5%)" is read as percentage points and is now flagged in the scan and in each such item (2 of DRACO's 76). "A decline of 12%" is read as the magnitude 12.
 

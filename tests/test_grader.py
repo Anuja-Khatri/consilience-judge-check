@@ -156,26 +156,63 @@ def test_command_line(tmp_path, capsys):
 
 def test_currency_codes_are_units_of_their_own_kind(tmp_path):
     """This package teaches the engine five currency codes. An amount in one is not
-    comparable with an amount in another, and a code takes no prefix."""
-    import consilience_judge_check  # noqa: F401  (registers the codes)
+    comparable with an amount in another, and a code takes no prefix wherever the engine
+    reads a unit: in a unit cell, inside a value cell, in a tolerance however it is spaced."""
+    import consilience_judge_check  # noqa: F401  (teaches the engine the codes)
     from consilience.compare import compare
-    from consilience_judge_check.units import prefixed_currency
     assert compare({"value": 100, "unit": "USD"}, {"value": 100, "unit": "USD"}).verdict == "agree"
     assert compare({"value": 100, "unit": "USD"},
                    {"value": 100, "unit": "EUR"}).verdict.startswith("not_comparable")
-    assert prefixed_currency("kUSD") == "USD" and prefixed_currency("USD") is None
-    assert prefixed_currency("percent") is None and prefixed_currency("") is None
+    assert compare({"value": 100, "unit": "USD"},
+                   {"value": 100, "unit": "kUSD"}).verdict.startswith("unparseable")
     p = tmp_path / "t.csv"
     p.write_text("id,reference_value,reference_unit,tolerance,stated_value,stated_unit,grader_verdict\n"
-                 "a,100,USD,5 USD,101,kUSD,met\n"          # a prefix on the stated value
-                 "b,100,kUSD,5 kUSD,101,kUSD,met\n"        # a prefix throughout
-                 "c,100,USD,5 kUSD,101,USD,met\n"          # a prefix on the tolerance
-                 "d,100,USD,5 USD,101,USD,met\n", encoding="utf-8")
+                 "stated,100,USD,5 USD,101,kUSD,met\n"            # a prefix on the stated unit
+                 "unitcell,30,kUSD,1000 USD,32000,USD,met\n"      # on the reference unit
+                 "space,100000,USD,500 kUSD,700000,USD,met\n"     # in the tolerance
+                 "glued,100000,USD,500kUSD,700000,USD,met\n"      # ... with no space
+                 "tab,100000,USD,500\tkUSD,700000,USD,met\n"      # ... after a tab
+                 "inline,30 kUSD,,1000 USD,32000,USD,met\n"       # inside a value cell
+                 "other,100,EUR,5 EUR,101,MEUR,met\n"             # another code, another prefix
+                 "plain,100,USD,5 USD,101,USD,met\n", encoding="utf-8")
     g = check_grader(p)
-    assert [(u["id"], u["reason"]) for u in g.undecided] == [
-        ("a", "unparseable"), ("b", "unparseable"), ("c", "unparseable")]
-    assert all("takes no prefix" in u["detail"] for u in g.undecided)
+    assert [u["id"] for u in g.undecided] == ["stated", "unitcell", "space", "glued", "tab", "inline", "other"]
+    assert all(u["reason"].startswith(("unparseable", "unusable_input")) for u in g.undecided)
     assert g.summary["decided"] == 1 and g.summary["right"] == 1
+
+
+def test_a_receipt_is_found_beside_its_table_from_any_folder(tmp_path, monkeypatch):
+    """A receipt records the table's path as it was given. `verify` also looks for a file
+    of that name beside the receipt, and checks it by hash, so a study folder verifies
+    from anywhere."""
+    d = tmp_path / "study"
+    d.mkdir()
+    (d / "t.csv").write_text("id,reference_value,reference_unit,tolerance,stated_value,stated_unit,grader_verdict\n"
+                             "a,100,USD,5 USD,101,USD,met\n", encoding="utf-8")
+    monkeypatch.chdir(tmp_path)
+    assert main(["check", "study/t.csv", "--receipt", "study/r.json"]) == 0
+    monkeypatch.chdir(d)
+    assert verify(d / "r.json").ok
+    monkeypatch.chdir(tmp_path.parent)
+    assert verify(d / "r.json").ok
+    (d / "t.csv").write_text("changed", encoding="utf-8")
+    assert not verify(d / "r.json").ok
+
+
+def test_version_fields_of_a_receipt(tmp_path):
+    """A receipt written before this package had its own version number has no
+    `judge_check_version` and still verifies. One with no engine version does not."""
+    p = tmp_path / "t.csv"
+    p.write_text("id,reference_value,reference_unit,tolerance,stated_value,stated_unit,grader_verdict\n"
+                 "a,100,USD,5 USD,101,USD,met\n", encoding="utf-8")
+    rec = check_grader(p).receipt
+    assert rec["judge_check_version"] and rec["consilience_version"]
+    def rehash(r):
+        r = {k: v for k, v in r.items() if k != "sha256"}
+        r["sha256"] = sha256_json(r)
+        return r
+    assert verify(rehash({k: v for k, v in rec.items() if k != "judge_check_version"})).ok
+    assert not verify(rehash({k: v for k, v in rec.items() if k != "consilience_version"})).ok
 
 
 def test_same_unit_rows_are_decided_in_exact_decimal_arithmetic(tmp_path):

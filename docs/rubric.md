@@ -68,7 +68,7 @@ re-reads the rubric and confirms it.
 
 **Read `review.csv` before you go on.** It lists every criterion that was accepted, with
 the value, tolerance and unit that were read. The reader is careful, but it reads free
-text with rules, and two audits each found text it misread (see Limits). A wrong reading
+text with rules, and three audits each found text it misread (see Limits). A wrong reading
 gives a wrong "right verdict" for every probe built from it. Checking the list is quick
 and is the real safeguard.
 
@@ -76,7 +76,10 @@ and is the real safeguard.
 id,criterion,value_read,tolerance_read,unit_read,note
 r1,States Q3 revenue as $30.8B (within +/- $0.5B),30800000000,500000000,USD,
 r2,"States headcount as 12,400 employees (within +/- 200)",12400,200,count,
+...
 ```
+
+(Two of the four rows are shown.)
 
 **2. Build the cases.**
 
@@ -194,8 +197,9 @@ always safe: it is only not tested.
 A criterion is used only if
 
 - it is plain ASCII text of at most 600 characters;
-- it starts with a lead word (default `States`; add others with `--lead`) and ends with
-  `(within +/- T)`;
+- it starts with a lead word and ends with `(within +/- T)`. The default lead word is
+  `States`. `--lead` names the lead words to use and replaces the default, so to keep
+  `States` and add another, name both (`--lead States --lead Reports`);
 - every word in it that holds a digit is recognised in full, either as a date or period
   label (a year, `Q3`, `FY25`, `H1`, `9/30/2025`, `5-year`, a day after a month name) or
   as the one value. A word such as `2.5-year`, `1H24`, `$3.2M-` or `C$9.7M` is not

@@ -1,4 +1,4 @@
-data:        studies/judge-check-2026/results/draco_gemini/table.csv (473 rows; sha256 6a1354d929e98cd21710a3a6785532f041ebeb5592de0af9b1bd3d7c4c8d2170)
+data:        studies/judge-check-2026/results/draco_second_judge/table.csv (473 rows; sha256 6a1354d929e98cd21710a3a6785532f041ebeb5592de0af9b1bd3d7c4c8d2170)
 decided:     473 of 473 (473 in exact decimal arithmetic, 0 after a unit conversion)
 grader right: 473
 lenient:     0 (accepted a value outside the stated tolerance)
@@ -20,5 +20,5 @@ by item (an item is wrong if any of its rows is; 95% interval treats items as in
   far: 0 of 76 items wrong (0% to 5%), 0 on every row; in 0 of 10 clusters (largest cluster 0 of 39, the others 0 of 37)
 could not decide: 0 rows
 result:      exit 0: the grader agrees with the arithmetic on every row
-receipt:     sha256 ab274c84b6819be078d00af4e7eabccbc5b3c6145ddb2627a24be1b6c24725c3
-wrote:       studies/judge-check-2026/results/draco_gemini/grader_receipt.json
+receipt:     sha256 616941978a5320aa95a8b53388ab88ed9ead9437637be28d342e00a9cfc6ab99
+wrote:       studies/judge-check-2026/results/draco_second_judge/grader_receipt.json

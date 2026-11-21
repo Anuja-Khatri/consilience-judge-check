@@ -95,8 +95,12 @@ strict:      1 (rejected a value inside the stated tolerance)
   line 4    a3  inside  strict: stated 20.12 USD, reference 19.67 USD, tolerance 0.50 USD, difference 0.45 USD
 ```
 
+(The output is shortened here. The tool also prints the table's hash, a count for each
+group, the rows it could not decide, the result and the receipt's hash, and each
+disagreement line ends with a short receipt for that row.)
+
 Exit codes: 0 the grader is right on every row, 1 it differs on some, 3 some rows could
-not be decided, 64 the table itself is unusable.
+not be decided, 64 the table itself is unusable, 2 the command line cannot be read.
 
 ```bash
 consilience-judge-check verify receipt.json
@@ -170,6 +174,12 @@ Two fields need a word:
 - `consilience_version` is the version of the engine that read the units.
   `judge_check_version` is the version of this package. Receipts written before this
   package had its own version number do not carry the second, and still verify.
+
+**What `verify` compares, and what it does not.** It compares the table's bytes and the
+result. The version fields are not part of that comparison: a receipt whose version
+field was edited and whose hash was then recomputed still verifies, because the same
+table gives the same result. A receipt is found from the folder it is in: `verify` looks
+for the table at the recorded path and then beside the receipt, and checks it by hash.
 
 ## What it does not do
 

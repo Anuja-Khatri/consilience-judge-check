@@ -2,10 +2,11 @@
   "receipt": "consilience-grader-receipt/v1",
   "command": "grader-check",
   "consilience_version": "0.2.0.dev0",
+  "judge_check_version": "0.1.0",
   "pint_version": "0.26.2",
   "inputs": {
     "data": {
-      "path": "studies/judge-check-2026/results/draco_gemini/table.csv",
+      "path": "studies/judge-check-2026/results/draco_second_judge/table.csv",
       "sha256": "6a1354d929e98cd21710a3a6785532f041ebeb5592de0af9b1bd3d7c4c8d2170",
       "bytes": 57309
     }
@@ -340,5 +341,5 @@
     ],
     "exit_code": 0
   },
-  "sha256": "ab274c84b6819be078d00af4e7eabccbc5b3c6145ddb2627a24be1b6c24725c3"
+  "sha256": "616941978a5320aa95a8b53388ab88ed9ead9437637be28d342e00a9cfc6ab99"
 }

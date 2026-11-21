@@ -20,7 +20,7 @@ consilience-judge-check table probes.csv verdicts.csv --out table.csv
 consilience-judge-check check table.csv --receipt receipt.json
 ```
 
-**A note on names.** When this study was run, these commands were part of the `consilience` package and were called `consilience rubric scan`, `rubric probes`, `rubric table` and `consilience grader-check`. The preregistrations, the scripts in `pilot/` and the audit records use those names and are kept as written. The code moved to this repository on 21 Nov 2026. Every receipt in this folder re-runs unchanged with the moved code.
+**A note on names.** When this study was run, these commands were part of the `consilience` package and were called `consilience rubric scan`, `rubric probes`, `rubric table` and `consilience grader-check`. The preregistrations, the scripts in `pilot/` and `adapters/` and the audit records use those names and are kept as written. The code moved to this repository on 21 Nov 2026. Every receipt in this folder re-runs unchanged with the moved code.
 
 **What the tool adds to the usual ways of checking a judge, and what a first reading might assume,** are on the front page of this repository: [README.md](../../README.md).
 
@@ -262,7 +262,7 @@ The table counts calls. Five calls on one text are not five independent trials, 
    consilience-judge-check probes contracts.json --out probes.csv
    ```
 
-   The cases used here are in `results/draco_product/probes.csv`.
+   The cases used here are in `results/draco_product/probes.csv`. They were built with `--offsets 0,+0.5,+0.9,+1.1,+1.5,+2,-0.9,-1.1,far,+0.9u,+1.1u,+3` (856 cases); the default set of distances is different.
 
 3. **Grade them with your judge**, in your own harness. Each probe has the `criterion` and the `response`. Write the verdicts as a CSV file with the columns `probe_id` and `verdict`.
 
@@ -305,7 +305,7 @@ consilience-judge-check verify studies/judge-check-2026/results/draco_product/gr
 ```
 
 ```bash
-consilience-judge-check verify studies/judge-check-2026/results/draco_gemini/grader_receipt.json
+consilience-judge-check verify studies/judge-check-2026/results/draco_second_judge/grader_receipt.json
 ```
 
 The first re-reads the table of 2,298 cases from the first two arms, re-runs every comparison and confirms 2,218 right, 57 lenient, 23 strict. The second does the same for the 753 replication cases: 654 right, 82 lenient, 17 strict. The third is a receipt of the Consilience engine's own `check` command, which this tool hands to the engine; it confirms that 15 of 565 wrong-law calls reach mark 9 and 78 reach mark 8. The fourth is the third judge through the package alone (3,051 rows: 2,872, 139, 40). The fifth is the second judge (473 rows so far, all right). A receipt says "given this table, these are the rows where the verdict differs". The call records beside it are the evidence that the judge gave those verdicts.
@@ -330,7 +330,7 @@ A receipt records a hash of the table's exact bytes, so a tool that rewrites lin
 | `AUDIT_PRODUCT.md` | The independent audits of the rubric commands as returned, and what was done |
 | `adapters/draco_rubric.py`, `adapters/draco_saved_verdicts.py` | DRACO's rubric as a table; this study's saved judge calls as a verdicts file |
 | `results/draco_product/` | The third judge through the package alone: contracts, probes, saved verdicts, table, receipt |
-| `results/draco_gemini/` | The second judge: every call, verdicts, table, receipt, run summary, and the two calls made before the run |
+| `results/draco_second_judge/` | The second judge: every call, verdicts, table, receipt, run summary, and the two calls made before the run |
 | `results/draco_contracts/items.json`, `items_boundary.json` | The 76 criteria and every response of the first two arms, with the value each states |
 | `results/draco_contracts/judge_calls.jsonl` | The 2,388 judge calls of the first two arms, with the judge's full reply |
 | `results/draco_contracts/grader_table.csv`, `grader_receipt.json`, `grader_check.txt` | The table `check` reads, its receipt, its printed report |
@@ -342,16 +342,16 @@ A receipt records a hash of the table's exact bytes, so a tool that rewrites lin
 
 Not included: the ten long reports used as context in the in-report conditions (model-written text about real companies, kept out of a public folder), and the explanations printed in the DiscoverPhysics paper (`pilot/extract_paper_examples.py` decodes them from the paper's source).
 
-Call records carry the model identifier in a `judge_model` field. The text of this study does not name models.
+Call records carry the model identifier in a `judge_model` field, and three summary files written by the scripts carry it too (`summary.json` in two folders, `run_summary.json`). The text of this study does not name models.
 
 ## How the study was run
 
 - **Written down first.** Six preregistrations, each committed before its calls. Their hashes as committed: judge `1f9e56088401…`, judge panel `5243c60dc294…`, DRACO `3e5845366310…`, DRACO near the boundary `f1b59a5df7ef…`, DRACO replication `b0a7dc2c3ede…`, DRACO second judge `54499db287af…`. The commit history that shows the order is in a private repository. One sentence was removed from each of three DRACO files for publication; the hashes above are of the files before that.
-- **Every call kept.** 4,464 judge calls with a verdict, none edited or dropped, and the failed calls beside them.
+- **Every call kept.** 4,459 judge calls with a result (a verdict or a score), none edited or dropped. Kept beside them: the 10 calls that failed, and 2 calls made before the second judge's run to learn its reply format.
 - **Checked before it was shown.** The first write-up led with "26 of 228 calls, 11%". Before publication that figure was put to a preregistered replication and an independent audit. The replication held. The audit found that the intervals were too narrow, that one sentence about the judge was wrong, that several "made no difference" statements were too strong, and that the engine did not decide "exactly" as claimed. The engine was fixed, the tables rebuilt and this text rewritten. `AUDIT.md` has every finding. Tables and receipts were regenerated; no call record was changed.
-- **Run on 20 Nov 2026**, as the first use of `check`, on benchmarks chosen because Perplexity's research page lists them and their papers name judge reliability as open.
+- **Run on 20 and 21 Nov 2026**, as the first use of `check`, on benchmarks chosen because Perplexity's research page lists them and their papers name judge reliability as open.
 - **Provenance.** The study belongs to the Consilience project (Anuja Khatri). The code and this text were written with an AI coding assistant working under her direction.
-- **Cost.** About 34 US dollars in judge calls.
+- **Cost.** About 34 US dollars in judge calls at list prices, by the author's own count.
 
 ## Sources and licences
 

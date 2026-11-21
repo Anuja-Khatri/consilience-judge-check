@@ -8,7 +8,8 @@
 
 Exit codes. ``check``: 0 the grader agrees with the arithmetic on every row, 1 it differs
 on some rows, 3 some rows could not be decided. ``verify``: 0 the receipt re-runs to the
-same result, 1 it does not. Every command: 64 for an input that cannot be used.
+same result, 1 it does not. Every command: 64 for an input that cannot be used, and 2
+for a command line that cannot be read (a missing or unknown option).
 """
 from __future__ import annotations
 
@@ -321,7 +322,8 @@ def build_parser() -> argparse.ArgumentParser:
     g.set_defaults(func=cmd_check)
 
     v = sub.add_parser("verify", help="re-run a receipt and confirm its hash (exit 0/1, 64 error)")
-    v.add_argument("receipt", help="a contracts file, a probes receipt or a check receipt")
+    v.add_argument("receipt", help="a contracts file, a probes receipt or a check receipt; a "
+                                    "receipt of the Consilience engine is handed to the engine")
     v.add_argument("--data", help="where the receipt's input file is now, if it has moved")
     v.set_defaults(func=cmd_verify)
     return ap

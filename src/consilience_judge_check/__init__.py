@@ -14,7 +14,7 @@ No judge and no model is run by this package. Units are read by the Consilience 
 arithmetic.
 """
 from ._version import __version__
-from .units import CURRENCY_UNITS, register_currencies  # registers the currency codes
+from .units import CURRENCY_UNITS, register_currencies  # teaches the engine the currency codes
 from .grader import GRADER_RECEIPT_SCHEMA, GraderResult, check_grader
 from .rubric import (CONTRACTS_SCHEMA, PROBES_SCHEMA, ScanResult, build_probes, probe_table,
                      read_criterion, scan_rubric)

@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "consilience-judge-check"
-version = "0.1.0"
+version = "0.1.1"
 description = "Where a rubric's right answer is arithmetic, is the judge right? Builds the test from the rubric, decides every case by exact arithmetic, and leaves a receipt."
 readme = "README.md"
 requires-python = ">=3.10"

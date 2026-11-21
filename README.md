@@ -10,10 +10,10 @@ It is a Consilience tool. The Consilience engine (the `consilience` package) rea
 
 | Step | Command | What you get |
 |---|---|---|
-| Find the criteria arithmetic can check | `consilience-judge-check scan rubric.csv` | How many there are, how much of the rubric's weight they carry, and every other criterion counted under the reason it was left out |
-| Build the test | `consilience-judge-check probes contracts.json` | Short responses that state a value at a known distance from the reference: on it, just inside the tolerance, just outside, far off |
-| Join your judge's verdicts | `consilience-judge-check table probes.csv verdicts.csv` | One row per graded case |
-| Decide and count | `consilience-judge-check check table.csv` | Each row right, lenient or strict; counts by criterion; a receipt |
+| Find the criteria arithmetic can check | `consilience-judge-check scan rubric.csv --out contracts.json` | How many there are, how much of the rubric's weight they carry, and every other criterion counted under the reason it was left out |
+| Build the test | `consilience-judge-check probes contracts.json --out probes.csv` | Short responses that state a value at a known distance from the reference: on it, just inside the tolerance, just outside, far off |
+| Join your judge's verdicts | `consilience-judge-check table probes.csv verdicts.csv --out table.csv` | One row per graded case |
+| Decide and count | `consilience-judge-check check table.csv --receipt receipt.json` | Each row right, lenient or strict; counts by criterion; a receipt |
 | Re-run a result | `consilience-judge-check verify receipt.json` | Whether the receipt re-runs to the same answer |
 
 ## What it adds to the usual ways of checking a judge
@@ -54,7 +54,7 @@ Both benchmarks publish their rubrics, prompts and code, which is the only reaso
 | The judges tested are the paper's three | One is: the third, at the paper's settings. The primary judge has been withdrawn by its provider, so its successor was tested. The second was not tested |
 | The sample is large | 76 criteria from 10 tasks, and one task holds 39 of them |
 | The rubric reader works on any rubric | It reads a narrow pattern and has been tried on one rubric. It writes a review list for a person to check |
-| People have reviewed this | Not yet. Four audits were done by separate AI sessions. Three of them broke the rubric reader, and the reader's final version has not been audited. The records are kept as returned |
+| People have reviewed this | Not yet. Five checks were done by separate AI sessions. Three of them broke the rubric reader, and the reader's final version has not been audited. The fifth found that the move to this repository had changed one behaviour, since put back. The records are kept as returned |
 | This is long-standing work | The Consilience engine is older. This tool and its study were built in November 2026, with an AI coding assistant working under the author's direction |
 
 ## Install
@@ -85,13 +85,17 @@ pip install -e ".[test]"
 python -m pytest
 ```
 
-The 197 tests include the hostile criteria written by the auditors, and tests that rebuild the study's test sentences byte for byte and re-run its receipts. To re-run one receipt by hand:
+The 199 tests include more than a hundred of the hostile criteria the auditors wrote, and tests that rebuild the study's test sentences byte for byte and re-run its receipts. To re-run one receipt by hand:
 
 ```bash
 consilience-judge-check verify studies/judge-check-2026/results/draco_product/grader_receipt_saved.json
 ```
 
-That re-reads the third judge's 3,051 graded cases, decides every row again, and confirms 2,872 right, 139 lenient and 40 strict.
+That re-reads the third judge's 3,051 graded cases, decides every row again and says whether the result is the same as recorded. To see the counts themselves (2,872 right, 139 lenient, 40 strict):
+
+```bash
+consilience-judge-check check studies/judge-check-2026/results/draco_product/table_saved.csv
+```
 
 ## Limits
 
@@ -100,18 +104,19 @@ That re-reads the third judge's 3,051 graded cases, decides every row again, and
 - **The study uses built sentences, not real reports**, and a small sample.
 - **A receipt says "given this table, these rows differ from the arithmetic".** It does not prove the judge gave the verdicts in the table. The call records kept beside it are the evidence for that.
 - **The engine is pinned to a development commit** of `consilience-core` (0.2.0.dev0), not to a release.
-- **No person has reviewed this yet.**
+- **No person has reviewed this yet.** Every audit so far was done by a separate AI session.
 
 ## What is in this repository
 
 | Path | What |
 |---|---|
 | `src/consilience_judge_check/` | The tool: `rubric.py` (scan, probes, table), `grader.py` (check), `verify.py`, `units.py` (currency codes), `cli.py` |
-| `tests/` | 197 tests |
+| `tests/` | 199 tests |
 | `docs/rubric.md`, `docs/check.md` | What problem each command solves, who it is for, what is read and what is left out, limits |
 | `studies/judge-check-2026/` | The first study: write-up, the audit records as returned, six preregistrations, scripts, every judge call, tables, receipts |
 | `PROVENANCE.md` | Where each thing came from |
 | `CHANGELOG.md` | What changed, including how the move to this repository was checked |
+| `AUDIT_MOVE.md` | The independent check of this repository after the move, as returned, and what was done about each finding |
 
 ## How it was made
 
