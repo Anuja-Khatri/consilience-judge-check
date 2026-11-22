@@ -1,24 +1,24 @@
-data:        studies/judge-check-2026/results/draco_second_judge/table.csv (489 rows; sha256 1d7a3808ac9017a67787aabf2ee464ad866960c56cf7ef58085ff8a76232e6d9)
-decided:     489 of 489 (489 in exact decimal arithmetic, 0 after a unit conversion)
-grader right: 489
+data:        studies/judge-check-2026/results/draco_second_judge/table.csv (697 rows; sha256 c4dcd938474ab0e6ce6f2b01ae0cfe2208d8f9c893d43b4da74ef85fcbff4163)
+decided:     697 of 697 (697 in exact decimal arithmetic, 0 after a unit conversion)
+grader right: 697
 lenient:     0 (accepted a value outside the stated tolerance)
 strict:      0 (rejected a value inside the stated tolerance)
-  group +0.9: 58 right, 0 lenient, 0 strict of 58 decided
-  group +1.1: 76 right, 0 lenient, 0 strict of 76 decided
+  group +0.9: 76 right, 0 lenient, 0 strict of 76 decided
+  group +1.1: 162 right, 0 lenient, 0 strict of 162 decided
   group +1.1:report: 69 right, 0 lenient, 0 strict of 69 decided
-  group -0.9: 58 right, 0 lenient, 0 strict of 58 decided
-  group -1.1: 76 right, 0 lenient, 0 strict of 76 decided
+  group -0.9: 76 right, 0 lenient, 0 strict of 76 decided
+  group -1.1: 162 right, 0 lenient, 0 strict of 162 decided
   group 0: 76 right, 0 lenient, 0 strict of 76 decided
   group far: 76 right, 0 lenient, 0 strict of 76 decided
 by item (an item is wrong if any of its rows is; 95% interval treats items as independent):
-  +0.9: 0 of 58 items wrong (0% to 6%), 0 on every row; in 0 of 10 clusters (largest cluster 0 of 31, the others 0 of 27)
+  +0.9: 0 of 76 items wrong (0% to 5%), 0 on every row; in 0 of 10 clusters (largest cluster 0 of 39, the others 0 of 37)
   +1.1: 0 of 76 items wrong (0% to 5%), 0 on every row; in 0 of 10 clusters (largest cluster 0 of 39, the others 0 of 37)
   +1.1:report: 0 of 69 items wrong (0% to 5%), 0 on every row; in 0 of 9 clusters (largest cluster 0 of 39, the others 0 of 30)
-  -0.9: 0 of 58 items wrong (0% to 6%), 0 on every row; in 0 of 10 clusters (largest cluster 0 of 31, the others 0 of 27)
+  -0.9: 0 of 76 items wrong (0% to 5%), 0 on every row; in 0 of 10 clusters (largest cluster 0 of 39, the others 0 of 37)
   -1.1: 0 of 76 items wrong (0% to 5%), 0 on every row; in 0 of 10 clusters (largest cluster 0 of 39, the others 0 of 37)
   0: 0 of 76 items wrong (0% to 5%), 0 on every row; in 0 of 10 clusters (largest cluster 0 of 39, the others 0 of 37)
   far: 0 of 76 items wrong (0% to 5%), 0 on every row; in 0 of 10 clusters (largest cluster 0 of 39, the others 0 of 37)
 could not decide: 0 rows
 result:      exit 0: the grader agrees with the arithmetic on every row
-receipt:     sha256 48ede2d94d65a066a75df59b2542eacaebeb51fbabc89f8b4a622c64ce6e6474
+receipt:     sha256 1d445945c51eaceb4a6fd352ab71a801e3fd6ceffffaa0633b3fb7b7fb944906
 wrote:       studies/judge-check-2026/results/draco_second_judge/grader_receipt.json

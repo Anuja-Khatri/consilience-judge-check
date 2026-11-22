@@ -1,5 +1,19 @@
 # Changelog
 
+## The study, 22 Nov 2026: the run on the second judge is finished
+
+No code changed. The run on the second DRACO judge had been closed on 21 Nov before its spending cap. It was reopened on 22 Nov by the author's decision and taken to the cap.
+
+| | |
+|---|---|
+| Calls with a verdict | 697, every one right |
+| Just inside the tolerance | Now complete: 76 of 76 criteria on each side, none wrongly refused |
+| Repeat calls on the just-outside sentences | 172 of the 304 planned, which is what the cap allowed. Every criterion has two calls on each side and 10 have three. None was accepted on any call |
+| Failed calls | Six in all, each made again |
+| In the whole study | 4,911 judge calls with a result, 11 failed, all kept |
+
+A separate session recounted the run from the call records before these numbers were published, and reproduced every count (`studies/judge-check-2026/AUDIT_SECOND_JUDGE.md`). It also listed limits that Part 1b of the write-up now states: the in-report result is weaker than the single-sentence one, the intervals treat criteria from 10 tasks as independent, the run was counted after each batch, and the script was changed twice after the first calls, not once.
+
 ## The study, 21 Nov 2026: the third judge with its reasoning switched on
 
 No code changed. A new, preregistered experiment was added to the study (Part 1c of its write-up).

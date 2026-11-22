@@ -7,8 +7,8 @@
   "inputs": {
     "data": {
       "path": "studies/judge-check-2026/results/draco_second_judge/table.csv",
-      "sha256": "1d7a3808ac9017a67787aabf2ee464ad866960c56cf7ef58085ff8a76232e6d9",
-      "bytes": 59169
+      "sha256": "c4dcd938474ab0e6ce6f2b01ae0cfe2208d8f9c893d43b4da74ef85fcbff4163",
+      "bytes": 84184
     }
   },
   "options": {
@@ -33,30 +33,30 @@
   },
   "result": {
     "summary": {
-      "rows": 489,
-      "decided": 489,
-      "right": 489,
+      "rows": 697,
+      "decided": 697,
+      "right": 697,
       "lenient": 0,
       "strict": 0,
       "grader_unreadable": 0,
       "undecided": 0,
       "blank_lines": 0,
-      "decided_exact": 489,
+      "decided_exact": 697,
       "decided_float": 0,
       "by_group": {
         "+0.9": {
-          "rows": 58,
-          "decided": 58,
-          "right": 58,
+          "rows": 76,
+          "decided": 76,
+          "right": 76,
           "lenient": 0,
           "strict": 0,
           "grader_unreadable": 0,
           "undecided": 0
         },
         "+1.1": {
-          "rows": 76,
-          "decided": 76,
-          "right": 76,
+          "rows": 162,
+          "decided": 162,
+          "right": 162,
           "lenient": 0,
           "strict": 0,
           "grader_unreadable": 0,
@@ -72,18 +72,18 @@
           "undecided": 0
         },
         "-0.9": {
-          "rows": 58,
-          "decided": 58,
-          "right": 58,
+          "rows": 76,
+          "decided": 76,
+          "right": 76,
           "lenient": 0,
           "strict": 0,
           "grader_unreadable": 0,
           "undecided": 0
         },
         "-1.1": {
-          "rows": 76,
-          "decided": 76,
-          "right": 76,
+          "rows": 162,
+          "decided": 162,
+          "right": 162,
           "lenient": 0,
           "strict": 0,
           "grader_unreadable": 0,
@@ -110,7 +110,7 @@
       },
       "by_item": {
         "+0.9": {
-          "items": 58,
+          "items": 76,
           "wrong_at_least_once": 0,
           "wrong_on_every_row": 0,
           "rows_disagree": 0,
@@ -118,19 +118,19 @@
           "strict_at_least_once": 0,
           "wrong_share_95": [
             0.0,
-            0.0621
+            0.0481
           ],
           "items_without_a_cluster": 0,
           "clusters": 10,
           "clusters_with_a_wrong_item": 0,
           "largest_cluster": {
             "wrong": 0,
-            "items": 31
+            "items": 39
           },
           "largest_cluster_is_tied": false,
           "other_clusters": {
             "wrong": 0,
-            "items": 27
+            "items": 37
           },
           "items_in_more_than_one_cluster": 0,
           "lenient_items_rounding_checked": 0,
@@ -200,7 +200,7 @@
           "lenient_items_still_outside_after_rounding_toward_reference": 0
         },
         "-0.9": {
-          "items": 58,
+          "items": 76,
           "wrong_at_least_once": 0,
           "wrong_on_every_row": 0,
           "rows_disagree": 0,
@@ -208,19 +208,19 @@
           "strict_at_least_once": 0,
           "wrong_share_95": [
             0.0,
-            0.0621
+            0.0481
           ],
           "items_without_a_cluster": 0,
           "clusters": 10,
           "clusters_with_a_wrong_item": 0,
           "largest_cluster": {
             "wrong": 0,
-            "items": 31
+            "items": 39
           },
           "largest_cluster_is_tied": false,
           "other_clusters": {
             "wrong": 0,
-            "items": 27
+            "items": 37
           },
           "items_in_more_than_one_cluster": 0,
           "lenient_items_rounding_checked": 0,
@@ -341,5 +341,5 @@
     ],
     "exit_code": 0
   },
-  "sha256": "48ede2d94d65a066a75df59b2542eacaebeb51fbabc89f8b4a622c64ce6e6474"
+  "sha256": "1d445945c51eaceb4a6fd352ab71a801e3fd6ceffffaa0633b3fb7b7fb944906"
 }

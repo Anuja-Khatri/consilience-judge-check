@@ -45,9 +45,12 @@ STAGES = [
 ]
 _lock = threading.Lock()
 # The service allows this key 25 requests a minute for this model. Calls are started at
-# most once every 2.7 seconds. (Added after the first 24 calls of the run: the run had
-# been stopped by that limit, which the first version of this script took for a refusal
-# to bill. Nothing else about the run changed.)
+# most once every 2.7 seconds. Two changes were made to this script after the first calls
+# of the run. After 25 records: this pacing, more attempts, and a narrower rule for when
+# a refusal stops the run (the run had been stopped by the per-minute limit, which the
+# first version took for a refusal to bill). After 247 records: the run stops at once on
+# the provider's per-day limit. The stages, settings, prompts, verdict pattern and cap
+# were not changed. (This comment was corrected on 22 Nov; it used to name one change.)
 MIN_GAP = 2.7
 _next_start = [0.0]
 
