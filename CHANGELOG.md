@@ -1,5 +1,9 @@
 # Changelog
 
+## 23 Nov 2026: results on one page
+
+`RESULTS.md` added: the study's findings on one page, each with its number, and what they do not show. No code and no result changed.
+
 ## The study, 22 Nov 2026: the run on the second judge is finished
 
 No code changed. The run on the second DRACO judge had been closed on 21 Nov before its spending cap. It was reopened on 22 Nov by the author's decision and taken to the cap.

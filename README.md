@@ -2,6 +2,8 @@
 
 **Where a rubric's right answer is arithmetic, is the judge right?**
 
+**What it found on two public benchmarks, on one page: [RESULTS.md](RESULTS.md).**
+
 More and more work is scored by a rubric and a judge, and the judge is often a language model. Most of what a rubric asks needs judgement. Some of it does not. A criterion such as "States Q3 revenue as $30.8B (within +/- $0.5B)" has one right verdict, and it is fixed by arithmetic.
 
 `consilience-judge-check` reads a rubric, finds those criteria, builds test responses whose right verdict is known, and reports where a judge's verdict differs. It needs no human labels. It runs no judge and no model: you run your judge on the test responses in your own harness and hand back its verdicts.
@@ -117,6 +119,7 @@ consilience-judge-check check studies/judge-check-2026/results/draco_product/tab
 | `tests/` | 200 tests |
 | `docs/rubric.md`, `docs/check.md` | What problem each command solves, who it is for, what is read and what is left out, limits |
 | `studies/judge-check-2026/` | The first study: write-up, the audit records as returned, seven preregistrations, scripts, every judge call, tables, receipts |
+| `RESULTS.md` | The findings on one page, with what they do not show |
 | `PROVENANCE.md` | Where each thing came from |
 | `CHANGELOG.md` | What changed, including how the move to this repository was checked |
 | `AUDIT_MOVE.md` | The independent check of this repository after the move, as returned, and what was done about each finding |
