@@ -4,6 +4,16 @@
 
 **What it found on two public benchmarks, on one page: [RESULTS.md](RESULTS.md).**
 
+## At a glance
+
+- **What it checks:** whether an LLM judge gets a rubric criterion right when the right verdict is plain arithmetic: a stated number with a stated tolerance.
+- **Why it matters:** deep-research benchmarks score answers with rubric judges. If a judge accepts a value the rubric rules out, the benchmark rewards a wrong answer. Running the judge again shows consistency, and comparing judges shows agreement. Neither shows which verdict is right. The rubric's own number does.
+- **Who it is for:** benchmark builders, evaluation teams, and anyone who scores work with an LLM judge and a rubric.
+- **Tested on:** Perplexity's DRACO deep-research benchmark and the DiscoverPhysics benchmark. On DRACO, one of the paper's judges accepted a value just outside the stated tolerance on 27 of 76 criteria. Full findings: [RESULTS.md](RESULTS.md).
+- **Try it:** `pip install "git+https://github.com/Anuja-Khatri/consilience-judge-check"`, then the four commands in the table below. No human labels and no extra model are needed.
+
+Part of [The Consilience](https://theconsilience.io), a verification layer for AI-for-science. All public repos: [github.com/Anuja-Khatri](https://github.com/Anuja-Khatri).
+
 More and more work is scored by a rubric and a judge, and the judge is often a language model. Most of what a rubric asks needs judgement. Some of it does not. A criterion such as "States Q3 revenue as $30.8B (within +/- $0.5B)" has one right verdict, and it is fixed by arithmetic.
 
 `consilience-judge-check` reads a rubric, finds those criteria, builds test responses whose right verdict is known, and reports where a judge's verdict differs. It needs no human labels. It runs no judge and no model: you run your judge on the test responses in your own harness and hand back its verdicts.
